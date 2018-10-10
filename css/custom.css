@@ -1,17 +1,23 @@
 div.header h1 {
     text-align: center; 
-    
+    color: whitesmoke;
+}
+
+div.header {
+    background-image: url(../Images/background-board-brown-326311.jpg);
+    height: 6em;
 }
 
 div.sidebar {
-
+    background-color: darkgray;
 }
 
 div.post {
+    background-color: cornsilk;
 
 }
 
 div.footer {
-    text-align: center;
     background-color: gray;
+    text-align: center;
 }
