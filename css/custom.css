@@ -1,3 +1,17 @@
 div.header h1 {
     text-align: center; 
+    
+}
+
+div.sidebar {
+
+}
+
+div.post {
+
+}
+
+div.footer {
+    text-align: center;
+    background-color: gray;
 }
