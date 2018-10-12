@@ -86,3 +86,9 @@ div.footer {
 .fa:hover {
     opacity: 0.7;
 }
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
