@@ -36,13 +36,14 @@ div.rightcolumn {
     padding-left: 20px;
 }
 
+div.row {
+    padding: 20px;
+}
+
 div.card {
     background-color: #f1f1f1;
     padding: 20px;
     margin-top: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #f44f0d;
 }
 
 div.row:after {
