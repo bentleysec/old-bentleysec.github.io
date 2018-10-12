@@ -26,13 +26,13 @@ div.header {
 div.leftcolumn {
     padding: 20px;
     float: left;
-    width: 25%;
+    width: 75%;
 }
 
 div.rightcolumn {
     padding: 20px;
     float: right;
-    width: 75%;
+    width: 25%;
     padding-left: 20px;
 }
 
