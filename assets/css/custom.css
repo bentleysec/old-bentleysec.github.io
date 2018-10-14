@@ -17,6 +17,7 @@ a.nav-link:hover  {
 div.header h1 {
     text-align: center; 
     color: whitesmoke;
+    font-family: 'Audiowide', cursive;
 }
 
 div.header {
@@ -54,6 +55,14 @@ div.card {
     margin-top: 20px;
     border-width: 1px;
     border-color: #fa5400;
+}
+
+a.card {
+    color:;
+}
+
+a.card:hover {
+    color:;
 }
 
 div.row:after {
