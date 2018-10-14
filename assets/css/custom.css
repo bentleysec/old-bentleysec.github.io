@@ -3,7 +3,7 @@
 }
 
 div.body {
-    background-color:  #5d6d7e;
+    background-color:#566573;
 }
 
 a.nav-link  {
@@ -52,6 +52,8 @@ div.card {
     background-color: #f1f1f1;
     padding: 20px;
     margin-top: 20px;
+    border-width: 1px;
+    border-color: #fa5400;
 }
 
 div.row:after {
