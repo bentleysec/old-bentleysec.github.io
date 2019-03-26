@@ -3,7 +3,7 @@
 }
 
 div.body {
-    background-color:white;
+    background-color:#B2B2B2;
 }
 
 a.nav-link  {
@@ -13,6 +13,7 @@ a.nav-link  {
 a.nav-link:hover  {
     color: rgb(194, 194, 194);
 }
+
 
 div.header h1 {
     text-align: center; 
@@ -53,8 +54,8 @@ div.card {
     background-color: #f1f1f1;
     padding: 20px;
     margin-top: 20px;
-    border-width: 1px;
-    border-color: #fa5400;
+    border-top-width: 1x;
+    border-top-color: #fa5400;
 }
 
 /* a.card {
