@@ -64,7 +64,9 @@ div.card {
     margin-top: 20px;
     border-top-width: 1x;
     border-top-color: #fa5400;
+    border-left-color: #fa5400;
 }
+
 
 /* a.card {
     color:;
