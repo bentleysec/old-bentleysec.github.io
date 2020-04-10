@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 div.body {
@@ -16,7 +16,7 @@ a.nav-link:hover  {
 
 
 div.header h1 {
-    text-align: center; 
+    text-align: center;
     color: whitesmoke;
     font-family: 'Audiowide', cursive;
 }
@@ -73,20 +73,21 @@ div.row:after {
 }
 
 div.footer {
-    background-color: gray;
+    background-color: black;
     text-align: center;
     padding: 20px;
+    color: whitesmoke;
 }
 
 div.social {
     display: inline-block;
-    
+
 }
 
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-    div.rightcolumn, div.leftcolumn, #rightsidebar {   
+    div.rightcolumn, div.leftcolumn, #rightsidebar {
         width: 100%;
         padding: 0;
     }
