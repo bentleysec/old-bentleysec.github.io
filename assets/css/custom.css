@@ -3,14 +3,22 @@
 }
 
 div.body {
-    background-color:#B2B2B2;
+    background-color:#333333;
 }
 
-a.nav-link  {
+a.link {
+    color: #fa5400;
+}
+
+a.link:hover  {
+    color: #d44700;
+}
+
+a.nav-link {
     color: whitesmoke;
 }
 
-a.nav-link:hover  {
+a.nav-link:hover {
     color: #fa5400;
 }
 
@@ -51,7 +59,7 @@ div.row {
 }
 
 div.card {
-    background-color: #f1f1f1;
+    background-color: #cccccc;
     padding: 20px;
     margin-top: 20px;
     border-top-width: 1x;
