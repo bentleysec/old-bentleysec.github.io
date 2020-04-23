@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 60px;
+    min-height: 100%;
+}
+
 div.body {
     background-color:#333333;
-    position: relative;
-    padding-bottom: 60px;
 }
 
 a.link {
@@ -87,11 +92,10 @@ div.row:after {
 div.footer {
     background-color: black;
     text-align: center;
-    padding: 20px;
     color: whitesmoke;
     position: absolute;
-    left: 0; right 0; bottom 0;
-    height: 60px;
+    right: 0; bottom: 0; left: 0;
+    padding: 20px;
 }
 
 div.social {
