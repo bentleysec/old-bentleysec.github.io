@@ -4,6 +4,11 @@
 
 div.body {
     background-color:#333333;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 60px;
 }
 
 a.link {
@@ -87,6 +92,9 @@ div.footer {
     text-align: center;
     padding: 20px;
     color: whitesmoke;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 div.social {
