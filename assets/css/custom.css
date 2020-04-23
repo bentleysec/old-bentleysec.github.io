@@ -9,8 +9,8 @@ html {
 body {
     position: relative;
     margin: 0;
-    /* padding-bottom: 60px; */
-    height: 100%;
+    padding-bottom: 60px;
+    min-height: 100%;
 }
 
 div.body {
