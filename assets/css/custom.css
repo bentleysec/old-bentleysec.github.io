@@ -7,6 +7,9 @@ html {
 }
 
 body {
+    position: relative;
+    margin: 0;
+    /* padding-bottom: 60px; */
     height: 100%;
 }
 
