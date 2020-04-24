@@ -92,6 +92,7 @@ pre {
     border-radius: 10px;
     border-left: 3px solid #fa5400;
     background-color: #dddddd;
+    padding-top: 1em;
 }
 
 /* a.card {
