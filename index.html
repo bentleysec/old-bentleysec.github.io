@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css?family=Audiowide|Righteous" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Audiowide|Righteous" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127415355-1"></script>
 <script>
@@ -28,34 +28,40 @@
       <div id="nav-placeholder">
 
         </div>
-        
+
         <script>
         $(function(){
           $("#nav-placeholder").load("templates/header.html");
         });
         </script>
-  
+
 
 <div class="row">
         <div class="leftcolumn">
+
+          <div class="card">
+            <h2>Pentest Plus Study</h2>
+            <p>Place to store study notes for the Pentest+ exam by Comptia</p>
+            <a class="link" href="posts/Pentest_Plus_Study.html">Pentest Plus Study</a>
+          </div>
 
           <div class="card">
             <h2>Cryptohack</h2>
             <p>Crpytohack is a website to learn about cryptography. They use challenges to break bad implementations of cryptography.</p>
             <a class="link" href="posts/cryptohack.html">Cryptohack</a>
           </div>
-          
+
           <div class="card">
               <h2>WebGoat</h2>
               <p>WebGoat is a purposely vulnerable web application developed by OWASP to help teach students about the OWASP Top 10.</p>
               <a class="link" href="posts/webgoat.html">WebGoat</a>
             </div>
         </div>
-        
+
         <div id="rightsidebar">
 
           </div>
-          
+
           <script>
           $(function(){
             $("#rightsidebar").load("templates/sideright.html");
@@ -65,12 +71,12 @@
 
 
     </div>
-  
+
 
     <div id="footer">
 
       </div>
-      
+
       <script>
       $(function(){
         $("#footer").load("templates/footer.html");
@@ -84,10 +90,10 @@
         var x = document.getElementById("navDemo");
         if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
-        } else { 
+        } else {
             x.className = x.className.replace(" w3-show", "");
         }
     }
     </script>
-  
+
 </body>
