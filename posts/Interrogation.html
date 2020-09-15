@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+        <div class="card">
+            <h2>Interrogation</h2>
+            <p>Interrogation is when the attacker directs the conversation and asks most the questions of the victim. This method is not as common as a social engineering tactic.</p>
+            <div class="articlenav">
+                <a class="link" href="Elicitation.html" style="float: left;"><- Elicitation</a>
+                <a class="link" href="Impersonation.html" style="float: right;">Impersonation -></a>
+              </div>
+            <p><a class="link" href="/index.html">Home</a></p>
+        </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/sideright.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>
