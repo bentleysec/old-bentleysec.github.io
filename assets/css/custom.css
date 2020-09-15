@@ -35,6 +35,9 @@ a.nav-link:hover {
     color: #fa5400;
 }
 
+p.indent {
+    margin-left: 15px;
+}
 
 div.header h1 {
     text-align: center;
