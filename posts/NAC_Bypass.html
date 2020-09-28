@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>NAC Bypass</h2>
+                <p>Network Access Control (NAC) provides a security layer to a network that only allows authenticated and authorized users access. NAC systems detect new devices that have been connected to the network and requires the system to be authenticated. NAC systems detect systems usually by:</p>
+                <ul>
+                    <li>Software clients that communicate with a NAC server</li>
+                    <li>A DHCP proxy server that listens for DHCP requests</li>
+                    <li>A server that listens to broadcast packets like ARP</li>
+                    <li>An SNMP server that queries switches for new MAC addresses that show up</li>
+                </ul>
+                <p>To bypass a NAC system an attacker will need to verify how the NAC system detects new systems. If the systems uses MAC addresses an attacker can use software to change their MAC address. Systems that use DHCP proxies could be bypassed by assigning a static IP to the attackers computer.</p>
+                <div class="articlenav">
+                    <a class="link" href="DoS-Stress_Test.html" style="float: left;"><- DoS/Stress Test</a>
+                    <a class="link" href="VLAN_Hopping.html" style="float: right;">VLAN Hopping -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/NetworkVulnNav.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>

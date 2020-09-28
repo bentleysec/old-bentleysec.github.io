@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>VLAN Hopping</h2>
+                <p>Virtual Local Area Networks (VLANs) separate broadcast domains for security or performance. Many organizations use VLANs to separate highly sensitive systems from more general networks. This makes the highly sensitive VLANs attractive targets for attackers.</p>
+                <p>There are two common attacks to perform VLAN hopping: double tagging and switch spoofing.</p>
+                <p><b>Double Tagging</b> is used for 802.1Q trunked interfaces. The ethernet frame allows a second VLAN tag in the packet. When the packet is read, the outer tag or service provider tag, is found immediately after the source MAC address and read first. Then, the inner, or customer tag is read second. Attackers will input the native VLAN as the first tag and the target VLAN as the second. The packet will be switched on the native VLAN, then the next switch will read the second tag, allowing the packet to traverse the secure VLAN.</p>
+                <p><b>Switch Spoofing</b> makes the attacker's system look like a trunking switch, this allows the system to view traffic sent over other VLANS.</p>
+                <div class="articlenav">
+                    <a class="link" href="NAC_Bypass.html" style="float: left;"><- NAC Bypass</a>
+                    <a class="link" href="Wireless_and_RF-Based_Vulnerabilities.html">Wireless and RF-Based Vulnerabilities -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/NetworkVulnNav.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>
