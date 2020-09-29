@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+              <h2>Authorization</h2>
+              <h4>Parameter Pollution</h4>
+              <p>Input validation techniques are the go-to standard for protecting against injection attacks. However, it’s important to understand that attackers have historically discovered ways to bypass almost every form of security control. Parameter pollution is one technique that attackers have used successfully to defeat input validation controls.</p>
+              <p>Parameter pollution works by sending a web application more than one value for the same input variable. For example, a web application might have a variable named account that is specified in a URL like this:</p>
+              <p>http://www.mycompany.com/status.php?account=12345</p>
+              <p>An attacker might try to exploit this application by injecting SQL code into the application:</p>
+              <p>http://www.mycompany.com/status.php?account=12345' OR 1=1;--</p>
+              <p>However, this string looks quite suspicious to a web application firewall and would likely be blocked. An attacker seeking to obscure the attack and bypass content filtering mechanisms might instead send a command with two different values for account :</p>
+              <p>http://www.mycompany.com/status.php?account=12345&account=12345' OR 1=1;--</p>
+              <p>This approach relies on the premise that the web platform won’t handle this URL properly. It might perform input validation on only the first argument but then execute the second argument, allowing the injection attack to slip through the filtering technology.</p>
+              <p>Parameter pollution attacks depend upon defects in web platforms that don’t handle multiple copies of the same parameter properly. These vulnerabilities have been around for a while and most modern platforms are defended against them, but successful parameter pollution attacks still occur today due to unpatched systems or insecure custom code.</p>
+              <h4>Insecure Direct Object Reference</h4>
+              <p>In some cases, web developers design an application to directly retrieve information from a database based upon an argument provided by the user in either a query string or a POST request. For example, this query string might be used to retrieve a document from a document management system:</p>
+              <p>https://www.mycompany.com/getDocument.php?documentID=1842</p>
+              <p>There is nothing wrong with this approach, as long as the application also implements other authorization mechanisms. The application is still responsible for ensuring that the user is properly authenticated and is authorized to access the requested document.</p>
+              <p>The reason for this is that an attacker can easily view this URL and then modify it to attempt to retrieve other documents, such as in these examples:</p>
+              <ul>
+                  <li>https://www.mycompany.com/getDocument.php?documentID=1841</li>
+                  <li>https://www.mycompany.com/getDocument.php?documentID=1843</li>
+                  <li>https://www.mycompany.com/getDocument.php?documentID=1844</li>
+              </ul>
+              <p>If the application does not perform authorization checks, the user may be permitted to view information that exceeds their authority. This situation is known as an insecure direct object reference.</p>
+
+                <div class="articlenav">
+                    <a class="link" href="Authentication.html" style="float: left;"><- Authentication</a>
+                    <a class="link" href="Cross-Site_Scripting_P.html" style="float: right;">Cross-Site Scripting -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/ApplicationNav.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>
