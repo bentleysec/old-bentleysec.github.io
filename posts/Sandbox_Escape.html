@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Sandbox Escape</h2>
+                <h4>Shell Upgrade</h4>
+                <p>Some Linux systems use restricted shells to keep users in a secure sandbox. Restricted shells limit the commands or applications that can be used. Common examples are found in the Bash shell using rbash or bash -r , in the Korn shell using rksh or ksh -r , and in the Bourne shell and similar shells using sh -r or rsh .</p>
+                <p>Restricted shells commonly prevent users from changing directories, setting PATH or SHELL variables, specifying absolute pathnames, and redirecting output. Some may even add additional limitations, which can be frustrating when attempting to compromise a targeted host from a restricted account!</p>
+                <p>Fortunately, breaking out of restricted shells can be as simple as starting a new unrestricted shell or using a utility like vi that has a built-in shell function to escape the Attacking Hosts329restricted shell! In general, when you are confronted with a restricted shell, you should do the following:</p>
+                <ul>
+                    <li>Check the commands you can run, particularly looking for SUID commands.</li>
+                    <li>Check to see if you can use sudo and what sudo commands you can execute.</li>
+                    <li>Check for languages like Perl, Python, or Ruby that you can run.</li>
+                    <li>Check to see if you can use redirect operators like | or > and escape characters like single quotes, double quotes, or other execution tags.</li>
+                </ul>
+                <h4>VM</h4>
+                <p>Attacking individual virtual machines normally follows the same process that attacks against a physical system would. In fact, in many cases you won’t know if you’re attacking a virtual machine, a container, or a physical machine until you have compromised it (and perhaps not even then!). If you suspect that you have compromised a virtual machine, you can look for common signs that the system is virtual, including the hardware that is presented to the operating system. In many cases, checking for the network interface card, or for virtualization plug-ins like VMware tools or VirtualBox extensions, can tell you if you have compromised a VM. On a Windows system, you can do this quite easily by using wmic:</p>
+                <p><code>wmic baseboard get manufacturer,product</code></p>
+                <p>The Linux <code>system-detect-virt</code> command is an easy way to determine what virtualization package is running if the system is running system-d. Other options include using the demidecode command, which can provide similar information, and checking the disk IDs to see if the system is being virtualized by using the <code>ls -l /dev/disk/by-id</code> listing command.</p>
+                <p>Virtualization is rarely obfuscated in real-world production system environments, so detecting virtualization should be possible on most systems you encounter. Once you know which hypervisor you are dealing with, you can conduct research on the attack methods that may be available for that specific environment.</p>
+                <p>Exploit tools that allow attackers to escape a virtual machine to directly attack the hypervisor have been sought after for years, with high prices paid for working exploits on the open market. Exploits have been found for VMware, Xen Project, Hyper-V, and VirtualBox, but each has been patched shortly after it was found. In most virtualization environments, VM escape isn’t likely to work unless a new exploit is introduced and you are able to use it to exploit a compromised host before it is patched by your target organization. That means that most penetration testers will be far more successful attacking the underlying administrative infrastructure so that they can access the virtualization management tools and systems than they will be if they rely on VM escape exploits.</p>
+                <h4>Container</h4>
+                <p>Attacks against OS-level virtualization tools like Docker often start by compromising the application that is running in the container. Typical penetration testing processes can be used, including port and vulnerability scanning and service exploitation. Once you have compromised a container, you can then attempt to access the container’s host — in fact, in some cases, like the vulnerable Docker instance that Not So Secure provides, you can simply run the Docker client from one of the vulnerable Docker containers and connect to the Docker daemon running on the virtual machine! As with most penetration testing efforts, you should carefully document the environment, check for misconfigurations and exposed or vulnerable services, and then pivot as you gain further access.</p>
+                <div class="articlenav">
+                    <a class="link" href="Default_Account_Settings.html" style="float: left;"><- Default Account Settings</a>
+                    <a class="link" href="Physical_Device_Security.html" style="float: right;">Physical Device Security -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/LocalHostNav.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>

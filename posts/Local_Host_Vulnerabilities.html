@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+        <div class="card">
+            <h2>Local Host Vulnerabilities</h2>
+            <h5>Given a scenario, exploit local host vulnerabilities</h5>
+            <ul>
+                <li><a class="link" href="OS_Vulnerabilities.html">OS Vulnerabilities</a></li>
+                <ul>
+                  <li><a class="link" href="OS_Vulnerabilities.html">Windows</a></li>
+                  <li><a class="link" href="OS_Vulnerabilities.html">MAC OS</a></li>
+                  <li><a class="link" href="OS_Vulnerabilities.html">Linux</a></li>
+                  <li><a class="link" href="OS_Vulnerabilities.html">Android</a></li>
+                  <li><a class="link" href="OS_Vulnerabilities.html">iOS</a></li>
+                </ul>
+                <li><a class="link" href="Unsecure_Service_and_Protocol_Configurations.html">Unsecure Service and Protocol Configurations</a></li>
+                <li><a class="link" href="Privilege_Escalation.html">Privilege Escalation</a></li>
+                <ul>
+                  <li><a class="link" href="Privilege_Escalation.html">Linux-Specific</a></li>
+                  <ul>
+                    <li><a class="link" href="Privilege_Escalation.html">SUID/SGID Programs</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Unsecure SUDO</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Ret2libc</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Sticky Bits</a></li>
+                  </ul>
+                  <li><a class="link" href="Privilege_Escalation.html">Windows-Specific</a></li>
+                  <ul>
+                    <li><a class="link" href="Privilege_Escalation.html">Cpassword</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Clear Text Credentials in LDAP</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Kerberoasting</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Credentials in LSASS</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Unattended Installation</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">SAM Database</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">DLL Hijacking</a></li>
+                  </ul>
+                  <li><a class="link" href="Privilege_Escalation.html">Exploitable Services</a></li>
+                  <ul>
+                    <li><a class="link" href="Privilege_Escalation.html">Unquoted Service Paths</a></li>
+                    <li><a class="link" href="Privilege_Escalation.html">Writable Services</a></li>
+                  </ul>
+                  <li><a class="link" href="Privilege_Escalation.html">Unsecure File/Folder Permissions</a></li>
+                  <li><a class="link" href="Privilege_Escalation.html">Keylogger</a></li>
+                  <li><a class="link" href="Privilege_Escalation.html">Scheduled Tasks</a></li>
+                  <li><a class="link" href="Privilege_Escalation.html">Kernel Exploits</a></li>
+                </ul>
+                <li><a class="link" href="Default_Account_Settings.html">Default Account Settings</a></li>
+                <li><a class="link" href="Sandbox_Escape.html">Sandbox Escape</a></li>
+                <ul>
+                  <li><a class="link" href="Sandbox_Escape.html">Shell Upgrade</a></li>
+                  <li><a class="link" href="Sandbox_Escape.html">VM</a></li>
+                  <li><a class="link" href="Sandbox_Escape.html">Container</a></li>
+                </ul>
+                <li><a class="link" href="Physical_Device_Security.html">Physical Device Security</a></li>
+                <ul>
+                  <li><a class="link" href="Physical_Device_Security.html">Cold Boot Attack</a></li>
+                  <li><a class="link" href="Physical_Device_Security.html">JTAG Debug</a></li>
+                  <li><a class="link" href="Physical_Device_Security.html">Serial Console</a></li>
+                </ul>
+                </ul>
+            
+
+            <div class="articlenav">
+                <p><a class="link" href="Application-Based_Attacks.html" style="float: left;"><- Application-Based Attacls</a></p>
+                <p><a class="link" href="Physical_Secuirty_Attacks">Physical Security Attacks</a></p>
+              </div>
+            <p><a class="link" href="/index.html">Home</a></p>
+        </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            // $("#rightsidebar").load("/templates/sideright.html");
+            $("#rightsidebar").load("/templates/AttackSubNav.html");
+          });
+          </script>
+
+          <!-- <div id="SocialNav">
+        </div>
+        <script>
+          $(function(){
+            $("#SocialNav").load("/templates/SocialNav.html");
+          });
+          </script>
+       </div> -->
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>
