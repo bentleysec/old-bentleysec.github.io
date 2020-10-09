@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Persistence</h2>
+                <p>Persistence ensures that an attacker maintains access to the system in case they loose the connection, which could be caused by an administrator cleaning up the system or even if their connection drops for some reason.</p>
+                <h4>Scheduled Jobs</h4>
+                <p>An attacker will schedule a job, in case they loose the connection, to callback to their system to re-establish the connection. Many botnets rely on scheduled jobs, even using a secure SSL connection to do so. Using a secure connection makes the connection easy to conceal.</p>
+                <h4>Scheduled Tasks</h4>
+                <p>A task can be scheduled on a remote system to execute programs at system startup, or at other times. A program can be executed to gain SYSTEM privileges, to conduct remote Execution as part of Lateral Movement, scheduled basis for persistence, to run a process under the context of a specified account.</p>
+                <h4>Daemons</h4>
+                <p>A Daemon is a service that runs as a background process. An Daemon provides longer access than injected code and can even survive reboots.</p>
+                <h4>Back Doors</h4>
+                <p>An attacker installed a vulnerable service that allows them to access the system at a future time.</p>
+                <h4>Trojan</h4>
+                <p>Trojans are seemingly non-suspicious software that have malware, or a vulnerable service, attached. The victim does not know that the program is malicious and installed the software and thus installing the vulnerable application.</p>
+                <h4>New User Creation</h4>
+                <p>Attackers, once they have access to the system, can create a new user to allow them future access through that new user.</p>
+
+                <div class="articlenav">
+                    <a class="link" href="Lateral_Movement.html" style="float: left;"><- Lateral Movement</a>
+                    <a class="link" href="Covering_Your_Tracks.html" style="float: right;">Covering Your Tracks -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/PostExploitNav.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>
