@@ -99,8 +99,9 @@ pre {
     border: 1px solid #333333;
     border-radius: 10px;
     border-left: 3px solid #fa5400;
-    background-color: #dddddd;
+    background-color: #333;
     padding-top: 1em;
+    padding-left: 1em;
 }
 
 /* a.card {
