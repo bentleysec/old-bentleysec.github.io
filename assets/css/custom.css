@@ -8,6 +8,7 @@ html {
 
 img {
     max-width:100%;
+    object-fit: contain;
 }
 
 body {
