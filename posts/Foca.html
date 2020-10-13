@@ -27,22 +27,21 @@
 
 <div class="row">
         <div class="leftcolumn">
-        <div class="card">
-            <h2>Software Assurance</h2>
-            <ul>
-                <li><a class="link" href="Findbugs.html">findbugs/findsecbugs</a></li>
-                <li><a class="link" href="Peach.html">Peach</a></li>
-                <li><a class="link" href="AFL.html">AFL</a></li>
-                <li><a class="link" href="SonarQube.html">SonarQube</a></li>
-                <li><a class="link" href="YASCA.html">YASCA</a></li>
-              </ul>
-            
-            <div class="articlenav">
-                <p><a class="link" href="Credential_Testing_Tools.html" style="float: left;"><- Credential Testing Tools</a></p>
-                <p><a class="link" href="OSINT.html" style="float: right;">OSINT -></a></p>
-              </div>
-            <p><a class="link" href="/index.html">Home</a></p>
-        </div>
+            <div class="card">
+                <h2>Foca</h2>
+                <p>FOCA (Fingerprinting Organizations with Collected Archives) is a tool used mainly to find metadata and hidden information in the documents its scans. These documents may be on web pages, and can be downloaded and analyzed with FOCA.</p>
+                <p>It is capable of analyzing a wide variety of documents, with the most common being Microsoft Office, Open Office, or PDF files, although it also analyzes Adobe InDesign or SVG files, for instance.</p>
+                <p>These documents are searched for using three possible search engines: Google, Bing, and DuckDuckGo. The sum of the results from the three engines amounts to a lot of documents. It is also possible to add local files to extract the EXIF information from graphic files, and a complete analysis of the information discovered through the URL is conducted even before downloading the file.</p>
+                <p>With all data extracted from all files, FOCA matches information in an attempt to identify which documents have been created by the same team and what servers and clients may be infered from them.</p>
+
+                <img src="../assets/Images/Tools/foca.png">
+
+                <div class="articlenav">
+                    <a class="link" href="Nslookup.html" style="float: left;"><- Nslookup</a>
+                    <a class="link" href="theHarvester.html" style="float: right;">theHarvester -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
         </div>
         
         <div id="rightsidebar">
@@ -51,19 +50,10 @@
           
           <script>
           $(function(){
-            // $("#rightsidebar").load("/templates/sideright.html");
-            $("#rightsidebar").load("/templates/ToolSubNav.html");
+            $("#rightsidebar").load("/templates/OSINTNav.html");
           });
           </script>
-
-          <!-- <div id="SocialNav">
-        </div>
-        <script>
-          $(function(){
-            $("#SocialNav").load("/templates/SocialNav.html");
-          });
-          </script>
-       </div> -->
+       </div>
 
 
     </div>

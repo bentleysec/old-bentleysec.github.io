@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BentleySec</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/assets/Images/favicon.jpeg"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="body">
+      <div id="nav-placeholder">
+
+        </div>
+        
+        <script>
+        $(function(){
+          $("#nav-placeholder").load("/templates/header.html");
+        });
+        </script>
+  
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>Kismet</h2>
+                <p>Kismet is a network detector, packet sniffer, and intrusion detection system for 802.11 wireless LANs. Kismet will work with any wireless card which supports raw monitoring mode, and can sniff 802.11a, 802.11b, 802.11g, and 802.11n traffic. The program runs under Linux, FreeBSD, NetBSD, OpenBSD, and Mac OS X. The client can also run on Microsoft Windows, although, aside from external drones, there's only one supported wireless hardware available as packet source.</p>
+                <p>Kismet differs from other wireless network detectors in working passively. Namely, without sending any loggable packets, it is able to detect the presence of both wireless access points and wireless clients, and to associate them with each other. It is also the most widely used and up to date open source wireless monitoring tool.</p>
+                <p>Kismet also includes basic wireless IDS features such as detecting active wireless sniffing programs including NetStumbler, as well as a number of wireless network attacks.</p>
+                <p>Kismet features the ability to log all sniffed packets and save them in a tcpdump/Wireshark or Airsnort compatible file format. Kismet can also capture "Per-Packet Information" headers.</p>                    
+                <p>Kismet also features the ability to detect default or "not configured" networks, probe requests, and determine what level of wireless encryption is used on a given access point.</p>
+                <p>In order to find as many networks as possible, Kismet supports channel hopping. This means that it constantly changes from channel to channel non-sequentially, in a user-defined sequence with a default value that leaves big holes between channels (for example, 1-6-11-2-7-12-3-8-13-4-9-14-5-10). The advantage with this method is that it will capture more packets because adjacent channels overlap.</p>                   
+                <p>Kismet also supports logging of the geographical coordinates of the network if the input from a GPS receiver is additionally available.</p>
+                <pre>
+<code>┌─[steve@parrot]─[~]
+└──╼ $kismet -h
+usage: kismet [OPTION]
+Nearly all of these options are run-time overrides for values in the
+kismet.conf configuration file.  Permanent changes should be made to
+the configuration file.
+    *** Generic Options ***
+    -v, --version                Show version
+        --no-console-wrapper     Disable server console wrapper
+        --no-ncurses-wrapper     Disable server console wrapper
+        --debug                  Disable the console wrapper and the crash
+                                handling functions, for debugging
+    -f, --config-file <file>     Use alternate configuration file
+        --no-line-wrap           Turn off linewrapping of output
+                                (for grep, speed, etc)
+    -s, --silent                 Turn off stdout output after setup phase
+        --daemonize              Spawn detached in the background
+        --no-plugins             Do not load plugins
+        --homedir <path>         Use an alternate path as the home 
+                                directory instead of the user entry
+        --confdir <path>         Use an alternate path as the base 
+                                config directory instead of the default 
+                                set at compile time
+        --datadir <path>         Use an alternate path as the data
+                                directory instead of the default set at 
+                                compile time.
+        --override <flavor>      Load an alternate configuration override 
+                                from {confdir}/kismet_{flavor}.conf
+                                or as a specific override file.
+    *** Logging Options ***
+    -T, --log-types <types>      Override activated log types
+    -t, --log-title <title>      Override default log title
+    -p, --log-prefix <prefix>    Directory to store log files
+    -n, --no-logging             Disable logging entirely
+
+    *** Device Tracking Options ***
+        --device-timeout=n       Expire devices after N seconds</code>
+                </pre>
+                <div class="articlenav">
+                    <a class="link" href="Aircrack-ng.html" style="float: left;"><- Aircrack-NG</a>
+                    <a class="link" href="WiFite.html" style="float: right;">WiFite -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
+        </div>
+        
+        <div id="rightsidebar">
+
+          </div>
+          
+          <script>
+          $(function(){
+            $("#rightsidebar").load("/templates/WirelessNav.html");
+          });
+          </script>
+       </div>
+
+
+    </div>
+  
+
+    <div id="footer">
+
+      </div>
+      
+      <script>
+      $(function(){
+        $("#footer").load("../templates/footer.html");
+      });
+      </script>
+
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+    </script>
+  
+</body>
