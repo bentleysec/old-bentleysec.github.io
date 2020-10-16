@@ -27,18 +27,21 @@
 
 <div class="row">
         <div class="leftcolumn">
-        <div class="card">
-            <h2>Social Engineering Tools</h2>
-            <ul>
-                <li><a class="link" href="SET.html">SET</a></li>
-                <li><a class="link" href="BeEF.html">BeEF</a></li>
-            </ul>
-            <div class="articlenav">
-                <p><a class="link" href="Wireless.html" style="float: left;"><- Wireless</a></p>
-                <p><a class="link" href="Web_Proxies.html" style="float: right;">Web Proxies -></a></p>
-              </div>
-            <p><a class="link" href="/index.html">Home</a></p>
-        </div>
+            <div class="card">
+                <h2>OWASP ZAP</h2>
+                <p>OWASP ZAP (short for Zed Attack Proxy) is an open-source web application security scanner. It is intended to be used by both those new to application security as well as professional penetration testers.</p>
+                <p>It is one of the most active Open Web Application Security Project (OWASP) projects and has been given Flagship status.</p>
+                <p>When used as a proxy server it allows the user to manipulate all of the traffic that passes through it, including traffic using https.</p>
+                <p>It can also run in a daemon mode which is then controlled via a REST API.</p>
+
+                <img src="../assets/Images/Tools/ZAP.png">
+
+                <div class="articlenav">
+                    <a class="link" href="Social_Engineering_Tools.html" style="float: left;"><- Social Engineering Tools</a>
+                    <a class="link" href="Burp_Suite.html" style="float: right;">Burp Suite -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
         </div>
         
         <div id="rightsidebar">
@@ -47,19 +50,10 @@
           
           <script>
           $(function(){
-            // $("#rightsidebar").load("/templates/sideright.html");
-            $("#rightsidebar").load("/templates/ToolSubNav.html");
+            $("#rightsidebar").load("/templates/WebProxiesNav.html");
           });
           </script>
-
-          <!-- <div id="SocialNav">
-        </div>
-        <script>
-          $(function(){
-            $("#SocialNav").load("/templates/SocialNav.html");
-          });
-          </script>
-       </div> -->
+       </div>
 
 
     </div>

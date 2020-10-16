@@ -27,18 +27,17 @@
 
 <div class="row">
         <div class="leftcolumn">
-        <div class="card">
-            <h2>Social Engineering Tools</h2>
-            <ul>
-                <li><a class="link" href="SET.html">SET</a></li>
-                <li><a class="link" href="BeEF.html">BeEF</a></li>
-            </ul>
-            <div class="articlenav">
-                <p><a class="link" href="Wireless.html" style="float: left;"><- Wireless</a></p>
-                <p><a class="link" href="Web_Proxies.html" style="float: right;">Web Proxies -></a></p>
-              </div>
-            <p><a class="link" href="/index.html">Home</a></p>
-        </div>
+            <div class="card">
+                <h2>Empire</h2>
+                <p>Empire is “a pure PowerShell post-exploitation agent built on cryptologically-secure communications and flexible architecture. Empire implements the ability to run PowerShell agents without needing powershell.exe, rapidly deployable post-exploitation modules ranging from key loggers to Mimikatz, and adaptable communications to evade network detection, all wrapped up in a usability-focused framework.”</p>
+                <p>Basically, Empire is a tool that is similar to Metasploit but specific to PowerShell. It allows you to run PowerShell scripts in memory and make a connection back to your machine.</p>
+
+                <div class="articlenav">
+                    <a class="link" href="Impacket.html" style="float: left;"><- Impacket</a>
+                    <a class="link" href="Metasploit.html" style="float: right;">Metasploit -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
         </div>
         
         <div id="rightsidebar">
@@ -47,19 +46,10 @@
           
           <script>
           $(function(){
-            // $("#rightsidebar").load("/templates/sideright.html");
-            $("#rightsidebar").load("/templates/ToolSubNav.html");
+            $("#rightsidebar").load("/templates/MiscNav.html");
           });
           </script>
-
-          <!-- <div id="SocialNav">
-        </div>
-        <script>
-          $(function(){
-            $("#SocialNav").load("/templates/SocialNav.html");
-          });
-          </script>
-       </div> -->
+       </div>
 
 
     </div>

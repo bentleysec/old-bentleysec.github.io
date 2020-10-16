@@ -27,18 +27,19 @@
 
 <div class="row">
         <div class="leftcolumn">
-        <div class="card">
-            <h2>Social Engineering Tools</h2>
-            <ul>
-                <li><a class="link" href="SET.html">SET</a></li>
-                <li><a class="link" href="BeEF.html">BeEF</a></li>
-            </ul>
-            <div class="articlenav">
-                <p><a class="link" href="Wireless.html" style="float: left;"><- Wireless</a></p>
-                <p><a class="link" href="Web_Proxies.html" style="float: right;">Web Proxies -></a></p>
-              </div>
-            <p><a class="link" href="/index.html">Home</a></p>
-        </div>
+            <div class="card">
+                <h2>SSH</h2>
+                <p>SSH is one of the most common tools used for remote access, many systems in an environment will have SSH already installed. The communications are encrypted, meaning it is more difficult for defenders to see what an attacker is doing.</p>
+                <p>SSH Tunneling is used to forward application ports from an SSH client to an SSH server. This can provide a secure way of transferring files and connecting to internal network services listening on non-routable networks and securing remote file share connectivity, like NFS.</p>
+                <p>A simple port forward command:</p>
+                <p><code> ssh -R[port A]:[host1]:[port B] [user]:[host2] </code></p>
+
+                <div class="articlenav">
+                    <a class="link" href="Remote_Access_Tools.html" style="float: left;"><- Remote Access Tools</a>
+                    <a class="link" href="NCAT.html" style="float: right;">NCAT -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
         </div>
         
         <div id="rightsidebar">
@@ -47,19 +48,10 @@
           
           <script>
           $(function(){
-            // $("#rightsidebar").load("/templates/sideright.html");
-            $("#rightsidebar").load("/templates/ToolSubNav.html");
+            $("#rightsidebar").load("/templates/RemoteAccessNav.html");
           });
           </script>
-
-          <!-- <div id="SocialNav">
-        </div>
-        <script>
-          $(function(){
-            $("#SocialNav").load("/templates/SocialNav.html");
-          });
-          </script>
-       </div> -->
+       </div>
 
 
     </div>

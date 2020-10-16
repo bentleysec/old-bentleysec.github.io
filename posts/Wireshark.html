@@ -27,18 +27,19 @@
 
 <div class="row">
         <div class="leftcolumn">
-        <div class="card">
-            <h2>Social Engineering Tools</h2>
-            <ul>
-                <li><a class="link" href="SET.html">SET</a></li>
-                <li><a class="link" href="BeEF.html">BeEF</a></li>
-            </ul>
-            <div class="articlenav">
-                <p><a class="link" href="Wireless.html" style="float: left;"><- Wireless</a></p>
-                <p><a class="link" href="Web_Proxies.html" style="float: right;">Web Proxies -></a></p>
-              </div>
-            <p><a class="link" href="/index.html">Home</a></p>
-        </div>
+            <div class="card">
+                <h2>Wireshark</h2>
+                <p>Wireshark is very similar to tcpdump, but has a graphical front-end, plus some integrated sorting and filtering options.</p>
+                <p>Wireshark lets the user put network interface controllers into promiscuous mode (if supported by the network interface controller), so they can see all the traffic visible on that interface including unicast traffic not sent to that network interface controller's MAC address. However, when capturing with a packet analyzer in promiscuous mode on a port on a network switch, not all traffic through the switch is necessarily sent to the port where the capture is done, so capturing in promiscuous mode is not necessarily sufficient to see all network traffic. Port mirroring or various network taps extend capture to any point on the network. Simple passive taps are extremely resistant to tampering.</p>
+                <p>If a remote machine captures packets and sends the captured packets to a machine running Wireshark using the TZSP protocol or the protocol used by OmniPeek, Wireshark dissects those packets, so it can analyze packets captured on a remote machine at the time that they are captured.</p>
+                <img src="../assets/Images/Tools/wireshark.png">
+
+                <div class="articlenav">
+                    <a class="link" href="Networking_Tools.html" style="float: left;"><- Networking Tools</a>
+                    <a class="link" href="Hping.html" style="float: right;">Hping -></a>
+                  </div>
+                <p><a class="link" href="/index.html">Home</a></p>
+            </div>
         </div>
         
         <div id="rightsidebar">
@@ -47,19 +48,10 @@
           
           <script>
           $(function(){
-            // $("#rightsidebar").load("/templates/sideright.html");
-            $("#rightsidebar").load("/templates/ToolSubNav.html");
+            $("#rightsidebar").load("/templates/NetworkingToolsNav.html");
           });
           </script>
-
-          <!-- <div id="SocialNav">
-        </div>
-        <script>
-          $(function(){
-            $("#SocialNav").load("/templates/SocialNav.html");
-          });
-          </script>
-       </div> -->
+       </div>
 
 
     </div>
