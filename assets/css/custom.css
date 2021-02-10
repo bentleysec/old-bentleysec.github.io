@@ -137,8 +137,7 @@ div.social {
 
 }
 
-.navbar-brand {
-    margin: auto;
-    width: 
+div#navbarNav {
+    padding-top: 30px;
 }
 
