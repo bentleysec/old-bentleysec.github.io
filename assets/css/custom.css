@@ -62,6 +62,12 @@ div.column {
     width: 1000px;
 }
 
+div.leftcolumn {
+    margin: auto;
+    padding: 20px;
+    float: left;
+}
+
 /* div.rightcolumn {
     padding: 20px;
     float: right;
