@@ -63,9 +63,9 @@ div.column {
 }
 
 div.leftcolumn {
-    margin: auto;
     padding: 20px;
     float: left;
+    width: 75%;
 }
 
 /* div.rightcolumn {
