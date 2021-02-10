@@ -137,7 +137,7 @@ div.social {
 
 }
 
-div#navbarNav {
+div#navbarNav.collapse.navbar-collapse {
     padding-top: 30px;
 }
 
