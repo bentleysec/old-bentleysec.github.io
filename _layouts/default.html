@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - BentleySec</title>
+    <title>BentleySec - {{ page.title}}</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -84,88 +84,7 @@
 
         <div class="row">
 
-            <div id="main" class="s-content__main large-8 column">
-
-    <article class="entry">
-
-        <header class="entry__header">
-
-            <h2 class="entry__title h1">
-                <a href="pentestplus/pentestplus.html" title="">Pentest+ Study</a>
-            </h2>
-
-            <div class="entry__meta">
-                <ul>
-                    <li>July 12, 2019</li>
-                    <li><a href="category/pentestplus.hmtl" title="" rel="category tag">Pentest+</a></li>
-                    <li>Steven Bentley</li>
-                </ul>
-            </div>
-         
-        </header>
-        
-        <div class="entry__content">
-            <p>Place to store study notes for the Pentest+ exam by Comptia</p>
-            <h4><a href="pentestplus/pentestplus.html">Pentest+ Study</a></h4>
-            <p><a href="pentestplus/AttacksAndExploits.html">Attacks and Exploits</a></p>
-            <p><a href="pentestplus/SecurityTools.html">Security Tools</a></p>
-        </div> 
-
-    </article> <!-- end entry -->
-
-    <article class="entry">
-
-        <header class="entry__header">
-
-            <h2 class="entry__title h1">
-                <a href="cryptohack/cryptohack.html" title="">Cryptohack</a>
-            </h2>
-        
-            <div class="entry__meta">
-                <ul>
-                    <li>July 11, 2019</li>
-                    <li>
-                        <a href="category/cryptohack.html" title="" rel="category tag">Cryptohack</a>,
-                    </li>
-                    <li>Steven Bentley</li>
-                </ul>
-            </div>
-         
-        </header>
-
-        <div class="entry__content">
-            <p>Cryptohack is a website to learn about cryptography. They use challenges to break bad implementations of cryptography.</p>
-        </div>
-
-    </article> <!-- end entry -->
-
-    <article class="entry">
-       
-        <header class="entry__header">
-
-            <h2 class="entry__title h1">
-                <a href="webgoat/webgoat.html" title="">WebGoat</a>
-            </h2>
-        
-            <div class="entry__meta">
-                <ul>
-                    <li>July 10, 2019</li>
-                    <li>
-                        <a href="category/webgoat.html" title="" rel="category tag">Webgoat</a>
-                    </li>
-                    <li>Steven Bentley</li>
-                </ul>
-            </div>
-
-        </header>
-
-        <div class="entry__content">
-            <p>WebGoat is a purposely vulnerable web application developed by OWASP to help teach students about the OWASP Top 10.</p>
-        </div> 
-
-    </article> <!-- end entry -->
-
-</div> <!-- end main -->
+            {{content}}
 
 
            <div id="sidebar" class="s-content__sidebar large-4 column">
