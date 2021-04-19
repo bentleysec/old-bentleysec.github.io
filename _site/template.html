@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - Blog</title>
+    <title>BentleySec</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -15,18 +15,18 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- script
     ================================================== -->
-    <script src="/js/modernizr.js"></script>
-    <script defer src="/js/fontawesome/all.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script defer src="js/fontawesome/all.min.js"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="icon" href="/images/favicon.jpeg">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="images/favicon.jpeg">
+    <link rel="manifest" href="site.webmanifest">
 
 </head>
 
@@ -50,7 +50,7 @@
 
             <div class="s-header__content column">
                 <h1 class="s-header__logotext">
-                    <a href="/index.html" title=""><img src="/images/logo-dark.png"></a>
+                    <a href="index.html" title=""><img src="images/logo-dark.png"></a>
                 </h1>
             </div>
 
@@ -61,16 +61,16 @@
            <div class="row">
 
                 <ul class="s-header__nav">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/projects/projects.html">Projects</a></li>
-                    <li><a href="/blog.html">Blog</a>
-                    <li><a href="/resources/resources.html">Resources</a></li>
-                    <li><a href="/archive.html">Archive</a></li>
-                </ul> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects/projects.html">Projects</a></li>
+                    <li><a href="blog/blog.html">Blog</a>
+                    <li><a href="resources/resources.html">Resources</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                </ul> <!-- end #nav -->
 
            </div> 
 
-        </nav> 
+        </nav> <!-- end #nav-wrap -->
 
         <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
 
@@ -86,39 +86,49 @@
 
             <div id="main" class="s-content__main large-8 column">
 
-    <article class="entry">
+                <article class="entry">
 
-        <header class="entry__header">
+                    <header class="entry__header">
 
-            <h2 class="entry__title h1">
-                Blog
-            </h2>
+                        <h2 class="entry__title h1">
+                            <a href="#" title="">Title</a>
+                        </h2>
 
+                        <div class="entry__meta">
+                            <ul>
+                                <li>Date</li>
+                                <li><a href="category/#.html" title="" rel="category tag">Tag</a></li>
+                                <li>Steven Bentley</li>
+                            </ul>
+                        </div>
                      
-        </header>
-        
-        <div class="entry__content">
-            
-        <ul>
-            
-            <li>
-                <a href="/2021/04/16/index.html">index</a>
-                - 16 April 2021
-            </li>
-            
-        </ul>
-        </div> 
+                    </header>
+                    
+                    <div class="entry__content">
+                        <p>Text</p>
+                    </div> 
 
-    </article>
+                </article> <!-- end entry -->
+
+
+           </div> <!-- end main -->
+
+
+           <div id="sidebar" class="s-content__sidebar large-4 column">
 
 
 
+               <div class="widget widget--categories">
+                   <h3 class="h6">Categories.</h3> 
+                   <ul>
+                        <li><a href="category/pentestplus.html" title="">Pentest+</a></li>
+                        <li><a href="category/cryptohack.html" title="">Cryptohack</a></li>
+                        <li><a href="category/webgoat.html" title="">WebGoat</a></li>
+                    </ul>
+                </div>
 
-
-</div> <!-- end main -->
-
-
-
+              
+           </div> <!-- end sidebar -->
 
        </div> <!-- end row -->
 
@@ -158,17 +168,17 @@
                         <h3  class="h6">Navigate</h3>
         
                         <ul class="s-footer__list s-footer-list--nav group">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/projects/projects.html">Projects</a></li>
-                            <li><a href="/blog/blog.html">Blog</a>
-                            <li><a href="/resources/resources.html">Resources</a></li>
-                            <li><a href="/archive.html">Archive</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="projects/projects.html">Projects</a></li>
+                            <li><a href="blog/blog.html">Blog</a>
+                            <li><a href="resources/resources.html">Resources</a></li>
+                            <li><a href="archive.html">Archive</a></li>
                         </ul>
                     </div>
 
                     <div class="large-8 tab-full column">
 
-                        <img src="/images/logo-light.png">
+                        <img src="images/logo-light.png">
         
                     </div>
                     
@@ -194,8 +204,8 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
