@@ -96,7 +96,7 @@
         </header>
         
         <div class="entry__content">
-            <p>WebGoat is a purposely vulnerable web application developed by OWASP to help teach students about the OWASP Top 10.</p>
+            <p><a href="https://owasp.org/www-project-webgoat/">WebGoat</a> is a purposely vulnerable web application developed by OWASP to help teach students about the OWASP Top 10.</p>
             <ul>
               <li><a class="link" href="/webgoat/Injection.html">Injection</a></li>
               <li><a class="link" href="/webgoat/Broken_Authentication.html">Broken Authentication</a></li>
@@ -110,6 +110,14 @@
               <li><a class="link" href="/webgoat/Client_Side.html">Client Side</a></li>
               <li><a class="link" href="/webgoat/Challenges.html">Challenges</a></li>
             </ul>
+            <h2>Setting Up</h2>
+            <p>I like to run Webgoat and Webwolf in a docker container. The command that I use to start up the container:</p>
+            <p>Pull the container:</p>
+            <p><code>docker pull webgoat/goatandwolf</code></p>
+            <p>Start the container:</p>
+            <p><code>sudo docker run --name goatandwolf -p 8080:8080 -p 9090:9090 webgoat/goatandwolf</code></p>
+            <p>You can now access webgoat at <code>localhost:8080</code> and webwolf at <code>localhost:9090</code></p>
+            <p>Once you reach the site, register a new user by selecting a Username and creating a password. Agree to the terms and conditions. Once you click on Sign up int will log you in.</p>
         </div> 
 
     </article> <!-- end entry -->
@@ -125,9 +133,10 @@
     <div class="widget widget--categories">
         <h3 class="h6">Categories.</h3> 
         <ul>
-             <li><a href="/category/pentestplus.html" title="">Pentest+</a></li>
-             <li><a href="/category/cryptohack.html" title="">Cryptohack</a></li>
-             <li><a href="/category/webgoat.html" title="">WebGoat</a></li>
+            <li><a href="/pages/useful_commands.html">Useful Commands</a></li>
+             <li><a href="/pentestplus/pentestplus.html" title="">Pentest+</a></li>
+             <li><a href="/cryptohack/cryptohack.html" title="">Cryptohack</a></li>
+             <li><a href="/webgoat/webgoat.html" title="">WebGoat</a></li>
          </ul>
      </div>
     

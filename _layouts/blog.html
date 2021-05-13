@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{{content}}
+
+
+<div id="sidebar" class="s-content__sidebar large-4 column">
+
+
+
+    <div class="widget widget--categories">
+        <h3 class="h6">Blog Posts</h3> 
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                - {{ post.date | date: "%d %B %Y" }}
+            </li>
+            {% endfor %}
+        </ul>
+        <h3><a href="/index.html">Home</a></h3>
+     </div>
+    
+</div> <!-- end sidebar -->

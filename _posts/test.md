@@ -1,22 +1,20 @@
 ---
 layout: blog
-title: index
+title: test
 ---
+
 <div id="main" class="s-content__main large-8 column">
- <article class="entry">
-        
+    <article class="entry">
 
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                Blog Test
-            </h2>       
+                Test
+            </h2>        
         </header>
         
         <div class="entry__content">
-            <p>TEEST</p>
+            <p>Test</p>
         </div> 
 
     </article> <!-- end entry -->
-
-</div> <!-- end main -->
