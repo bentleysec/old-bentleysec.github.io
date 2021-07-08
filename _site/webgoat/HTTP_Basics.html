@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - Injection</title>
+    <title>BentleySec - HTTP Basics</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -91,12 +91,18 @@
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                Injection
+                HTTP Basics
             </h2>         
         </header>
         
         <div class="entry__content">
-            
+            <h4>Try It!</h4>
+            <p>Input your name into the box to send the request to the server.</p>
+            <h4>Quiz</h4>
+            <p>To find the answer to the question you will need to look at the Inspector. Go back to the "Try It!" form on the previous page and right-click on the <code>Go!</code> button and click on Inspect. This reveals the html code behind the page. Look for the <code>&lt;form&gt;</code> tag and it will include <code>method</code>. The method will tell you if it is a <code>POST</code> or a <code>GET</code>.</p>
+            <p>To find the magic number, while on the Inspector to find the form method, click on the search and search for "magic"</p>
+            <img src="/images/WebGoat/magic_num.png">
+
         </div> 
 
     </article> <!-- end entry -->
@@ -110,8 +116,17 @@
 
 
     <div class="widget widget--categories">
-        <h3 class="h6">WebGoat</h3> 
+        <h3 class="h6"><a class="link" href="/webgoat/General.html">General</a></h3> 
         <ul>
+            <li><a class="link" href="/webgoat/HTTP_Basics.html">HTTP Basics</a></li>
+            <li><a class="link" href="/webgoat/HTTP_Proxies.html">HTTP Proxies</a></li>
+            <li><a class="link" href="/webgoat/Developer_Tools.html">Developer Tools</a></li>
+            <li><a class="link" href="/webgoat/CIA_Triad.html">CIA Triad</a></li>
+            <li><a class="link" href="/webgoat/Crypto_Basics.html">Crypto Basics</a></li>
+            <li><a class="link" href="/webgoat/Writing_new_content.html">Writing new content</a></li>
+        </ul>
+          <h4><a href="/webgoat/webgoat.html">WebGoat</a></h4>
+          <ul>
             <li><a class="link" href="/webgoat/General.html">General</a></li>
             <li><a class="link" href="/webgoat/Introduction.html">Introduction</a></li>
             <li><a class="link" href="/webgoat/Injection.html">Injection</a></li>
@@ -126,7 +141,6 @@
             <li><a class="link" href="/webgoat/Client_Side.html">Client Side</a></li>
             <li><a class="link" href="/webgoat/Challenges.html">Challenges</a></li>
           </ul>
-          <h4><a href="/webgoat/webgoat.html">WebGoat</a></h4>
           <h3><a href="/index.html">Home</a></h3>
      </div>
     
