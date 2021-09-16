@@ -52,9 +52,6 @@ title: Crypto Basics
             <p>Change the UID & GID of the user webgoat from 1000:1000 to 0:0, the file should look like this</p>
             <p>
 <pre><code>
-<<<<<<< HEAD
-~# cat pass.txt <br>
-=======
 ~# cat pass.txt<br>
 >>>>>>> d3379bcf80bf7ef735f516876205832596767cdd
 root:x:0:0:root:/root:/bin/bash<br>
@@ -76,12 +73,8 @@ irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin<br>
 gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin<br>
 nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin<br>
 _apt:x:100:65534::/nonexistent:/bin/false<br>
-<<<<<<< HEAD
-webgoat:x:<b>0:0</b>::/home/webgoat:</code></pre>
-=======
 webgoat:x:<b>0:0</b>::/home/webgoat:
 </code></pre>
->>>>>>> d3379bcf80bf7ef735f516876205832596767cdd
             </p>
             <p>Now copy the file back <code>docker cp pass.txt 098f135c6b08:/etc/passwd</code></p>
             <p>Access the container <code>docker exec -it &lt;docker container id&gt; /bin/bash</code></p>
