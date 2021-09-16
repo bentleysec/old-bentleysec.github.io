@@ -333,16 +333,16 @@ code {
     margin: 0 .2rem;
     padding: .4rem .8rem;
     /* white-space: nowrap; */
-    background: #efefef;
+    background: #1b1b1f;
     /* border: 1px solid #d3d3d3; */
-    color: #272727;
+    color: #ffffff;
     border-radius: 3px;
 
     display:inline-block;
     white-space: normal;
     max-width:100%; 
     word-break:break-all; 
-    word-wrap:break-word;
+    word-wrap:break-word; 
 }
 
 pre>code {
