@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>BentleySec - SQL Injection (intro)</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Steven Bentley">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script defer src="/js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" href="/images/favicon.jpeg">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="/index.html" title=""><img src="/images/logo-dark.png"></a>
+                </h1>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects/projects.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a>
+                    <li><a href="/resources/resources.html">Resources</a></li>
+                    <li><a href="/archive.html">Archive</a></li>
+                </ul> 
+
+           </div> 
+
+        </nav> 
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main large-8 column">
+
+    <article class="entry">
+
+        <header class="entry__header">
+
+            <h2 class="entry__title h1">
+                SQL Injection (intro)
+            </h2>         
+        </header>
+        
+        <div class="entry__content">
+            <h4>What is SQL?</h4>
+            <p>We need to retrieve the deptartment for the employee Bob Franco using the table 'employees':</p>
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th><b>userid</b></th>
+                        <th><b>first_name</b></th>
+                        <th><b>last_name</b></th>
+                        <th><b>department</b></th>
+                        <th><b>salary</b></th>
+                        <th><b>auth_tan</b></th>
+                    </tr>
+                    <tr>
+                        <td>32147</td>
+                        <td>Paulina</td>
+                        <td>Travers</td>
+                        <td>Accounting</td>
+                        <td>$46.000</td>
+                        <td>P45JSI</td>
+                    </tr>
+                    <tr>
+                        <td>89762</td>
+                        <td>Tobi</td>
+                        <td>Barnett</td>
+                        <td>Development</td>
+                        <td>$77.000</td>
+                        <td>TA9LL1</td>
+                    </tr>
+                    <tr>
+                        <td>96134</td>
+                        <td>Bob</td>
+                        <td>Franco</td>
+                        <td>Marketing</td>
+                        <td>$83.700</td>
+                        <td>LO9S2V</td>
+                    </tr>
+                    <tr>
+                        <td>34477</td>
+                        <td>Abraham</td>
+                        <td>Holman</td>
+                        <td>Development</td>
+                        <td>$50.000</td>
+                        <td>UU2ALK</td>
+                    </tr>
+                    <tr>
+                        <td>37648</td>
+                        <td>John</td>
+                        <td>Smith</td>
+                        <td>Marketing</td>
+                        <td>$64.350</td>
+                        <td>3SL99A</td>
+                    </tr>
+                </table>
+            </div>
+            <p>We need a SQL stament to select the row we want (deptartment) from the correct table (employees), to narrow it down we can use the Where statement.</p>
+            <code>SELECT deptartment FROM employees WHERE auth_tan='LO9S2V'</code>
+            
+            <h4>Data Manipulation Language (DML)</h4>
+            <p>In this challenge we need to change an existing field in the database. To do this we need to use the UPDATE staement. So we update the table and set the new vault where a condition is met.</p>
+            <code>UPDATE employees SET department = 'Sales' WHERE auth_tan='TA9LL1'</code>
+
+            <h4>Data Definition Language (DDL)</h4>
+            <p>This challenge is to add a column "phone" to the existing table "employees".</p>
+            <code>ALTER TABLE employees ADD phone varchar(20)</code>
+
+            <h4>Data Control Language (DCL)</h4>
+            <p>We are going to grant rights to the table 'grant_rights' to the user 'unauthorized_user' in this challenge.</p>
+            <code>GRANT all ON grant_rights TO unauthorized_user</code>
+
+            <h4>Try It! String SQL injection</h4>
+            <p>This is our first change to try actual SQL Injection. Though in this challenge we are using a form.</p>
+            <p><img src="../images/WebGoat/SQL_Injection.png"></p>
+
+            <h4>Try It! Numeric SQL injection</h4>
+            <p>This challenge there are 2 input fields and only one is susceptible to SQL Injection. If you put random info into the fields WebGoat will show you the query.</p>
+            <p><img src="../images/WebGoat/SQL_Numeric.png"></p>
+            <p>Using this information we can build a query that will result in SQL injection.</p>
+            <p><img src="../images/WebGoat/SQL_Numeric_win.png"></p>
+
+            <h4>Compromising confidentiality with String SQL injection</h4>
+            <p>In this challenge we are trying to use SQL Injection to get the whole table of employees rather than our own information.</p>
+            <p><img src="../images/WebGoat/SQL_String.png"></p>
+
+            <h4>Compromising Integrity with Query chaining</h4>
+            <p>This challenge we are using SQL Injection to change the employees table to increase our salary. We can use the lessons learned earlier about changing data and use  the UPDATE SQL statement.</p>
+            <p>In the <b>Employee Name: </b> section enter: <code>Smith '; update employees set salary = 100000 where last_name='Smith' --</code> </p>
+
+            <h4>Compromising Availability</h4>
+            <p>In order to cover up our previous injection that raised our salary, we need to drop the access_log table.</p>
+            <p><code>'; drop table access_log --</code></p>
+        </div> 
+
+    </article> <!-- end entry -->
+
+   
+
+</div> <!-- end main -->
+
+
+<div id="sidebar" class="s-content__sidebar large-4 column">
+
+
+
+    <div class="widget widget--categories">
+        <h3 class="h6"><a class="link" href="/webgoat/Injection.html">Injection</a></h3> 
+        <ul>
+            <li><a class="link" href="/webgoat/Injection_intro.html">SQL Injection (intro)</a></li>
+            <li><a class="link" href="/webgoat/Injection_advanced.html">SQL Injection (advanced)</a></li>
+            <li><a class="link" href="/webgoat/Injection_mitigation.html">SQL Injection (mitigation)</a></li>
+            <li><a class="link" href="/webgoat/Path_Traversal.html">Path Traversal</a></li>
+        </ul>
+          <h4><a href="/webgoat/webgoat.html">WebGoat</a></h4>
+          <ul>
+            <li><a class="link" href="/webgoat/Introduction.html">Introduction</a></li>
+            <li><a class="link" href="/webgoat/General.html">General</a></li>
+            <li><a class="link" href="/webgoat/Injection.html">Injection</a></li>
+            <li><a class="link" href="/webgoat/Broken_Authentication.html">Broken Authentication</a></li>
+            <li><a class="link" href="/webgoat/Sensitive_Data_Exposure.html">Sensitive Data Exposure</a></li>
+            <li><a class="link" href="/webgoat/XML_External_Entities.html">XML External Entities</a></li>
+            <li><a class="link" href="/webgoat/Broken_Access_Control.html">Broken Access Control</a></li>
+            <li><a class="link" href="/webgoat/Cross-site_Scripting.html">Cross-Site Scripting</a></li>
+            <li><a class="link" href="/webgoat/Insecure_Deserialization.html">Insecure Deserialization</a></li>
+            <li><a class="link" href="/webgoat/Vulnerable_Components.html">Vulnerable Components</a></li>
+            <li><a class="link" href="/webgoat/Request_Forgeries.html">Request Forgeries</a></li>
+            <li><a class="link" href="/webgoat/Client_Side.html">Client Side</a></li>
+            <li><a class="link" href="/webgoat/Challenges.html">Challenges</a></li>
+          </ul>
+          <h3><a href="/index.html">Home</a></h3>
+     </div>
+    
+</div> <!-- end sidebar -->
+
+
+       </div> <!-- end row -->
+
+   </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row s-footer__top">
+            <div class="column">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="#0"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-vimeo-v" aria-hidden="true"></i></a></li> -->
+                    <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div> <!-- end footer__top -->
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About BentleySec</h3>
+
+                <p>
+                    This site is a handy resource for me to park my notes on what I'm learning and different projects I'm working on.
+                </p>
+            </div>
+
+            <div class="large-6 tab-full column">
+                <div class="row">
+
+        
+                    <div class="large-4 tab-full column">
+                        <h3  class="h6">Navigate</h3>
+        
+                        <ul class="s-footer__list s-footer-list--nav group">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/projects/projects.html">Projects</a></li>
+                            <li><a href="/blog/blog.html">Blog</a>
+                            <li><a href="/resources/resources.html">Resources</a></li>
+                            <li><a href="/archive.html">Archive</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="large-8 tab-full column">
+
+                        <img src="/images/logo-light.png">
+        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="ss-copyright">
+                <span>© Copyright BentleySec</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+    </footer> <!-- end Footer-->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
