@@ -120,7 +120,6 @@ a:hover, a:active {
 }
 
 
-
 /* ===================================================================
  * # typography & general theme styles
  * 
@@ -2303,7 +2302,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .entry h2 a:hover, .entry h2 a:focus {
-    color: #000000;
+    color: #fa5400;;
 }
 
 .entry__header {
