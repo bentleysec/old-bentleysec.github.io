@@ -15,7 +15,51 @@ title: Cloud Concepts, Architecture, and Design
         </header>
         
         <div class="entry__content">
-            <p>Domain 1 focuses on the following topics:</p>
+            <ol>
+                <li>Understand Cloud Computing Concepts</li>
+                <ul>
+                    <li>Cloud Computing Definitions</li>
+                    <li>Cloud Computing Roles (e.g., cloud service customer, cloud service provider, cloud service partner, cloud service broker)</li>
+                    <li>Key Cloud Computing Characteristics (e.g., on-demand self-service, broad network access, multi-tenancy, rapid elasticity and scalability, resource pooling, measured service)</li>
+                    <li>Building Block Technologies (e.g., virtualization, storage, networking, databases, orchestration)</li>
+                </ul>
+                <li>Describe Cloud Reference Architecture</li>
+                <ul>
+                    <li>Cloud Computing Activities</li>
+                    <li>Cloud Service Capabilities (e.g., application capability types, platform capability types, infrastructure capability types)</li>
+                    <li>Cloud Service Categories (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))</li>
+                    <li>Cloud Deployment Models (e.g., public, private, hybrid, community)</li>
+                    <li>Cloud Shared Considerations (e.g., interoperability, portability, reversibility, availability, security, privacy, resiliency, performance, governance, maintenance and versioning, service levels and Service Level Agreements (SLA), auditability, regulatory)</li>
+                    <li>Impact of Related Technologies (e.g., machine learning, artificial intelligence, blockchain, Internet of Things (IoT), containers, quantum computing)</li>
+                </ul>
+                <li>Understand Security Concepts Relevant to Cloud Computing</li>
+                <ul>
+                    <li>Cryptography and Key Management</li>
+                    <li>Access Control</li>
+                    <li>Data and Media Sanitization (e.g., overwriting, cryptographic erase)</li>
+                    <li>Network Security (e.g., network security groups)</li>
+                    <li>Virtualization Security (e.g., hypervisor security, container security)</li>
+                    <li>Common Threats</li>
+                </ul>
+                <li>Understand Design Principles of Secure Cloud Computing</li>
+                <ul>
+                    <li>Cloud Secure Data Lifecycle</li>
+                    <li>Cloud based Disaster Recovery (DR) and Business Continuity (BC) planning</li>
+                    <li>Cost Benefit Analysis</li>
+                    <li>Functional Security Requirements (e.g., portability, interoperability, vendor lock-in)</li>
+                    <li>Security Considerations for Different Cloud Categories (e.g., Software as a Service (SaaS), Infrastructure as a Service (IaaS), Platform as a Service (PaaS))</li>
+                </ul>
+                <li>Evaluate Cloud Service Providers</li>
+                <ul>
+                    <li>Verification Against Criteria (e.g., International Organization for Standardization/International Electrotechnical Commission (ISO/IEC) 27017, Payment Card Industry Data Security Standard (PCI DSS))</li>
+                    <li>System/subsystem Product Certifications (e.g., Common Criteria (CC), Federal Information Processing Standard (FIPS) 140-2)</li>
+                </ul>
+            </ol>
+
+
+
+            
+            <!-- <p>Domain 1 focuses on the following topics:</p>
             <ul>
                 <li>Cloud computing players and terms</li>
                 <li>Cloud computing essential characteristics</li>
@@ -30,9 +74,63 @@ title: Cloud Concepts, Architecture, and Design
             <h3>Cloud Computing Concepts</h3>
             <h4>Definitions</h4>
             <ul>
-                <li><b></b></li>
+                <li><b>Cloud Computing</b> - a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interaction.</li>
+                <li><b>Service Models</b></li>
+                <ul>
+                    <li><b>Software as a Service (SaaS)</b> - The cloud provider is responsible for administering, patching, and updating software.</li>
+                    <li><b>Platform as a Service (PaaS)</b> - The cloud provider is responsible for providing a selection of OSs, a customer can choose which one they want to use. This model is helpful for developers, they can test their software in an isolated environment without risking damage to production systems. PaaS also includes database systems and big-data style services.</li>
+                    <li><b>Infrastructure as a Service (IaaS)</b> - The cloud provider is responsible for the hardware (data center, racks, machines, cables). The customer installs all software including the OS.</li>
+                </ul>
+                <li><b>Deployment Models</b></li>
+                <ul>
+                    <li><b>Public</b> - The resources are available for anyone to use, as long as they create an account and pay for the service.</li>
+                    <li><b>Private</b> - The resources are for a single organization, the cloud my be physically located on-premise or in the cloud.</li>
+                    <li><b>Community</b> - Similar to a public cloud, the resources are shared by a group of organizations with services provided to all members.</li>
+                    <li><b>Hybrid</b> - A combination of any of the deployment models.</li>
+                </ul>
+                <li><b>Cloud Computing Roles</b></li>
+                <ul>
+                    <li><b>Cloud Service Customer</b> - The person or company purchasing the cloud service</li>
+                    <li><b>Cloud Service Provider</b> - The company offering the cloud service</li>
+                    <li><b>Cloud Service Partner</b> - A third-party offering cloud-based services using a Cloud Service Provider.</li>
+                    <li><b>Cloud Service Broker</b> - A company purchasing services from a Cloud Service Provider and reselling the services to a customer.</li>
+                </ul>
+                <li><b>Cloud Computing Characteristics</b></li>
+                <ul>
+                    <li><b>On-Demand Self-Service</b> - A service that can be rapidly provisioned and released with minimal management effort or service provider interaction.</li>
+                    <li><b>Broad Network Access</b> - Capabilities are available over the network and accessed through standard mechanisms that promote use by heterogeneous thin or thick client platforms (e.g., mobile phones, tablets, laptops, and workstations).</li>
+                    <li><b>Multitenancy</b> - Sharing infrastructure with other cloud customers simultaneously.</li>
+                    <li><b>Rapid Elasticity and Scalability</b> - The resources provided to the customers grow and shrink as necessary to meet operational needs.</li>
+                    <li><b>Resource Pooling</b> - Cloud customers share resources including servers, storage, applications services, etc. You pay for what you need and use.</li>
+                    <li><b>Measured Service</b> - The Cloud Service Provider charges for resources used.</li>
+                </ul>
+                <li><b>Virtualization</b> - This allows for Cloud Service Providers to pool resources for customers. Virtualizing systems allows for more than one customer to use the same server.</li>
+                <li><b>Storage</b></li>
+                <ul>
+                    <li><b>SAN Storage Area Network</b> - Provides secure storage among multiple computers within a domain. The SAN appears as a single disk although it may be spread out across multiple locations</li>
+                    <li><b>NAS Network Attached Storage</b> - This solution uses TCP/IP and allows file-level access</li>
+                </ul>
+                <li><b>Networking</b> - All the equipment used for connecting the other nodes</li>
+                <li><b>Databases</b> - Databases organize data, by using databases in the cloud the Cloud Service Provider is responsible for patching, tunning , and other administrative tasks.</li>
+                <li><b>Orchestration</b> - Use of technology to manage the cloud infrastructure</li>
+            </ul>
+
+            <h4>Reference Architecture</h4>
+            <p>Reference Architecture (RA) provides a framework that allows a wide variety of cloud vendors and services to be interoperable.</p>
+            <p>There are two types, role-based and layer-based. NIST provides 5 roles, with the following type of activities:</p>
+            <ul>
+                <li><b>Cloud Consumer</b> - The procurement and use of cloud services</li>
+                <li><b>Cloud Provider</b> - The entity that makes a service available</li>
+                <li><b>Cloud Auditor</b> - An entity capable of independent examination and evaluation of clouds service controls</li>
+                <li><b>Cloud Broker</b> - An entity in three primary activities: aggregation of services, integration with existing infrastructure, and customization of services</li>
+                <li><b>Cloud Carrier</b> - The entity that provides the network or telecommunication connectivity that permits deliver of cloud services</li>
             </ul>
             
+            <h4>Cloud Service Capabilities</h4>
+            <p>This is another way to look at the cloud service model.</p>
+            <ul>
+                <li><b>Application Capability Types</b> - Ability to access an applicaiton </li>
+            </ul> -->
         </div> 
 
     </article> <!-- end entry -->
