@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>BentleySec - Describe Cloud Reference Architecture</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Steven Bentley">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script defer src="/js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" href="/images/favicon.jpeg">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="/index.html" title=""><img src="/images/logo-dark.png"></a>
+                </h1>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects/projects.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a>
+                    <li><a href="/resources/resources.html">Resources</a></li>
+                    <li><a href="/archive.html">Archive</a></li>
+                </ul> 
+
+           </div> 
+
+        </nav> 
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main large-8 column">
+
+    <article class="entry">
+
+        <header class="entry__header">
+
+            <h2 class="entry__title h1">
+                Describe Cloud Reference Architecture
+            </h2>         
+        </header>        
+        <div class="entry__content">
+            <h3>Cloud Computing Activities</h3>
+            <p><b>Cloud computing activities</b>, as outlined in <a href="https://www.iso.org/standard/60545.html">ISO/IEC 17789</a>
+                <blockquote>A cloud computing activity is defined as a specified pursuit or set of tasks.<br>
+                Cloud computing activities need to have a purpose and deliver one or more outcomes.
+                </blockquote>
+            </p>
+            
+            <h3>Cloud Service Capabilities</h3>
+            <p>
+                Cloud capability types look at capabilities provided by each cloud service model.
+            </p>
+            <ul>
+                <li><b>Application capability types</b> - allow access to an application, hosted in the cloud, over the network.</li>
+                <li><b>Platform capability types</b> - allow access to develop and deploy solutions. The solutions may be in-house developed or acquired from another entity. The platform itself may be customizable but the underlying infrastructure is not.</li>
+                <li><b>Infrastructure capability types</b> - allow the ability to maintain underlying infrastructure such as installing operating systems, tools, provisioning of infrastructure compute, storage, and network resources.</li>
+            </ul>
+
+
+            <h3>Cloud Service Categories</h3>
+            <ul>
+                <li><b>Software as a Service (SaaS)</b> - The capability provided to the consumer is to use the provider's applications running on a cloud infrastructure. The applications are accessible from various client devices through a thin client interface such as a web browser (e.g., web-based email). The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, storage, or even individual application capabilities, with the possible exception of limited user-specific application configuration settings. (Source: NIST CC Definition)</li>
+                <li><b>Infrastructure as a Service (IaaS)</b> - The capability provided to the consumer is to provision processing, storage, networks, and other fundamental computing resources where the consumer is able to deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, deployed applications, and possibly limited control of select networking components (e.g., host firewalls). (Source: NIST CC Definition)</li>
+                <li><b>Platform as a Service (PaaS)</b> - The capability provided to the consumer is to deploy onto the cloud infrastructure consumer-created or acquired applications created using programming languages and tools supported by the provider. The consumer does not manage or control the underlying cloud infrastructure including network, servers, operating systems, or storage, but has control over the deployed applications and possibly application hosting environment configurations. (Source: NIST CC Definition)</li>
+            </ul>
+
+            <h3>Cloud Deployment Models</h3>
+            <ul>
+                <li><b>Public</b> - The cloud infrastructure is made available to the general public or a large industry group and is owned by an organization selling cloud services. (Source: NIST CC Definition)</li>
+                <li><b>Private</b> - The cloud infrastructure is operated solely for an organization. It may be managed by the organization or a third party and may exist on premise or off premise. (Source: NIST CC Definition)</li>
+                <li><b>Hybrid</b> - The cloud infrastructure is a composition of two or more clouds (private, community, or public) that remain unique entities but are bound together by standardized or proprietary technology that enables data and application portability (e.g., cloud bursting for load balancing between clouds). (Source: NIST CC Definition)</li>
+                <li><b>Community</b> - The cloud infrastructure is shared by several organizations and supports a specific community that has shared concerns (e.g., mission, security requirements, policy, and compliance considerations). It may be managed by the organizations or a third party and may exist on premise or off premise. (Source: NIST CC Definition)</li>
+            </ul>
+
+            <h3>Cloud Shared Considerations</h3>
+            <ul>
+                <li><b>Interoperability</b> -  The capability to communicate, to execute programs, or to transfer data among various functional units under specified conditions. [Source: American National Standard Dictionary of Information Technology (ANSDIT)]</li>
+                <li><b>Portability</b> - The ability to transfer data from one system to another without being required to recreate or reenter data descriptions or to modify significantly the application being transported. 2. The ability of software or of a system to run on more than one type or size of computer under more than one operating system. 3. Of equipment, the quality of being able to function normally while being conveyed. [Source: Federal Standard 1037C]</li>
+                <li><b>Reversibility</b> - The ability to transfer services from one cloud environment to another. Transferring should be secure, simple, and automatic.</li>
+                <li><b>Availability</b> - The purchased services from the CSP must be available, within the constraints of the SLA, to the customer. Also, the ability of the CSP to scale and grow to meet customer needs. If the consumer need to expand their services and there are no resources available to do so, the CSP service fails.</li>
+                <li><b>Security</b> - protecting information and information systems from unauthorized access, use, disclosure, disruption, modification, or destruction. Ultimately, the data owner is responsible for the security of the data.</li>
+                <li><b>Privacy</b> - Information privacy is the assured, proper, and consistent collection, processing, communication, use and disposition of disposition of personal information (PI) and personally identifiable information (PII) throughout its life cycle. (Source: adapted from OASIS)</li>
+                <li><b>Resiliency</b> - The ability to continue operating under unexpected situations.</li>
+                <li><b>Performance</b> - How well the service delivers, the major concerns are network availability and bandwidth.</li>
+                <li><b>Governance</b> - The policies, procedures, and controls that govern the usage of the cloud.</li>
+                <li><b>Maintenance and versioning</b> - Depending on the service category (SaaS, IaaS, PaaS) that is used will determine who is responsible for maintenance and versioning. Updates and patches may be applied without customer knowledge.</li>
+                <li><b>Service levels and Service Level Agreements (SLA)</b> - an SLA specifies the required performance parameters and will define the business relationship of a solution. The SLA specifies in clear terms requirements for uptime, availability, processes, customer support, security controls, etc.</li>
+                <li><b>Auditability</b> - An examination of the cloud service controls to verify if they are meeting agreed upon measurements.</li>
+                <li><b>Regulatory</b> - Statutory, regulatory and legal requirements vary by market sector and jurisdiction, and they can change the responsibilities of both cloud service customers and cloud service providers. Compliance with such requirements is often related to governance and risk management activities. </li>
+            </ul>
+
+            <h3>Impact of Related Technologies</h3>
+            <ul>
+                <li><b>Machine learning</b> - a field within Artificial Intelligence (AI) that focuses on the ability of computers to learn on their own without being programmed. Many CSPs are offering machine learning tools.</li>
+                <li><b>Artificial intelligence</b> - A branch of computer science devoted to developing data processing systems that performs functions normally associated with human intelligence, such as reasoning, learning, and self-improvement.</li>
+                <li><b>Blockchain</b> - a collaborative, tamper-resistant ledger that maintains transactional records. The transactional records (data) are grouped into blocks. A block is connected to the previous one by including a unique identifier that is based on the previous block’s data. As a result, if the data is changed in one block, it’s unique identifier changes, which can be seen in every subsequent block (providing tamper evidence). This domino effect allows all users within the blockchain to know if a previous block’s data has been tampered with. Since a blockchain network is difficult to alter or destroy, it provides a resilient method of collaborative record keeping.  </li>
+                <li><b>Internet of Things (IoT)</b> - User or industrial devices that are connected to the internet. IoT devices include sensors, controllers, and household appliances.</li>
+                <li><b>Containers</b> - a form of operating system virtualization combined with application software packaging. Containers provide a portable, reusable, and automatable way to package and run applications.</li>
+                <li><b>Quantum computing</b> - a type of computation that harnesses the collective properties of quantum states, such as superposition, interference, and entanglement, to perform calculations.</li>
+            </ul>
+        
+        </div>
+    </article>
+</div>
+
+<div id="sidebar" class="s-content__sidebar large-4 column">
+    <div class="widget widget--categories">
+        <h3 class="h6">Cloud Concepts, Architecture, and Design</h3>
+        <ol>
+            <li><a href="/subjects/CCSP/Architecture/Concepts.html">Understand Cloud Computing Concepts</a></li>
+            <li><a href="/subjects/CCSP/Architecture/Reference_architecture.html">Describe Cloud Reference Architecture</a></li>
+            <li><a href="/subjects/CCSP/Architecture/Security_Concepts.html">Understand Security Concepts Relevant to Cloud Computing</a></li>
+            <li><a href="/subjects/CCSP/Architecture/Design_Principles.html">Understand Design Principles of Secure Cloud Computing</a></li>
+            <li><a href="/subjects/CCSP/Architecture/Evaluate.html">Evaluate Cloud Service Providers</a></li>
+        </ol>
+        <h3 class="h6">CCSP</h3>
+        <ol>
+            <li><a href="/subjects/CCSP/architectural.html">Cloud Concepts, Architecture, and Design</a></li>
+            <li><a href="/subjects/CCSP/data_security.html">Cloud Data Security</a></li>
+            <li><a href="/subjects/CCSP/platform_and_infrastructure_security.html">Cloud Platform and Infrastructure Security</a></li>
+            <li><a href="/subjects/CCSP/application_security.html">Cloud Application Security</a></li>
+            <li><a href="/subjects/CCSP/operations.html">Cloud Security Operations</a></li>
+            <li><a href="/subjects/CCSP/legal_and_compliance.html">Legal, Risk, and Compliance</a></li>
+        </ol>
+    </div>
+</div>
+
+
+       </div> <!-- end row -->
+
+   </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row s-footer__top">
+            <div class="column">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="#0"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-vimeo-v" aria-hidden="true"></i></a></li> -->
+                    <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div> <!-- end footer__top -->
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About BentleySec</h3>
+
+                <p>
+                    This site is a handy resource for me to park my notes on what I'm learning and different projects I'm working on.
+                </p>
+            </div>
+
+            <div class="large-6 tab-full column">
+                <div class="row">
+
+        
+                    <div class="large-4 tab-full column">
+                        <h3  class="h6">Navigate</h3>
+        
+                        <ul class="s-footer__list s-footer-list--nav group">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/projects/projects.html">Projects</a></li>
+                            <li><a href="/blog/blog.html">Blog</a>
+                            <li><a href="/resources/resources.html">Resources</a></li>
+                            <li><a href="/archive.html">Archive</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="large-8 tab-full column">
+
+                        <img src="/images/logo-light.png">
+        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="ss-copyright">
+                <span>© Copyright BentleySec</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+    </footer> <!-- end Footer-->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
