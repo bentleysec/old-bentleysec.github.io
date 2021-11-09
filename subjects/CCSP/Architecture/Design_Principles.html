@@ -14,7 +14,47 @@ title: Understand Design Principles of Secure Cloud Computing
             </h2>         
         </header>        
         <div class="entry__content">
-        
-        </div>
+        <h3>Cloud Secure Data Lifecycle</h3>
+        <p>The cloud secure data lifecycle includes six steps or phases:
+            <ol>
+                <li><b>Create:</b> Creating new data or modifying existing data.</li>
+                <li><b>Store:</b> The newly created data needs to be stored somewhere, such as a database or file system.</li>
+                <li><b>Use:</b> The activities to the data such as viewing, processing, and changing.</li>
+                <li><b>Share:</b> The exchange of data.</li>
+                <li><b>Archive:</b> The data is no longer being used and is stored for possible retrieval.</li>
+                <li><b>Destroy:</b> The data retention policy defines when the data is no longer needed and so is destroyed.</li>
+            </ol>
+            Security needs to be implemented in all six steps of the data lifecycle. The most popular tools are encryption and data loss prevention.
+        </p>
+
+        <h3>Cloud based Disaster Recovery (DR) and Business Continuity (BC) Planning</h3>
+        <p>A disaster recovery plan helps an organization return to normal operations after a disaster, while a business continuity plan helps keep the business running. The two plane work together when a disaster strikes.</p>
+        <p>A disaster recovery plans success relies on the backups of data. Depending on the disaster, after all the infrastructure has been rebuilt, reconfigured, and restored the backups are used to restore the data. The location of the backups and how the data will be restored need to be considered in the disaster recovery plan. Network access and bandwidth are considerations,</p>
+        <p>A successful business continuity plan relies on having the resources to continue business operations when a disaster hits, this is often in the form of an alternate location. Spreading out the cloud usage across regions implements redundancy and provides the greatest possible availability to resources.</p>
+
+        <h3>Cost Benefit Analysis</h3>
+        <p>Before moving process to the cloud, a business must consider all the costs. Although running processes in the cloud include benefits such as reduced capitol costs (no hardware) there are higher operating costs.</p>
+
+        <h3>Functional Security Requirements</h3>
+        <p>Moving computing to the cloud offers many benefits for a business. However, moving to the cloud introduces some cloud-centric challenges: portability, interoperability, and vendor lock-in.</p>
+        <h5>Portability</h5>
+        <p>Each cloud provider uses different tools and templates. Moving resources and data to the cloud require a business to adapt to the cloud provider's infrastructure. Moving data between CSPs and between a CSP and a business' own infrastructure can be difficult. Data can even be lost or modified in the process.</p>
+        <h5>Interoperability</h5>
+        <p>With all the different cloud providers, they each offer their own solution for security and control sets. This can be an issue as businesses use these different solutions. Security gaps can surface as businesses strive to learn all the different nuances of the CSPs. One solution to this problem is sharing data through carefully crafted APIs.</p>
+        <h5>Vendor Lock-in</h5>
+        <p>When a company decides to use a cloud provider and modifies their processes and data to the providers standards they are then locked in to that vendor. Moving to another provider would incur too much cost. To overcome vendor lock-in a carefully designed reference architecture must be followed.</p>
+
+        <h3>Security Considerations for Different Cloud Categories (SaaS, IaaS, PaaS)</h3>
+        <h5>SaaS</h5>
+        <p>In a SaaS solution, the CSP provides most of the security. The customer has limited options for security considerations. The SaaS provider is responsible for the security of the infrastructure, operating system, application, networking, and storage.</p>
+        <p>The customer has responsibility for their own data and may have some responsibility for the API. This includes the customer understanding the security policies and procedures of the SaaS provider, securely transferring data to the SaaS provider, securely sharing the data, and providing access security through the use of secure passwords, MFA, and proper use of login credentials.</p>
+        <h5>IaaS</h5>
+        <p>In a IaaS solution, the customer provides most of the security. The IaaS providers are responsible for the security of the servers, virtualization, storage, and networking.</p>
+        <p>The customer is responsible for pretty much everything built on top of the hypervisor, which would include the operating system.</p>
+        <h5>PaaS</h5>
+        <p>In a PaaS solution, the responsibility for security lies with the PaaS provider and the customer. The PaaS provider secures the underlying infrastructure, including the servers, operating systems, virtualization, storage, and networking.</p>
+        <p>The customer has responsibility for any solution developed on the operating system, which would include the data, APIs, and applications.</p>
+
+    </div>
     </article>
 </div>

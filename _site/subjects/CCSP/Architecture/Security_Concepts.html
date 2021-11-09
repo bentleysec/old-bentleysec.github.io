@@ -103,14 +103,37 @@
             <p>Keys are essential to cryptography, properly managing the keys are critical to maintaining the security of data in the cloud. Many cloud service providers offer a key management service (KMS) to properly store and protect keys.</p>
 
             <h3>Access Control</h3>
+            <p>In the cloud model there are three types of access controls: physical, technical, and administrative. Depending on the control the CSP and customer have different responsibilities.</p>
+            <p><b>Physical access controls</b> are the actual physical access to the hardware, servers and data centers, that run the cloud. The responsibility falls entirely to the CSP for providing the controls for physical access.</p>
+            <p><b>Technical access controls</b> fall under the responsibility of both the customer and the CSP depending on which model is used. For instance, reviewing logs for unusual activity can be a shared responsibility by both the customer and the CSP.</p>
+            <p><b>Administrative access controls</b> are the policies and procedures a customer uses for access to the cloud resources. The responsibility falls under the custody of the customer.</p>
 
             <h3>Data and Media Sanitization</h3>
+            <p>Data on-prem is easily securely sanitized. In the cloud it is more difficult because you don't have physical access to the hard drives to remove the data. Data in the cloud is additionally backed-up and stored in other locations. To overcome these obstacles, businesses can encrypt the data at rest and crypto-shred.</p>
+            <p>Overwriting data happens when deleted areas are marked for reuse. This data will then be overwritten by new data. The problem is, you cannot control how fast the data will be overwritten and the data will persist on disk.</p>
+            <p>Cryptographic erase is when the cryptographic keys for the encrypted data at rest is destroyed rendering the data unreadable.</p>
 
             <h3>Network Security</h3>
+            <p>A key component for cloud computing is broad network access, this means that malicious actors also have access to the cloud services you are using showing the importance for network security.</p>
+            <p>A Network Security Group provides rules or a virtual firewall to a group of cloud resources. The rules can be applied to a VM, subnet, or other cloud resource.</p>
+            <p>Another method for network security is limiting the number of ingress and egress points and then monitoring them. Rules can be applied to who can connect into the cloud and what the resources in the cloud can connect out to.</p>
 
             <h3>Virtualization Security</h3>
+            <p>The two most common methods of virtualization are either through a hypervisor or through containers.</p>
+            <p>There are 2 types of hypervisors, a type 1 hypervisor and a type 2 hypervisor. Type 1, or native, hypervisors run on the bare metal, like ESXI. Type 1 hypervisors are more secure and faster. Type 2 hypervisors are software based and are installed on top of another OS, like VMware Workstation or VirtualBox. Type 2 hypervisors rely on the underlying OS and are therefore susceptible to some of it's vulnerabilities</p>
+            <p>Containerization, such as Docker or LXC, provides a layer of abstraction between the OS and the container. Security risks occur with misconfigured containers or poor identity and access management.</p>
 
             <h3>Common Threats</h3>
+            <p>Some of the most common threats to the security of data in the cloud include:
+                <ul>
+                    <li>Poor Access Management</li>
+                    <li>Insecure APIs</li>
+                    <li>Data Leaks</li>
+                    <li>Misconfigured Cloud Storage</li>
+                    <li>Data Loss</li>
+                    <li>DoS</li>
+                </ul>
+            </p>
             
         </div>
     </article>
