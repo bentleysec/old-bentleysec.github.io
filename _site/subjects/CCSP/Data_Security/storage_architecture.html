@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - Cloud Data Security</title>
+    <title>BentleySec - Design and Implement Cloud Data Storage Architectures</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -91,62 +91,40 @@
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                Cloud Data Security
+                Design and Implement Cloud Data Storage Architectures
             </h2>         
-        </header>
-        
+        </header>        
         <div class="entry__content">
-        <ol>
-            <li><a href="/subjects/CCSP/Data_Security/concepts.html">Describe Cloud Data Concepts</a></li>
-            <ul>
-                <li>Cloud Data Life Cycle Phases </li>
-                <li>Data Dispersion</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/storage_architecture.html">Design and Implement Cloud Data Storage Architectures</a></li>
-            <ul>
-                <li>Storage Types (e.g. long term, ephemeral, raw-disk)</li>
-                <li>Threats to Storage Types</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/technologies.html">Design and Apply Data Security Technologies and Strategies</a></li>
-            <ul>
-                <li>Encryption and Key Management</li>
-                <li>Hashing</li>
-                <li>Masking</li>
-                <li>Tokenization</li>
-                <li>Data Loss Prevention (DLP)</li>
-                <li>Data Obfuscation</li>
-                <li>Data De-identification (e.g., anonymization)</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/discovery.html">Implement Data Discovery</a></li>
-            <ul>
-                <li>Structured Data</li>
-                <li>Unstructured Data</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/classification.html">Implement Data Classification</a></li>
-            <ul>
-                <li>Mapping</li>
-                <li>Labeling</li>
-                <li>Sensitive data (e.g., Protected Health Information (PHI), Personally Identifiable Information (PII), card holder data)</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/irm.html">Design and Implement Information Rights Management (IRM)</a></li>
-            <ul>
-                <li>Objectives (e.g., data rights, provisioning, access models)</li>
-                <li>Appropriate Tools (e.g., issuing and revocation of certificates)</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/data_policies.html">Plan and Implement Data Retention, Deletion and Archiving Policies</a></li>
-            <ul>
-                <li>Data Retention Policies</li>
-                <li>Data Deletion Procedures and Mechanisms</li>
-                <li>Data Archiving Procedures and Mechanisms</li>
-                <li>Legal Hold</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/data_events.html">Design and Implement Auditability, Traceability and Accountability of Data Events</a></li>
-            <ul>
-                <li>Definition of Event Sources and Requirement of Identity Attribution</li>
-                <li>Logging, Storage and Analysis of Data Events</li>
-                <li>Chain of Custody and Non-repudiation</li>
-            </ul>
-        </ol>
+        <p>One of the benefits of the cloud is pooling resources. Virtualized pools of storage provide the benefit of being more flexible, but it is more difficult to know exactly where and how data is being stored in the storage pools.</p>
+        <h3>Storage Types</h3>
+       <p>Each of the cloud service models has a unique storage type to meet their specific demands.</p>
+       <h5>IaaS</h5>
+       <p><b>Ephemeral: </b>This storage type is comparable to RAM as the storage is volatile and the data is only available as long as the IaaS instance is running. This storage type is usually packaged as part of compute rather than storage.</p>
+       <p><b>Raw: </b>Raw device mapping (RDM) allows the VM to access a storage logical unit number (LUN). The LUN is a portion of the overall storage for use by a single VM.</p>
+       <p><b>Long-term: </b>This is used for data retention and provides durable, persistent storage media. Sometimes offers of data discovery and search are provided.</p>
+       <p><b>Volume: </b>This type of storage behaves like a mounted drive on a computer but is virtualized. Data may be stored across multiple physical disks in the form of blocks.</p>
+       <p><b>Object: </b>This is similar to Unix sharepoint or Windows file server. Data is stored and retrieved as objects and users interact with the data objects using file browsers.</p>
+
+       <h5>PaaS</h5>
+       <p><b>Disk: </b>A virtual disk that can be in the form of a volume or object store, depending on what the CSP offers.</p>
+       <p><b>Database: </b>Can be offered as a service fot the PaaS. Usually with logical separation with data being accessed via API calls to the database.</p>
+       <p><b>Binary Large Object (blob): </b>Blobs are unstructured data often in the form of text files, images, or other binary files. Blob storage services are usually accessed via a URL.</p>
+
+       <h5>SaaS</h5>
+       <p><b>Information storage and management: </b>This data is usually stored in a database that is managed by the CSP and allows users to create and manipulate data via a web GUI.</p>
+       <p><b>Content and file storage: </b>Data that is stored in the app in the form of files, used in filesharing and collaborative apps.</p>
+       <p><b>Content delivery network (CDN): </b>Object storage that is stored geographically close to users to lower latency and bandwidth.</p>
+
+       <h3>Threats to Storage Types</h3>
+       <p><b>Unauthorized access: </b>Becasue of the multi-tenancy of cloud platforms, the CSP must make sure that there are appropriate access controls and separation to allow only authorized users access to data.</p>
+       <p><b>Unauthorized provisioning: </b>CSPs make provisioning additional resources easy, this can lead to service sprawl. Unofficial or shadow IT can lead to more cost for the organization, also the storage for these services may not be under the purvey of the security team leading to insecure storage.</p>
+       <p><b>Regulatory noncompliance: </b>Some CSPs may not meet all the regulatory compliance that an organization may need to follow. This can lead to non-compliance of the organization and additional fines.</p>
+       <p><b>Jurisdictional issues: </b>Many CSPs are global companies with data centers all over the globe and move customer data between data centers, even in other countries, for redundancy. Some organizations may have legal requirements (like privacy protections) to not have data in certain countries. It is important for an organization to have proper configurations in place so that they are within their legal requirements.</p>
+       <p><b>Denial of service: </b>CSPs are only accessible through a network, in the event of a network outage, like a severed cable, the data in the cloud is inaccessible. Additionally, malicious actors may attack the CSP through a DDoS to make the data inaccessible.</p>
+       <p><b>Data corruption or destruction: </b>Many events can corrupt or destroy data; human error, malicious insiders, hardware and software failures, or even natural disasters.</p>
+       <p><b>Theft or media loss: </b>CSPs have appropriate physical security controls to prevent media theft, which is extremely unlikely, but that does not stop all thefts. Render data unusable by using encryption.</p>
+       <p><b>Malware and ransomware: </b>Anywhere data is stored that has storage and processing is susceptible to malware. Proper access controls and anti-malware can prevent malware.</p>
+       <p><b>Improper disposal: </b>CSPs are responsible for disposal of physical hardware. Protecting data by using encryption will make sure that it is protected from improper disposal.</p>
 
         </div>
     </article>
@@ -154,6 +132,17 @@
 
 <div id="sidebar" class="s-content__sidebar large-4 column">
     <div class="widget widget--categories">
+        <h3 class="h6">Cloud Data Security</h3>
+        <ol>
+            <li><a href="/subjects/CCSP/Data_Security/concepts.html">Describe Cloud Data Concepts</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/storage_architecture.html">Design and Implement Cloud Data Storage Architectures</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/technologies.html">Design and Apply Data Security Technologies and Strategies</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/discovery.html">Implement Data Discovery</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/classification.html">Implement Data Classification</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/irm.html">Design and Implement Information Rights Management (IRM)</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/data_policies.html">Plan and Implement Data Retention, Deletion and Archiving Policies</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/data_events.html">Design and Implement Auditability, Traceability and Accountability of Data Events</a></li>
+        </ol>
         <h3 class="h6">CCSP</h3>
         <ol>
             <li><a href="/subjects/CCSP/architectural.html">Cloud Concepts, Architecture, and Design</a></li>

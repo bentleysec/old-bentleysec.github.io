@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - Cloud Data Security</title>
+    <title>BentleySec - Describe Cloud Data Concepts</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -91,62 +91,43 @@
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                Cloud Data Security
+                Describe Cloud Data Concepts
             </h2>         
-        </header>
-        
+        </header>        
         <div class="entry__content">
-        <ol>
-            <li><a href="/subjects/CCSP/Data_Security/concepts.html">Describe Cloud Data Concepts</a></li>
-            <ul>
-                <li>Cloud Data Life Cycle Phases </li>
-                <li>Data Dispersion</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/storage_architecture.html">Design and Implement Cloud Data Storage Architectures</a></li>
-            <ul>
-                <li>Storage Types (e.g. long term, ephemeral, raw-disk)</li>
-                <li>Threats to Storage Types</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/technologies.html">Design and Apply Data Security Technologies and Strategies</a></li>
-            <ul>
-                <li>Encryption and Key Management</li>
-                <li>Hashing</li>
-                <li>Masking</li>
-                <li>Tokenization</li>
-                <li>Data Loss Prevention (DLP)</li>
-                <li>Data Obfuscation</li>
-                <li>Data De-identification (e.g., anonymization)</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/discovery.html">Implement Data Discovery</a></li>
-            <ul>
-                <li>Structured Data</li>
-                <li>Unstructured Data</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/classification.html">Implement Data Classification</a></li>
-            <ul>
-                <li>Mapping</li>
-                <li>Labeling</li>
-                <li>Sensitive data (e.g., Protected Health Information (PHI), Personally Identifiable Information (PII), card holder data)</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/irm.html">Design and Implement Information Rights Management (IRM)</a></li>
-            <ul>
-                <li>Objectives (e.g., data rights, provisioning, access models)</li>
-                <li>Appropriate Tools (e.g., issuing and revocation of certificates)</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/data_policies.html">Plan and Implement Data Retention, Deletion and Archiving Policies</a></li>
-            <ul>
-                <li>Data Retention Policies</li>
-                <li>Data Deletion Procedures and Mechanisms</li>
-                <li>Data Archiving Procedures and Mechanisms</li>
-                <li>Legal Hold</li>
-            </ul>
-            <li><a href="/subjects/CCSP/Data_Security/data_events.html">Design and Implement Auditability, Traceability and Accountability of Data Events</a></li>
-            <ul>
-                <li>Definition of Event Sources and Requirement of Identity Attribution</li>
-                <li>Logging, Storage and Analysis of Data Events</li>
-                <li>Chain of Custody and Non-repudiation</li>
-            </ul>
-        </ol>
+            <h3>Cloud Data Life Cycle Phases</h3>
+            <p>In order to keep data secure in the cloud, a data lifecycle should be followed. This ensures that data can be correctly protected from creation to destruction. The secure data lifecycle follows a roughly linear lifecycle, and some data may not go through all phases.</p>
+            
+            <ol>
+            <li><h5>Create</h5></li>
+            <p>Data is created when it is entered into the system, or when it is modified.</p>
+            <p>Controls: When data is created it should be classified either by the creator or the owner.</p>
+
+            <li><h5>Store</h5></li>
+            <p>The act of saving data after creation, which can happen at the same time.</p>
+            <p>Controls: Data at rest should be encrypted with proper key management and appropriate access controls. When data is in transit it should be protected using TLS, VPNs, SSH, etc. Having appropriate backups is another control to help preserve integrity and availability.</p>
+
+            <li><h5>Use</h5></li>
+            <p>Data is used when it is viewed or processed. This can happen when viewing a web applications, viewing and editing files, or fetching data over an API.</p>
+            <p>Controls: Managing data flow via data loss prevention (DLP), information rights management (IRM), system access controls, network monitoring tools. It is also important to have adequate accountability controls which require logging and monitoring access to the data.</p>
+
+            <li><h5>Share</h5></li>
+            <p>Access to the data is granted to other users or entities that are authorized.</p>
+            <p>Controls: Access controls including role-based access control, DLP, IRM, and access reviews.</p>
+
+            <li><h5>Archive</h5></li>
+            <p>Archived data is data that has reached it's end of life but may still need to be retained. Archived data can also a cost benefit becasue it can be moved to cheaper slower storage.</p>
+            <p>Controls: Similar to the controls for the storage phase. One consideration is encryption keys may be cycled out and the data is effectively lost.</p>
+
+            <li><h5>Destroy</h5></li>
+            <p>Data is no longer needed and no longer needs to be retained. Data needs to be destroyed securely.</p>
+            <p>Controls: Low-sensitivity data does not need advanced destruction methods such as deleting filesystems and setting disk space to be reused. High-sensitive data may need more advanced methods of deletion such as, cryptoshredding (deleting encryption keys). </p>
+
+            </ol>
+
+            <h3>Data Dispersion</h3>
+            <p>Data dispersion is breaking data into smaller chunks and storing the chunks on different devices, it is similar to the concept of striping in a RAID array.</p>
+       
 
         </div>
     </article>
@@ -154,6 +135,17 @@
 
 <div id="sidebar" class="s-content__sidebar large-4 column">
     <div class="widget widget--categories">
+        <h3 class="h6">Cloud Data Security</h3>
+        <ol>
+            <li><a href="/subjects/CCSP/Data_Security/concepts.html">Describe Cloud Data Concepts</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/storage_architecture.html">Design and Implement Cloud Data Storage Architectures</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/technologies.html">Design and Apply Data Security Technologies and Strategies</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/discovery.html">Implement Data Discovery</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/classification.html">Implement Data Classification</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/irm.html">Design and Implement Information Rights Management (IRM)</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/data_policies.html">Plan and Implement Data Retention, Deletion and Archiving Policies</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/data_events.html">Design and Implement Auditability, Traceability and Accountability of Data Events</a></li>
+        </ol>
         <h3 class="h6">CCSP</h3>
         <ol>
             <li><a href="/subjects/CCSP/architectural.html">Cloud Concepts, Architecture, and Design</a></li>

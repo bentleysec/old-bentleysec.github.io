@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>BentleySec - Design and Apply Data Security Technologies and Strategies</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Steven Bentley">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script defer src="/js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" href="/images/favicon.jpeg">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="/index.html" title=""><img src="/images/logo-dark.png"></a>
+                </h1>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects/projects.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a>
+                    <li><a href="/resources/resources.html">Resources</a></li>
+                    <li><a href="/archive.html">Archive</a></li>
+                </ul> 
+
+           </div> 
+
+        </nav> 
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main large-8 column">
+
+    <article class="entry">
+
+        <header class="entry__header">
+
+            <h2 class="entry__title h1">
+                Design and Apply Data Security Technologies and Strategies
+            </h2>         
+        </header>        
+        <div class="entry__content">
+            <h3>Encryption and Key Management</h3>
+            <p>Security in the cloud would not be possible without encryption. The encrypted data is only secure as the keys. Kerchhoff's principle states that a cryptosystem should be secure even if everything about the system, except the key, is public knowledge. Keys should be the highest classification level available in an organization. Keys should be protected at all stages of their lifecycle. Here are some hints:
+                <ul>
+                    <li>Create strong, random keys</li>
+                    <li>Store keys in a secure manner</li>
+                    <li>Use keys securely</li>
+                    <li>Only share keys using secure features</li>
+                    <li>Archive keys that are no longer used but might be needed to retrieve archived data</li>
+                    <li>Destroy keys that are no longer needed in a secure manner</li>
+                </ul>
+            </p>
+            <p>Encryption in the cloud can implemented at a variety of layers.
+                <ul>
+                    <li><b>Storage-level encryption:</b> Data is encrypted by the CSP as it is written to storage, protecting the data if the physical devices are stolen. The CSP manages the keys and therefore may potentially be able to read the data.</li>
+                    <li><b>Volume-level encryption:</b> Data is encrypted by the consumer as it is written to volumes connected to VMs. This protects the data from theft and prevents the CSP from reading the data, though an attacker can still read the data if they gain access to the instance.</li>
+                    <li><b>Object-level encryption:</b> Object level data is encrypted as it is written to storage, though the CSP may control the keys and may have access to the data. It is recommended that the customer implements their own encryption and key management.</li>
+                    <li><b>File-level encryption:</b> Data is encrypted by an application, such as Microsoft Office Apps or Adobe. The keys are managed by the application, usually through a password that the user enters or automated through IRM.</li>
+                    <li><b>Application-level encryption:</b> Object level data is encrypted by the application. Many SaaS offerings provide a bring your own key ability.</li>
+                    <li><b>Database-level encryption:</b> The database file may be encrypted or transparent encryption (which is provided by the database management system) to encrypt specific columns or the entire database. The keys are managed by the consumer.</li>
+                </ul>
+            </p>
+
+            <h3>Hashing</h3>
+            <p>Hashing, also known as one-way encryption, passes any length of data through a hash function that creates a string of characters, or hash value. The same hash value will always be produced when passing in the same data. This is helpful for verifying the integrity of data, making sure that the data was not changed in any way.</p>
+            <p>Hashing can also be used to verify the source of a message. The sender calculates the hash of the date and encrypts the hash value with their private key. The receiver uses the senders public key to decrypt the hash value and compares that to their own calculation of the hash value of the data.</p>
+            <p>In a cloud environment hashing can be used to verify data such as backups or emails are accurate. File integrity monitoring also uses hashes to see if important files have been changed.</p>
+
+            <h3>Masking</h3>
+            <p>Data masking is when specific data is hidden for specific use cases. An example would be when viewing a stored credit card on a website, only the last four digits will be visible - even though the website needs the full credit card number to make purchases.</p>
+
+            <h3>Tokenization</h3>
+            <p>Tokenization is when sensitive data is represented by nonsensitive data. The most common use of Tokenization is for credit card numbers. An organization will securely pass the credit card information to a tokenization service, the tokenization service then creates a token and passes that on to the organization. Tokens can then be referenced by the organization to the tokenization service.</p>
+            <p>An implementation of tokenization may look like this:
+                <ol>
+                    <li>The user inputs sensitive information into an application</li>
+                    <li>The app securely sends the data to the tokenization service</li>
+                    <li>The sensitive data is securely stored in a database and a token is created that represents the data</li>
+                    <li>The token is then sent to the original app and is stored by the app</li>
+                    <li>When the sensitive data is needed, the app sends the token with authentication data to the tokenization service.</li>
+                </ol>
+            </p>
+
+            <h3>Data Loss Prevention (DLP)</h3>
+            <p>Data loss prevention is a system that includes controls for detection, prevention, and correction. Detection identifies where sensitive data is stored and being used. Prevention enforces policies on the sensitive data for storage and sharing. Correction alerts when there is a policy violation.</p>
+            <p>A typical DLP system has three components:
+                <ol>
+                    <li><b>Discovery:</b> helps an organization to find, identify, organize, and inventory data. The tool will usually perform a network scan to find fileshares, storage area networks. databases, and other storage locations.</li>
+                    <li><b>Monitoring:</b> enables the organization to identify how the data is being used to prevent unauthorized use. The monitoring can take place at different data states.
+                    <ul>
+                        <li>At-rest can spot policy violations such as sensitive data being stored in unauthorized locations. Additionally, monitoring can take place within databases to detect sensitive data stored in the inappropriate columns.</li>
+                        <li>In-motion can spot when sensitive data is being moved across the network, the monitoring tools need to be placed in the correct places within the network to see the data in transit, a user could set up a VPN tunnel to move data and a network monitoring solution would not be able to decrypt and look at the data. Agents installed on the system that stores the data can prevent such a scenario.</li>
+                        <li>In-use can monitor user endpoint to detect policy violations. This monitoring is through an agent installed on the endpoint.</li>
+                    </ul>
+                    </li>
+                    <li><b>Enforcement:</b> creates alerts when policy violations have occurred. An agent can be installed on the endpoint and prevent a user from mounting a USB, which could be used to exfiltrate data.</li>
+                </ol>
+            </p>
+            <p>Deploying DLP within the cloud can be a challenge. Most organizations lack the ability to install agents, like in a SaaS or PaaS service model. A cost-benefit analysis should be performed to determine if the right DLP solution.</p>
+
+            <h3>Data Obfuscation</h3>
+            <p>Data obfuscation is used when sensitive data needs to be used in a situation like testing an app. The tester should not be able to view the sensitive data but needs to have data to test the app. There are multiple ways to perform data obfuscation:
+                <ul>
+                    <li><b>Substitution:</b> is when sensitive data is swapped out for other data, often randomly. There are data sets that a tester can use online such as a random person generator.</li>
+                    <li><b>Shuffling:</b> is when data is moved around. A tester can either shuffle the letters in a name so Steve becomes Etsve, or data within a database can be shuffled so Sally's address becomes Bob's.</li>
+                    <li><b>Value variance:</b> performs mathematical changes to data. An algorithm can go through a data set and set a variance on each value, such as +/- 100.</li>
+                    <li><b>Deletion:</b> replaces the data with null values, also known as nullification.</li>
+                    <li><b>Encryption:</b> this method obfuscates the data and may not be very useful for testing. Homomorphic encryption is an emerging field that allows encrypted data to be processed without decryption.</li>
+                </ul>
+            </p>
+            <p>Another form of obfuscation that can be used, especially in the cloud, is pseudo-anonymization or pseudonymization. This is when a dataset has sensitive data (such as PII) removed and replaced with an index value. The nonsensitive data can be uploaded and stored in the cloud without PII. When the data is retrieved the index value is used to replace the PII.</p>
+
+            <h3>Data De-identification</h3>
+            <p>Personal details can be used to identify people from data in two ways. The first way is through direct identifiers, this is PII of individuals. The second way is through indirect identifiers, which is when information is combined to identify an individual. Data de-identification is when these identifiers are anonymized so the individuals cannot be identified. Of course direct identifiers are simpler to anonymize than indirect identifiers.</p>
+            <p>Most privacy regulations require data anonymization for any PII that is used outside if production systems and environments.</p>
+       
+
+        </div>
+    </article>
+</div>
+
+<div id="sidebar" class="s-content__sidebar large-4 column">
+    <div class="widget widget--categories">
+        <h3 class="h6">Cloud Data Security</h3>
+        <ol>
+            <li><a href="/subjects/CCSP/Data_Security/concepts.html">Describe Cloud Data Concepts</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/storage_architecture.html">Design and Implement Cloud Data Storage Architectures</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/technologies.html">Design and Apply Data Security Technologies and Strategies</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/discovery.html">Implement Data Discovery</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/classification.html">Implement Data Classification</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/irm.html">Design and Implement Information Rights Management (IRM)</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/data_policies.html">Plan and Implement Data Retention, Deletion and Archiving Policies</a></li>
+            <li><a href="/subjects/CCSP/Data_Security/data_events.html">Design and Implement Auditability, Traceability and Accountability of Data Events</a></li>
+        </ol>
+        <h3 class="h6">CCSP</h3>
+        <ol>
+            <li><a href="/subjects/CCSP/architectural.html">Cloud Concepts, Architecture, and Design</a></li>
+            <li><a href="/subjects/CCSP/data_security.html">Cloud Data Security</a></li>
+            <li><a href="/subjects/CCSP/platform_and_infrastructure_security.html">Cloud Platform and Infrastructure Security</a></li>
+            <li><a href="/subjects/CCSP/application_security.html">Cloud Application Security</a></li>
+            <li><a href="/subjects/CCSP/operations.html">Cloud Security Operations</a></li>
+            <li><a href="/subjects/CCSP/legal_and_compliance.html">Legal, Risk, and Compliance</a></li>
+        </ol>
+    </div>
+</div>
+
+
+       </div> <!-- end row -->
+
+   </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row s-footer__top">
+            <div class="column">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="#0"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-vimeo-v" aria-hidden="true"></i></a></li> -->
+                    <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div> <!-- end footer__top -->
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About BentleySec</h3>
+
+                <p>
+                    This site is a handy resource for me to park my notes on what I'm learning and different projects I'm working on.
+                </p>
+            </div>
+
+            <div class="large-6 tab-full column">
+                <div class="row">
+
+        
+                    <div class="large-4 tab-full column">
+                        <h3  class="h6">Navigate</h3>
+        
+                        <ul class="s-footer__list s-footer-list--nav group">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/projects/projects.html">Projects</a></li>
+                            <li><a href="/blog/blog.html">Blog</a>
+                            <li><a href="/resources/resources.html">Resources</a></li>
+                            <li><a href="/archive.html">Archive</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="large-8 tab-full column">
+
+                        <img src="/images/logo-light.png">
+        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="ss-copyright">
+                <span>© Copyright BentleySec</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+    </footer> <!-- end Footer-->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
