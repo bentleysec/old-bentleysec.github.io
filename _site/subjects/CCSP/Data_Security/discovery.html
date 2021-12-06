@@ -95,9 +95,34 @@
             </h2>         
         </header>        
         <div class="entry__content">
+            <p>There are two definitions of Data Discovery when it comes to information discovery. First, discovery of data stored within the environment as part of the inventory of critical data assets, which is part of DLP. Secondly, discovery of trends and valuable intelligence from the data. Business intelligence usually is interested in the second part of data discovery, but it is not as important to the security team.</p> 
+            <p>Security teams  use data discovery in tools that that monitor the environment. These tools gather data such as system vulnerabilities, misconfigurations, intrusion attempts, and even suspicious behavior. Here are some important terms for data discovery:
+                <ul>
+                    <li><b>Data lake and data warehouse:</b> sore and consolidate large amounts of data. A lake is unstructured data often stored in files or blobs. A warehouse is structured storage that has been normalized. Normalized data is differently formatted data that is been parsed to a common format.</li>
+                    <li><b>Data mart:</b> contains data that is in a warehouse and is made available to business units to perform analysis.</li>
+                    <li><b>Data mining:</b> discovering, analyzing, and extracting patterns in data.</li>
+                    <li><b>Online analytic processing (OLAP):</b> provides analytic processing on the data. This allows for more digging into the data to analyze subsets of the information.</li>
+                    <li><b>ML/AI training data:</b> Machine Learning improves computer algorithms by experience, such as feeding the algorithm data. The algorithm learns from this fed data to make better decisions. AI on the other hand is the goal of designing a computer system capable of displaying intelligent thought or problem solving. Both ML and AI require large data sets to train the algorithms.</li>
+                </ul>
+            </p>
+            
             <h3>Structured Data</h3>
+            <p>Structured data is stat that has been formatted in a consistent way. Most often, data is stored in a database and is normalized, some data may also be structured in a markup language such as XML or JSON. When data is structured it makes data discovery much more simplified. Some more informational terms:
+                <ul>
+                    <li><b>Data model or schema:</b> is a description of the format that the data is stored, such as elements, rows, or tuples in a database</li>
+                    <li><b>Metadata:</b> is data the describes data.</li>
+                    <li><b>Semantics:</b> is the meaning of data and can be used to analyze the relationships expressed in data.</li>
+                </ul>
+            </p> 
 
             <h3>Unstructured Data</h3>
+            <p>Unstructured data is information stored without a common format, such as documents and photos. This makes data discovery much more difficult than structured data. One approach to dealing with unstructured data is applying data labels. Data labels classify documents that hold sensitive data, such as credit card numbers or PII. Labels are often labeled as "restricted", "classified", or "sensitive". Another approach is through content analysis, which can be very resource intensive. Some methods that can be used:
+                <ul>
+                    <li><b>Pattern matching:</b> compares data to known formats such as credit card numbers using regular expressions (regex).</li>
+                    <li><b>Lexical analysis:</b> attempts to take meaning or context out of the data to discover sensitive data, this can be useful to flag unstructured data.</li>
+                    <li><b>Hashing:</b> identifies known data such as system files or sensitive files by computing a hash of the file and comparing it to known hashes.</li>
+                </ul>
+            </p>
        
 
         </div>
