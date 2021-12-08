@@ -14,6 +14,46 @@ title: Implement Data Classification
             </h2>         
         </header>        
         <div class="entry__content">
+            <p>Classification is done by identifying common attributes in data and forming groups by those common attributes. The different levels of classification help organizations set controls on wide swaths of data. When a new system is brought online, rather than performing an in-depth analysis on the system, an organization can classify the system and apply the proper level of security controls. Classification levels can be driven by multiple factors:
+                <ul>
+                    <li><b>Data type:</b> There are different regulations that dictate different data types. Healthcare, PII, financial, educations, or legal data all have regulatory requirements.</li>
+                    <li><b>Legal constraints:</b> GDPR is a legal requirement on how to handle data on EU citizens.</li>
+                    <li><b>Ownership:</b> In today's connected world, many organizations and entities share data. The owners of this shared data may impose requirements on this data.</li>
+                    <li><b>Value/Criticality:</b> different data has different value to different organizations. It is important to take into account how valuable to the organization. Such as critical business operations.</li>
+                </ul>
+            </p>
+            
+            <h3>Mapping</h3>
+            <p>Data mapping, in context of security, relates to mapping where data exists on the network and possibly data ownership. Many DLP solutions provide this functionality.</p>
+
+            <h3>Labeling</h3>
+            <p>Once the data has been classified, labels provide a means to provide the level of classification to everyone within the organization, like putting a stamp "Top Secret" on a document, but you cannot put a physical stamp on digital data. There are many ways to label data:
+                <ul>
+                    <li><b>Hard-copy materials:</b> data printed on paper that can be labeled with a printed watermark, stamp, or storing the media in a labeled container.</li>
+                    <li><b>Physical assets:</b> these include servers, workstations, external hard drives, flash drives, discs, etc that can be labeled with a physical label.</li>
+                    <li><b>Digital files:</b> can be labeled with metadata such as a watermark in the document or a footer. </li>
+                    <li><b>Complex or shared systems and data sets:</b> components can be labeled where others cannot. Label what can be labeled and rely on training and reference material to provide protection and meet requirements.</li>
+                </ul>
+            </p>
+
+            <h3>Sensitive data</h3>
+            <p>Sensitivity of data is usually driven by regulations. Here is a list of possible sensitive data:
+                <ul>
+                    <li><b>Personally identifiable information (PII):</b> there are many regulations for PII including GDPR, PIPEDA, and GLBA.</li>
+                    <li><b>Protected health information (PHI):</b> defined and governed by HIPAA in the U.S.</li>
+                    <li><b>Cardholder data:</b> defined and governed by PCI-DSS on how to handle, process, and store card data.</li>
+                </ul>
+            </p>
+            <p>Here are some considerations from when creating a data classification policy:
+                <ul>
+                    <li><b>Compliance requirements inherent at various classification levels:</b> as a best practice, individuals who know how to manage sensitive data should be identified in policy to help users seek assistance as needed.</li>
+                    <li><b>Data retention and disposal requirements:</b> sensitive data is regulated by different laws and regulation in regards to retention periods. Policies need to be created that align with organizational goals and regulatory requirements, along with proper disposal methods.</li>
+                    <li><b>What is considered sensitive or regulated data:</b> policy should clearly specify which data is sensitive or not and, of the sensitive data, what type of data (PII vs PHI).</li>
+                    <li><b>Appropriate or approved uses of data:</b> policies should specify on approved use and processing of sensitive data.</li>
+                    <li><b>Access control and authorization:</b> classification can be used to determine who has access rights to the data. Logical and physical access to the data is one of the most powerful tools in protecting sensitive data.</li>
+                    <li><b>Encryption needs:</b> policies should be enabled that provide clear guidance on how encryption should be used to protect data.</li>
+                </ul>
+            </p>
        
 
         </div>
