@@ -14,6 +14,31 @@ title: Design and Implement Information Rights Management (IRM)
             </h2>         
         </header>        
         <div class="entry__content">
+            <p>Providing security controls to data that is shared outside the organization is called Information Rights Management, or sometimes Digital Rights Management. There are 2 main categories to IRM:
+                <ul>
+                    <li>Consumer-grade IRM, which is commonly known as DRM. This controls the use, copying, and distribution of copyrighted material such as music, videos, software, and movies.</li>
+                    <li>Enterprise-grade IRM, which is commonly associated with digital files such as images and documents.</li>
+                </ul>
+            </p>
+            <h3>Objectives</h3>
+            <p>Most IRM solutions work by using an access control list (ACL). The ACL specifies users and authorizes what those users can do with the data (read, write, modify, print). Most SaaS offerings provide built-in controls for sharing data. These are what IRM systems should implement:
+                <ul>
+                    <li><b>Persistence:</b> The controls for the data must be able to follow the data when it is shared.</li>
+                    <li><b>Dynamic policy control:</b> Provide a way to update the restriction after a document has been shared.</li>
+                    <li><b>Expiration:</b> The ability to set a time limit on the shared document. </li>
+                    <li><b>Continuous audit trail:</b> An audit trail is generated for all shared documents.</li>
+                    <li><b>Interoperability:</b> The ability for the IRM solution to work in a variety of environments. Not all organizations utilize the same OSes, Office suite, etc.</li>
+                </ul>
+                There are different access control models for an IRM solution an the restrictions are set by the data owner:
+                <ul>
+                    <li><b>(DAC) Discretionary Access Control:</b> The data owner sets the controls on a per-document basis.</li>
+                    <li><b>(MAC) Mandatory Access Control:</b> The data owner sets controls on the metadata of the document, such as classification level, or specific job roles.</li>
+                </ul>
+            </p>
+
+            <h3>Appropriate tools</h3>
+            <p>IRM tools, in order to function, require the ability to create, issue, store, and revoke certificates and tokens. These certificates and tokens are used to verify authorized users and their actions. This requires local storage for the encryption keys and security for the storage to ensure it's integrity
+            </p>
        
 
         </div>
