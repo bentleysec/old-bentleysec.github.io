@@ -1,0 +1,49 @@
+---
+layout: ccspplatformandinfrastructure
+title: Comprehend Cloud Infrastructure Components
+---
+
+<div id="main" class="s-content__main large-8 column">
+
+    <article class="entry">
+
+        <header class="entry__header">
+
+            <h2 class="entry__title h1">
+                Comprehend Cloud Infrastructure Components
+            </h2>         
+        </header>        
+        <div class="entry__content">
+        
+
+            <h3>Physical Environment</h3>
+            <p>The physical environment depends on the cloud security model:
+                <ul>
+                    <li>Private cloud is usually on prem, in which case the organization is the CSP. If it is built using a commercial vendor, they are the CSP.</li>
+                    <li>Community cloud the member host the cloud is the CSP.</li>
+                    <li>Public cloud the vendor is the CSP.</li>
+                </ul>
+            </p>
+            <p>The physical security of the environment is sole responsibility of the CSP. Common methods to protect the environment include locks, security personnel, lights, fences, etc.</p>
+
+            <h3>Network and Communications</h3>
+            <p>All the networking components that maintain the cloud are the responsibility of the CSP, including security. The customer is responsible for all the networking infrastructure at their organization. To provide security over the internet is a shared responsibility. The CSP must use secure protocols top provide a secure means of data transfer. It is the responsibility of the customer to set up and use the secure protocols.</p>
+
+            <h3>Compute</h3>
+            <p>Compute resources are componenets that provide VMs, disk, processor, memory, and network resources, which are all under the responsibility of the CSP. All physical components are the responsibility of the CSP, all the data and users are the responsibility are the responsibility of the customer. The software that runs on the hardware and is used by the customer falls under the responsibility of both the CSP and the customer depending on the service model.
+                <ul>
+                    <li>IaaS: When then CSP provides software such as virtualization and OS, they are responsible. If the software is configurable, the customer is responsible for the configurations. All other software is the responsibility of the customer.</li>
+                    <li>PaaS: The CSP is responsible for all the services they provide, the customer is responsible for the configurations they change, all data and users, and any additional software or applications that they install on the platform.</li>
+                    <li>SaaS: The CSP is responsible for all compute resources, the customer is responsible for the customization of the services provided, data, and users.</li>
+                </ul>
+            </p>
+
+            <h3>Virtualization</h3>
+
+            <h3>Storage</h3>
+
+            <h3>Management Plane</h3>
+
+        </div>
+    </article>
+</div>

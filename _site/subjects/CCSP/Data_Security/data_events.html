@@ -95,6 +95,32 @@
             </h2>         
         </header>        
         <div class="entry__content">
+
+            <h3>Definition of Event Sources and Requirement of Identity Attribution</h3>
+            <p>An event is any observable action that occurs, cloud solutions have different challenges to collect events than on-prem servers. The biggest difference is the availability of the data, which varies by cloud provider. IaaS solutions will provide the most detailed logs from network, OS, and application data sources. SaaS solutions may only provide application level logs with no access to OS and network logs.</p>
+            <p>The Open Web Application Security Project® (OWASP) published guides, one of which is on <a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html">logging</a>. This is a useful guide and series of best practices to help when using cloud services. Here are some examples:
+            <ul>
+                <li><b>Synchronize time across all servers and devices</b>: The synchronization of timestamps across devices is crucial in investigating events.</li>
+                <li><b>Differing classification schemes</b>: Different applications will categorize events with different metadata. Having the same schema for your data across platforms will help search for events.</li>
+                <li><b>Identity attribution</b>: This allows you to answer the question "who did what and when?"</li>
+                <li><b>Application-specific logs</b>: Similar to differing classification schemes, applications may log the same type of data differently.</li>
+                <li><b>Integrity of log files</b>: Not allowing the logs to be changed by users on the hosts that are generating the logs.</li>
+            </ul></p>
+
+            <h3>Logging, Storage and Analysis of Data Events</h3>
+            <p>Looking at raw logs will not be very beneficial to tracking down what happened in an event. Using a central logging server and a SIEM to analyze the logs helps by:
+                <ul>
+                    <li><b>Log centralization and aggregation</b>: Having logs in one location makes it so you don't have to log into all your different hosts in the environment to access logs. Endpoints usually push logs to the SIEM.</li>
+                    <li><b>Data integrity</b>: The SIEM will have separate permissions than the hosts and will prevent users with Administrative permissions on the hosts to tamper with the logs.</li>
+                    <li><b>Normalization</b>: Sources of data will format the data in different ways. A SIEM will format data in a similar way so to allow easier searching. This is called normalizing the data. For example, usernames from one system may be labeled user.name, user, or username.</li>
+                    <li><b>Automated or continuous monitoring</b>: SIEMS use algorithms to search the logs for potential attacks or anomalous data.</li>
+                    <li><b>Alerting</b>: SIEMs will alert on the anomalous data it detects.</li>
+                    <li><b>Investigative monitoring</b>: The SIEM provides support capabilities when investigating logs becomes necessary.</li>
+                </ul>
+            </p>
+
+            <h3>Chain of Custody and Non-repudiation</h3>
+            <p>Chain of custody is a defensible record of how evidence was handled and collected, and by whom. Nonrepudiation is holding a specific account responsible for a particular action.</p>
        
 
         </div>

@@ -14,9 +14,41 @@ title: Plan and Implement Data Retention, Deletion and Archiving Policies
             </h2>         
         </header>        
         <div class="entry__content">
-            <p></p>
+            <p>The data lifecycle specifies when data is created and when it is no longer needed. When data is no longer needed it can be disposed, archived, or deleted. Disposal of data can be performed by destruction, deletion, or even moving the data to a different location (such as to backups).</p>
+            <p>There are different compliance standards that specify how long the data must be kept. Some compliance standards specify that newer data is readily accessible, while older data is still accessible on backups or archived, and after some time period has passed secure deletion.</p>
 
             <h3>Data Retention Policies</h3>
+            <p>Data retention has two primary objectives: operational needs and compliance requirements. When creating data retention policies, multiple factors must be considered such as availability, compliance, and operational objectives such as cost. An important cloud service to take into account is backups.</p>
+            <h5>Storage Costs and Access Requirements</h5>
+            <p>Not all storage is created equal. Some data may need to be accessed more frequently, while other data (usually older) does not need to be accessed as much. Data that needs to be accessed frequently usually needs to be stored on faster storage, while older data may be able to be stored on slower storage. Faster storage tends to cost more than slower storage.</p> 
+            <h5>Specified Legal and Regulatory Retention Periods</h5>
+            <p>Some organizations may need to follow regulations that define retention periods for specific data. Some common regulations are, HIPPA, PCI-DSS, and EU GDPR.</p>
+            <h5>Data Retention Practices</h5>
+            <p>A retention policy must define what data is to be stored, why it is stored, and the amount of time it is to be stored. Other procedures that should be documented are:
+                <ul>
+                    <li>Schedules - TThe period of time that data must be stored</li>
+                    <li>Integrity Checking - Data in storage or when being copied may become corrupted, integrity checking procedures check the data integrity when being copied and periodically while in storage.</li>
+                    <li>Retrieval Procedures - How stored data is accessed and by whom.</li>
+                    <li>Data Formats - Over time formats change, this must be taken into consideration when storing data.</li>
+                </ul>
+            </p>
+            <h5>Data Security and Discovery</h5>
+            <p>Data standards change over time including encryption standards. Data in long term storage may be encrypted with outdated cryptography. In order to secure this data, it is advisable to consider defense-in-depth strategies. Data retention should also take into consideration the ability to discovery data in case of an investigation.</p>
+
+            <h3>Data Deletion Procedures and Mechanisms</h3>
+            <p>When data has reached it's retention period it must be deleted in a secure way. NIST SP 800-88 Guidelines for Media Sanitization provides an excellent resource on removing data from information systems.
+                <ul>
+                    <li><b>Clear</b> - Removing data from user-addressable storage. Just like clearing the recycle bin on the Desktop. Data may still be recoverable.</li>
+                    <li><b>Purge</b> - Using specialized tools such as, overwriting data with dummy data, magnetic degaussing, or built-in hardware based data sanitization functions. Cryptographic erasure or Cryptroshredding is when the encryption keys are deleted so the data is inaccessible.</li>
+                    <li><b>Destroy</b> - Destroying the physical media the data is stored on.</li>
+                </ul>
+            </p>
+
+            <h3>Data Archiving Procedures and Mechanisms</h3>
+            <p>Adequate security protocols need to be followed as data moves from live systems to archives, this includes the data in transit and at rest.</p>
+
+            <h3>Legal Hold</h3>
+            <p>When data is under a legal hold, its retention schedule is indefinitely suspended. The data must be held even if the retention period has passed, it should be held until the legal hold has been lifted.</p>
        
 
         </div>

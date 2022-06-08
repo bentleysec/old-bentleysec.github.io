@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>BentleySec - CASP 2-5</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Steven Bentley">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="/js/modernizr.js"></script>
+    <script defer src="/js/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" href="/images/favicon.jpeg">
+    <link rel="manifest" href="/site.webmanifest">
+
+</head>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- Header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="s-header__content column">
+                <h1 class="s-header__logotext">
+                    <a href="/index.html" title=""><img src="/images/logo-dark.png"></a>
+                </h1>
+            </div>
+
+        </div> <!-- end row -->
+
+       <nav class="s-header__nav-wrap">
+
+           <div class="row">
+
+                <ul class="s-header__nav">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/projects/projects.html">Projects</a></li>
+                    <li><a href="/blog.html">Blog</a>
+                    <li><a href="/resources/resources.html">Resources</a></li>
+                    <li><a href="/archive.html">Archive</a></li>
+                </ul> 
+
+           </div> 
+
+        </nav> 
+
+        <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+
+    </header> <!-- Header End -->
+
+
+
+    <!-- Content
+    ================================================== -->
+    <div class="s-content">
+
+        <div class="row">
+
+            <div id="main" class="s-content__main large-8 column">
+
+    <article class="entry">
+
+        <header class="entry__header">
+
+            <h2 class="entry__title h1">
+                2.5 Given a scenario, analyze vulnerabilities and recommend risk mitigations.
+            </h2>         
+        </header>
+        
+        <div class="entry__content">
+            <h3 id="vulnerabilities">Vulnerabilities</h3>
+                <h4 id="race-conditions">&ensp;Race conditions</h4>
+                <h4 id="overflows">&ensp;Overflows</h4>
+                    <h5 id="buffer">&ensp;&ensp;Buffer</h5>
+                    <h5 id="integer">&ensp;&ensp;Integer</h5>
+                <h4 id="broken-authentication">&ensp;Broken authentication</h4>
+                <h4 id="unsecure-references">&ensp;Unsecure references</h4>
+                <h4 id="poor-exception-handling">&ensp;Poor exception handling</h4>
+                <h4 id="security-misconfiguration">&ensp;Security misconfiguration</h4>
+                <h4 id="improper-headers">&ensp;Improper headers</h4>
+                <h4 id="information-disclosure">&ensp;Information disclosure</h4>
+                <h4 id="certificate-errors">&ensp;Certificate errors</h4>
+                <h4 id="weak-cryptography-implementations">&ensp;Weak cryptography implementations</h4>
+                <h4 id="weak-ciphers">&ensp;Weak ciphers</h4>
+                <h4 id="weak-cipher-suite-implementations">&ensp;Weak cipher suite implementations</h4>
+                <h4 id="software-composition-analysis">&ensp;Software composition analysis</h4>
+                <h4 id="use-of-vulnerable-frameworks-and-software-modules">&ensp;Use of vulnerable frameworks and software modules</h4>
+                <h4 id="use-of-unsafe-functions">&ensp;Use of unsafe functions</h4>
+                <h4 id="third-party-libraries">&ensp;Third-party libraries</h4>
+                    <h5 id="dependencies">&ensp;&ensp;Dependencies</h5>
+                    <h5 id="code-injections-malicious-changes">&ensp;&ensp;Code injections/malicious changes</h5>
+                    <h5 id="end-of-support-end-of-life">&ensp;&ensp;End of support/end of life</h5>
+                    <h5 id="regression-issues">&ensp;&ensp;Regression issues</h5>
+            <h3 id="inherently-vulnerable-system-application">Inherently vulnerable system/application</h3>
+                <h4 id="client-side-processing-vs-server-side-processing">&ensp;Client-side processing vs.  server-side processing</h4>
+                <h4 id="json-representational-state-transfer-rest-">&ensp;JSON/representational state transfer (REST)</h4>
+                <h4 id="browser-extensions">&ensp;Browser extensions</h4>
+                    <h5 id="flash">&ensp;&ensp;Flash</h5>
+                    <h5 id="activex">&ensp;&ensp;ActiveX</h5>
+                <h4 id="hypertext-markup-language-5-html5-">&ensp;Hypertext Markup Language 5 (HTML5)</h4>
+                <h4 id="asynchronous-javascript-and-xml-ajax-">&ensp;Asynchronous JavaScript and XML (AJAX)</h4>
+                <h4 id="simple-object-access-protocol-soap-">&ensp;Simple Object Access Protocol (SOAP)</h4>
+                <h4 id="machine-code-vs-bytecode-or-interpreted-vs-emulated">&ensp;Machine code vs. bytecode or interpreted vs. emulated</h4>
+            <h3 id="attacks">Attacks</h3>
+                <h4 id="directory-traversal">&ensp;Directory traversal</h4>
+                <h4 id="cross-site-scripting-xss-">&ensp;Cross-site scripting (XSS)</h4>
+                <h4 id="cross-site-request-forgery-csrf-">&ensp;Cross-site request forgery (CSRF)</h4>
+                <h4 id="injection">&ensp;Injection</h4>
+                    <h5 id="xml">&ensp;&ensp;XML</h5>
+                    <h5 id="ldap">&ensp;&ensp;LDAP</h5>
+                    <h5 id="structured-query-language-sql-">&ensp;&ensp;Structured Query Language (SQL)</h5>
+                    <h5 id="command">&ensp;&ensp;Command</h5>
+                    <h5 id="process">&ensp;&ensp;Process</h5>
+                <h4 id="sandbox-escape">&ensp;Sandbox escape</h4>
+                <h4 id="virtual-machine-vm-hopping">&ensp;Virtual machine (VM) hopping</h4>
+                <h4 id="vm-escape">&ensp;VM escape</h4>
+                <h4 id="border-gateway-protocol-bgp-route-hijacking">&ensp;Border Gateway Protocol (BGP)/route hijacking</h4>
+                <h4 id="interception-attacks">&ensp;Interception attacks</h4>
+                <h4 id="denial-of-service-dos-ddos">&ensp;Denial-of-service (DoS)/DDoS</h4>
+                <h4 id="authentication-bypass">&ensp;Authentication bypass</h4>
+                <h4 id="social-engineering">&ensp;Social engineering</h4>
+                <h4 id="vlan-hopping">&ensp;VLAN hopping</h4>
+
+
+
+            
+            </div> 
+
+    </article> <!-- end entry -->
+
+   
+
+</div> <!-- end main -->
+
+           <div id="sidebar" class="s-content__sidebar large-4 column">
+
+
+
+               <div class="widget widget--categories">
+                   <h3 class="h6">Security Operations</h3> 
+                   <ul>
+                    <li><a class="link" href="/casp/securityoperations/2-1.html">2.1 Given a scenario, perform threat management activities.</a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-2.html">2.2 Given a scenario, analyze indicators of compromise and formulate an appropriate response.</a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-3.html">2.3 Given a scenario, perform vulnerability management activities. </a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-4.html">2.4 Given a scenario, use the appropriate vulnerability assessment and penetration testing methods and tools.</a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-5.html">2.5 Given a scenario, analyze vulnerabilities and recommend risk mitigations.</a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-6.html">2.6 Given a scenario, use processes to reduce risk.</a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-7.html">2.7 Given an incident, implement the appropriate response.</a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-8.html">2.8 Explain the importance of forensic concepts. </a></li>
+                    <li><a class="link" href="/casp/securityoperations/2-9.html">2.9 Given a scenario, use forensic analysis tools. </a></li>
+                  </ul>
+                    <h4><a href="/casp/casp.html">CASP+ Home</a></h4>
+                </div>
+               
+           </div> <!-- end sidebar -->
+
+
+       </div> <!-- end row -->
+
+   </div> <!-- end content-wrap -->
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row s-footer__top">
+            <div class="column">
+                <ul class="s-footer__social">
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <!-- <li><a href="#0"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-vimeo-v" aria-hidden="true"></i></a></li> -->
+                    <li><a href="#0"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div> <!-- end footer__top -->
+
+        <div class="row s-footer__bottom">
+
+            <div class="large-6 tab-full column s-footer__info">
+                <h3 class="h6">About BentleySec</h3>
+
+                <p>
+                    This site is a handy resource for me to park my notes on what I'm learning and different projects I'm working on.
+                </p>
+            </div>
+
+            <div class="large-6 tab-full column">
+                <div class="row">
+
+        
+                    <div class="large-4 tab-full column">
+                        <h3  class="h6">Navigate</h3>
+        
+                        <ul class="s-footer__list s-footer-list--nav group">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/projects/projects.html">Projects</a></li>
+                            <li><a href="/blog/blog.html">Blog</a>
+                            <li><a href="/resources/resources.html">Resources</a></li>
+                            <li><a href="/archive.html">Archive</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="large-8 tab-full column">
+
+                        <img src="/images/logo-light.png">
+        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="ss-copyright">
+                <span>© Copyright BentleySec</span> 
+                <span>Design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0l8 9h-6v15h-4v-15h-6z"/></svg>
+            </a>
+        </div> <!-- end ss-go-top -->
+
+    </footer> <!-- end Footer-->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
