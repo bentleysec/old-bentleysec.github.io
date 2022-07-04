@@ -108,18 +108,52 @@
                     <p>A network intrusion prevention system (NIDS) is a system that monitors and prevents threats from occurring on the network. The device, in order to prevent traffic, needs to be placed inline directly behind the firewall.</p>
                     <p>A wireless intrusion prevention system is a device that monitors wifi networks to detect unauthorized access points and automatically takes actions to prevent the threat.</p>
                 <h4>&ensp;Web application firewall (WAF)</h4>
+                    <p>A WAF works on the web application level, which inspects HTTP/HTTPS traffic for anomalies. A WAF can prevent many different types of attacks:
+                        <ul>
+                            <li>SQL Injection</li>
+                            <li>XSS</li>
+                            <li>CSRF</li>
+                            <li>Malicious File Execution</li>
+                            <li>Broken Authentication</li>
+                        </ul>
+                    </p> 
                 <h4>&ensp;Network access control (NAC)</h4>
+                    <p>A NAC checks devices connecting to the network to ensure they are compliant to the security policy. This usually includes making sure the device has anti-virus, is up-to-date on security patches, and a firewall installed and enabled.</p>
                 <h4>&ensp;Virtual private network (VPN)</h4>
+                    <p>A VPN provides a secure, encrypted tunnel across an untrusted network like the internet. A VPN can be used by end-users to connect to enterprise networks or connect sites.</p>
                 <h4>&ensp;Domain Name System Security Extensions (DNSSEC)</h4>
+                    <p>DNSSEC authenticates DNS responses by using digital signatures based on public key cryptography. Without DNSSEC computers are vulnerable to DNS poisoning which is when malicious additions are added to the DNS server cache or client cache.</p>
                 <h4>&ensp;Firewall/unified threat management (UTM)/next-generation firewall (NGFW)</h4>
+                    <p>A UTM appliance offers many security functions including firewall, IDS, IPS, deep packet inspection (DPI), data loss prevention (DLP), anti-virus, WAF, SIEM, etc. </p>
+                    <p>A firewall blocks unwanted traffic from entering the network. A network firewall protects the network and is usually placed at the ingress point in the network. A software firewall usually run on a host operating system to protect endpoints. Virtual firewalls are virtual hosts that run on a hypervisor. A firewall has a rule-set that will allow or deny traffic.</p>
+                    <p>A first generation firewall uses static packet filtering. The rule set is usually based on host IP addresses and ports.</p>
+                    <p>A second generation firewall uses stateful inspection of the traffic. They monitor TCP streams and dynamically open ports.</p>
+                    <p>A next generation firewall offer additional capabilities by implementing VPNs, anti-virus protection, some can even provide DLP and IPS protection.</p>
                 <h4>&ensp;Network address translation (NAT) gateway</h4>
+                    <p>Network Area Translation (NAT) is a technique that provides internet access to private networks without having to assign public IP4 addresses to the private hosts. The gateway provides the route to the internet, and will have a public IP4 address that will be associated to all the private hosts in the private network. Becasue the private network is hidden from the internet, connections cannot be initiated from the outside, they can only be initiated from the inside through the gateway.</p>
                 <h4>&ensp;Internet gateway</h4>
+                    <p>An internet gateway connects two different networks that use different protocols for communication. A very common internet gateway is a router.</p>
                 <h4>&ensp;Forward/transparent proxy</h4>
+                    <p>A forward proxy routes traffic between the client and the server, usually external to the network. The proxy can regulate traffic to enforce security policies such as masking IP addresses, forcing secure protocols, and blocking unknown traffic.</p>
+                    <p>A transparent proxy is able to intercept connections between clients and servers without being visible. Requests on the client will still be formed as if there is not proxy in place.</p>
                 <h4>&ensp;Reverse proxy</h4>
+                    <p>A reverse proxy accepts client requests, forwards them to the server, then returns the results of the server to the client. The reverse proxy acts as a gateway between the clients and servers and can provide security policies to protect the servers.</p>
                 <h4>&ensp;Distributed denial-of-service (DDoS) protection</h4>
+                    <p>One technique that is used to protect against DDoS attacks is called a Black Hole also known as a sinkhole. A rule is automatically triggered when a certain threshold is met that will drop all traffic. Once the attack is identified and the malicious traffic can be blocked the route is put back up in place.</p>
                 <h4>&ensp;Routers</h4>
+                    <p>Routers connect different networks together. Routers contain a routing table that provides route for each network. Routers in dynamic routing setup can use different protocols to find routes in the network.
+                        <ul>
+                            <li>Routing Information Protocol (RIP) is a simple ands easy protocol that is not considered a secure routing protocol.</li>
+                            <li>Enhanced Interior Gateway Routing Protocol (EIGRP) is used in CISCO networks.</li>
+                            <li>Open Shortest Path First (OSPF) allows for routers top communicate securely and transfer data through link-state advertisements (LSA). There is no hop limit on OSPF.</li>
+                            <li>Border Gateway Protocol (BGP) is used between internet service providers and can also be used to send routing updates to enterprises. BGP can be used so that only approved routers can exchange data with each other.</li>
+                        </ul>
+                    </p>
                 <h4>&ensp;Mail security</h4>
+                    <p>An organization should be using a spam filter in order to protect employees from email threats. A spam filter will filter incoming SMTP traffic as well as query Spamhaus block List to verify blocked domain names and IP addresses.</p>
                 <h4>&ensp;Application programming interface (API) gateway/Extensible Markup Language (XML) gateway</h4>
+                    <p>APIs provide a means for two programs to communicate and share data. APIs are sometimes insecure and allow sensitive data to leave the enterprise. Common threats include SQL Injection, denial-of-service, and  broken authentication. Common secure practices are to secure the connection over HTTPS, content security to mitigate injection attacks, and using an API key to use the service.</p>
+                    <p>XMLs </p>
                 <h4>&ensp;Traffic mirroring</h4>
                     <h5>&ensp;&ensp;Switched port analyzer (SPAN) ports</h5>
                     <h5>&ensp;&ensp;Port mirroring</h5>
