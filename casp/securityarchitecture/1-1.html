@@ -101,27 +101,46 @@ title: CASP 1-1
                     <p>A LAN is a network in once physical location. A LAN's single defining characteristic is that it connects devices that are in a single, limited area.</p>
                     <p>A VLAN is a network that exists on the same physical network but acts as if split between separate networks.</p>
                 <h4>&ensp;Jump box</h4>
-                    <p></p>
+                    <p>A jump box allows an administrator to securely connect to a remote environment. In some cases specific tools are needed in the administration of the remote environemnt such as a SCADA system, a jump box will have the specialized tools to manage these systems.</p>
                 <h4>&ensp;Screened subnet</h4>
+                    <p>A screened subnet can also be referred to as a DMZ. A DMZ is a subnet that is firewalled off from the internal network in order to host externally accessible services such as a web application. This protects the internal network from any attacks that may come in from the external network. Only traffic that is needed to support the services hosted in the DMZ are allowed into the internal network.</p>
                 <h4>&ensp;Data zones</h4>
+                    <p>A data zones are a way to store different types of data that have different requirements. More secure data can be stored in a data zone with more rigid requirements. Storing data in different data zones help alleviate the burden of managing policies for all data.</p>
                 <h4>&ensp;Staging environments</h4>
+                    <p>A staging environment is a test environment to test out updates and patches before releasing them into production. If a patch affects a service it is better to test it out in a test environment before releasing it to production.</p>
                 <h4>&ensp;Guest environments</h4>
+                    <p>A guest network allows an organization to provide internet to guests without giving access to internal systems. A guest network is separated from the internal network thus providing a layer of security.</p>
                 <h4>&ensp;VPC/virtual network (VNET)</h4>
+                    <p>Virtual Private Cloud peering or virtual network allows you to connect multiple workloads within a cloud service provider. It allows the traffic to traverse directly between workloads rather than routed to the edge of the network and back in to another VPC.</p>
                 <h4>&ensp;Availability zone</h4>
+                    <p>Availability zones are isolated segments within a region of a cloud service provider.</p>
                 <h4>&ensp;NAC lists</h4>
+                    <p>Network Access Control lists grants network access to certain devices based on specific criteria. The criteria are specified by the policy set up by the NAC solution.</p>
                 <h4>&ensp;Policies/security groups</h4>
+                    <p>Users can be separated into different security groups that have the level of access needed to perform their job function.</p>
                 <h4>&ensp;Regions</h4>
+                    <p>A region is a group of data centers deployed within a proximity connected through a dedicated low latency network.</p>
                 <h4>&ensp;Access control lists (ACLs)</h4>
+                    <p>ACLs act as a white-list to provide access to different resources like network access. Firewall rules can even be considered ACLs.</p>
                 <h4>&ensp;Peer-to-peer</h4>
+                    <p>A peer-to-peer network distributes the computing tasks between the computers connected to the network, each node can act as a server for the other nodes allowing for shared access to resources such as files.</p>
                 <h4>&ensp;Air gap</h4>
+                    <p>A computer that is air gapped is not connected to the internet. This is a segmentation technique for computers that run critical services such as in a nuclear power plant.</p>
             <h3>Deperimeterization/zero trust</h3>
+                <p>Zero trust is a security model that eliminates trust in protected networks. In theory, a zero trust network would be able to be secure in an untrusted network (the Internet).</p>
                 <h4>&ensp;Cloud</h4>
+                    <p>Cloud apps are becoming more and more popular. Because of this, companies are hosting services in a variety of locations and it becomes difficult to implement trusted networks across multiple locations.</p>
                 <h4>&ensp;Remote work</h4>
+                    <p>More and more workers are working remotely from home, which is an untrusted network. Zero trust principles can help protect the company.</p>
                 <h4>&ensp;Mobile</h4>
+                    <p>Mobile phones are used to access services that a company may provide. Mobile phones themselves are usually unmanged by the company and pose a significant risk.</p>
                 <h4>&ensp;Outsourcing and contracting</h4>
+                    <p>Most companies use some form of outsourcing or contractors, which can pose a significant security risk. The target breach was caused by an HVAC contractor having access to trusted networks.</p>
                 <h4>&ensp;Wireless/radio frequency (RF) networks</h4>
+                    <p>Wi-Fi networks should be considered untrusted networks.</p>
             <h3>Merging of networks from various organizations</h3>
                 <h4>&ensp;Peering</h4>
+                    <p>Peering connects workloads within a single cloud provider. The advantage is that traffic is not routed to the edge of the cloud providers network and then back in.</p>
                 <h4>&ensp;Cloud to on premises</h4>
                 <h4>&ensp;Data sensitivity levels</h4>
                 <h4>&ensp;Mergers and acquisitions</h4>
@@ -129,9 +148,13 @@ title: CASP 1-1
                 <h4>&ensp;Federation</h4>
                 <h4>&ensp;Directory services</h4>
             <h3>Software-defined networking (SDN)</h3>
+                    <p>SDN is an approach to move away from vendor specific protocols on networking equipment. By using APIs, dynamic updates can be applied to physical and virtual networking equipment by applications and services.</p>
                 <h4>&ensp;Open SDN</h4>
+                    <p>Open SDN is the open standard that provides the instructions.</p>
                 <h4>&ensp;Hybrid SDN</h4>
+                    <p>As companies move from traditional networking to SDN, they will need to have a hybrid environment using both solutions.</p>
                 <h4>&ensp;SDN overlay</h4>
+                    <p>SDN overlay moves traffic across physical networking infrastructure.</p>
             
             </div> 
 

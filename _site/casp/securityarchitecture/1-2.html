@@ -97,25 +97,43 @@
         
         <div class="entry__content">
             <h3 id="scalability">Scalability</h3>
+                <p>Scalability is a system's ability to adapt to demand.</p>
                 <h4 id="vertically">&ensp;Vertically</h4>
+                    <p>When a system becomes overwhelmed by requests, we can add more compute resources (CPUs, RAM, faster I/O, networking connections) to the system to enable it to handle the demand. This approach may be more volatile.</p>
                 <h4 id="horizontally">&ensp;Horizontally</h4>
+                    <p>When a system becomes overwhelmed by requests, we can add more systems to enable the service to handle the demand.</p>
             <h3 id="resiliency">Resiliency</h3>
                 <h4 id="high-availability">&ensp;High availability</h4>
+                    <p>High availability provides ensures that systems will have limited downtime.</p>
                 <h4 id="diversity-heterogeneity">&ensp;Diversity/heterogeneity</h4>
+                    <p>Relying too heavily on one vendor could impact the security of the environemnt. With the rise of zero-day exploits and supply-chain attacks, one vendor could bring down your environment.</p>
                 <h4 id="course-of-action-orchestration">&ensp;Course of action orchestration</h4>
+                    <p>The creation of automated responses to avoid outages. Having scripts respond to outages or other issues increases reaction time to an incident.</p>
                 <h4 id="distributed-allocation">&ensp;Distributed allocation</h4>
+                    <p>Having distributed systems that share the workload help provide high availability.</p>
                 <h4 id="redundancy">&ensp;Redundancy</h4>
+                    <p>The duplication of systems and data can help with any sort of loss to availability.</p>
                 <h4 id="replication">&ensp;Replication</h4>
+                    <p>Data that is held in the primary instance is copied to a standby instance, this helps support high availability, backups, and disaster recovery.</p>
                 <h4 id="clustering">&ensp;Clustering</h4>
+                    <p>High availability can be provided through clustering the application. Multiple servers host the application and depending on the workload of each server a load balancer assigns requests to servers that have less workload.</p>
             <h3 id="automation">Automation</h3>
                 <h4 id="autoscaling">&ensp;Autoscaling</h4>
+                    <p>When there is a spike in demand additional compute resources can be automatically provisioned to meet the need.</p>
                 <h4 id="security-orchestration-automation-and-response-soar-">&ensp;Security Orchestration, Automation, and Response (SOAR)</h4>
+                    <p>Automated responses that a SOC uses to respond to security events using Runbooks.</p>
                 <h4 id="bootstrapping">&ensp;Bootstrapping</h4>
+                    <p>Creation of configurations for VMs that are automatically provisioned to help meet demand.</p>
             <h3 id="performance">Performance</h3>
+                <p>When designing the security of networks, infrastructure, and procedures performance must be taken into account. Part of the CIA triad is Availability, having low performance due to improperly configuring the infrastructure is a security issue.</p>
             <h3 id="containerization">Containerization</h3>
+                <p>Using containers such as Docker help provide quick and easy provisioning of applications. Ensure that the containers that are being implemented are secure.</p>
             <h3 id="virtualization">Virtualization</h3>
+                <p>Virtualization allows an organization to run virtual equipment on a hypervisor. This allows an organization to run multiple OSes on a single physical server.</p>
             <h3 id="content-delivery-network">Content delivery network</h3>
+                <p>Content delivery networks are dispersed servers that deliver content to end users. This helps speed up delivery of the content and protects against DDOS attackes/</p>
             <h3 id="caching">Caching</h3>
+                <p>Data that is commonly or recently accessed can be stored in high-speed storage like RAM, this speeds the delivery of the content to the end user.</p>
 
             
             </div> 
