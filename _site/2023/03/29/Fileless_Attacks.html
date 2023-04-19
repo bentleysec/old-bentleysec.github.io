@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - OSINT</title>
+    <title>BentleySec - Fileless Attacks</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -90,34 +90,72 @@
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                OSINT
+                Fileless Attacks
             </h2>        
         </header>
         
         <div class="entry__content">
-            <p>Open source intelligence (OSINT) is a field of intelligence collection that involves gathering information from publicly available sources. This can include media outlets, social media, government websites, and other online resources. The goal of OSINT is to provide intelligence agencies, businesses, and other organizations with the information they need to make informed decisions.</p>
+        
+        <h3>Introduction</h3>
 
-            <p>There are several key elements to consider when it comes to open source intelligence. First and foremost, it is important to understand the various types of sources that can be used for OSINT. These sources can be classified into several categories, including:
-            <ol>
-                <li>Traditional media: This includes sources such as newspapers, television, and radio.</li>
-                <li>Digital media: This includes sources such as websites, social media platforms, and online forums.</li>
-                <li>Government sources: This includes sources such as official government websites and documents, as well as information from agencies such as the FBI and CIA.</li>
-                <li>Professional sources: This includes sources such as industry trade publications, academic journals, and professional associations.</li>
-            </ol></p>
-            <p>In order to effectively gather and analyze open source intelligence, it is also important to consider the tools and techniques that are used. Some common tools used in OSINT include:
-            <ol>
-                <li>Web scraping: This involves using software to automatically extract data from websites and other online sources.</li>
-                <li>Data mining: This involves using algorithms and other techniques to identify patterns and trends in large sets of data.</li>
-                <li>Social media monitoring: This involves using tools to track and analyze activity on social media platforms.</li>
-                <li>Geospatial analysis: This involves using geographic information and other data to create maps and other visualizations.</li>
-            </ol></p>
-            <p>One of the key benefits of open source intelligence is that it is relatively inexpensive to gather and analyze, compared to other forms of intelligence collection. It is also relatively easy to access, as much of the information is available online. However, it is important to be aware of the limitations of OSINT. For example, the accuracy of the information gathered may vary, and it is important to verify the sources and ensure that the information is reliable.</p>
+        <p>File-less attacks are a type of malware attack that can evade traditional antivirus and detection tools because they do not rely on a file being written to disk. Instead, file-less attacks operate entirely in memory and use legitimate system tools and processes to carry out their malicious activities. This blog post will cover what file-less attacks are, how they work, and how to defend against them.</p>
 
-            <p>Another key aspect of open source intelligence is the role of human analysts. While many of the tools and techniques used in OSINT are automated, it is still important to have trained analysts who can interpret the data and provide insights and recommendations based on their expertise.</p>
+        <h3>What Are File-less Attacks</h3>
 
-            <p>Open source intelligence is a valuable tool for organizations looking to gather and analyze information from publicly available sources. By understanding the types of sources available and the tools and techniques used to gather and analyze this information, it is possible to make informed decisions based on reliable and accurate data.</p>
+        <p>A file-less attack is a type of attack where malware is executed in memory, without being written to disk. This technique allows attackers to evade traditional antivirus and detection tools that rely on scanning files for malicious code.</p>
 
-             </div> 
+        <p>File-less attacks are also known as non-malware or memory-based attacks, as they use legitimate system tools and processes to carry out their malicious activities. These tools and processes can include PowerShell, WMI, and other native Windows applications.</p>
+
+        <h3>How Do File-less Attacks Work?</h3>
+
+        <p>File-less attacks are executed using several techniques that allow the malware to remain in memory and avoid detection. These techniques include:</p>
+
+        <h5>PowerShell Attacks</h5>
+
+        <p>PowerShell is a command-line interface for Windows that allows users to automate administrative tasks. Attackers can use PowerShell to execute commands that download and execute malware without ever writing a file to disk.</p>
+
+        <h5>Windows Management Instrumentation (WMI) Attacks</h5>
+
+        <p>WMI is a set of tools that allow administrators to manage and monitor Windows systems. Attackers can use WMI to execute commands that download and execute malware without ever writing a file to disk.</p>
+
+        <h5>Living off the Land (LOL) Attacks</h5>
+
+        <p>LOL attacks use legitimate system tools, such as PowerShell and WMI, to carry out malicious activities. These attacks can evade detection because they use tools that are already present on the system and are often whitelisted by security tools.</p>
+
+        <h5>Malicious Macros</h5>
+
+        <p>Malicious macros are embedded in documents, such as Word or Excel files, and can be used to download and execute malware without writing a file to disk.</p>
+
+        <h5>Registry Attacks</h5>
+
+        <p>Registry attacks involve modifying registry keys to execute commands that download and execute malware without ever writing a file to disk.</p>
+
+        <h3>Defending Against File-less Attacks</h3>
+
+        <p>Defending against file-less attacks requires a multi-layered approach that includes:</p>
+
+        <h5>Endpoint Detection and Response (EDR) Solutions</h5>
+
+        <p>EDR solutions can detect file-less attacks by monitoring system activity and behavior for malicious activity. These solutions use machine learning algorithms to identify anomalous behavior and respond to threats in real-time.</p>
+
+        <h5>Network Monitoring</h5>
+
+        <p>Network monitoring tools can detect file-less attacks by monitoring network traffic for anomalous behavior. These tools can identify malicious traffic and block it before it reaches the endpoint.</p>
+
+        <h5>Application Whitelisting</h5>
+
+        <p>Application whitelisting can prevent file-less attacks by only allowing trusted applications to run on the endpoint. This approach can prevent the execution of malicious scripts and tools that are often used in file-less attacks.</p>
+
+        <h5>Regular Patching and Software Updates</h5>
+
+        <p>Regular patching and software updates can prevent file-less attacks by closing vulnerabilities in the operating system and applications. Attackers often use known vulnerabilities to gain access to the system and execute file-less attacks.</p>
+
+        <h3>Conclusion</h3>
+
+        <p>File-less attacks are a growing threat to organizations because they can evade traditional antivirus and detection tools. Defending against file-less attacks requires a multi-layered approach that includes endpoint detection and response solutions, network monitoring, application whitelisting, and regular patching and software updates. By understanding the techniques used in file-less attacks and implementing these defenses, organizations can better protect themselves against this growing threat.</p>
+
+
+        </div> 
 
     </article> <!-- end entry -->
 

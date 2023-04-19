@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - OSINT</title>
+    <title>BentleySec - TLS Connections</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -90,34 +90,51 @@
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                OSINT
+                How TLS Connections are Made
             </h2>        
         </header>
         
         <div class="entry__content">
-            <p>Open source intelligence (OSINT) is a field of intelligence collection that involves gathering information from publicly available sources. This can include media outlets, social media, government websites, and other online resources. The goal of OSINT is to provide intelligence agencies, businesses, and other organizations with the information they need to make informed decisions.</p>
+            <p>An TLS (Secure Socket Layer) connection is a secure way to establish communication between two endpoints over the internet. It is used to encrypt data exchanged between two points, ensuring that the data remains confidential and protected against tampering.</p>
 
-            <p>There are several key elements to consider when it comes to open source intelligence. First and foremost, it is important to understand the various types of sources that can be used for OSINT. These sources can be classified into several categories, including:
-            <ol>
-                <li>Traditional media: This includes sources such as newspapers, television, and radio.</li>
-                <li>Digital media: This includes sources such as websites, social media platforms, and online forums.</li>
-                <li>Government sources: This includes sources such as official government websites and documents, as well as information from agencies such as the FBI and CIA.</li>
-                <li>Professional sources: This includes sources such as industry trade publications, academic journals, and professional associations.</li>
-            </ol></p>
-            <p>In order to effectively gather and analyze open source intelligence, it is also important to consider the tools and techniques that are used. Some common tools used in OSINT include:
-            <ol>
-                <li>Web scraping: This involves using software to automatically extract data from websites and other online sources.</li>
-                <li>Data mining: This involves using algorithms and other techniques to identify patterns and trends in large sets of data.</li>
-                <li>Social media monitoring: This involves using tools to track and analyze activity on social media platforms.</li>
-                <li>Geospatial analysis: This involves using geographic information and other data to create maps and other visualizations.</li>
-            </ol></p>
-            <p>One of the key benefits of open source intelligence is that it is relatively inexpensive to gather and analyze, compared to other forms of intelligence collection. It is also relatively easy to access, as much of the information is available online. However, it is important to be aware of the limitations of OSINT. For example, the accuracy of the information gathered may vary, and it is important to verify the sources and ensure that the information is reliable.</p>
+            <p>In this blog post, we'll discuss the steps involved in establishing an TLS connection and how it works.</p>
+            
+            <h3>What is TLS?</h3>
 
-            <p>Another key aspect of open source intelligence is the role of human analysts. While many of the tools and techniques used in OSINT are automated, it is still important to have trained analysts who can interpret the data and provide insights and recommendations based on their expertise.</p>
+            <p>TLS is a protocol that provides a secure channel for communication over the internet. It is used to secure data transferred between a web server and a web client, such as a web browser. TLS uses a combination of public key encryption and symmetric key encryption to ensure the confidentiality and integrity of the data.</p>
 
-            <p>Open source intelligence is a valuable tool for organizations looking to gather and analyze information from publicly available sources. By understanding the types of sources available and the tools and techniques used to gather and analyze this information, it is possible to make informed decisions based on reliable and accurate data.</p>
+            <h3>How does TLS work?</h3>
 
-             </div> 
+            <p>The TLS protocol works by following a series of steps to establish a secure connection between two endpoints. These steps include:</p>
+            <h5>Step 1: Client Hello</h5>
+
+            <p>The TLS handshake process begins when a client, such as a web browser, sends a Client Hello message to the server it wants to communicate with. The Client Hello message includes information about the client's TLS capabilities, such as the TLS version and cipher suites it supports.</p>
+
+            <h5>Step 2: Server Hello</h5>
+
+            <p>When the server receives the Client Hello message, it responds with a Server Hello message. The Server Hello message includes information about the TLS version and cipher suite that will be used for the connection.</p>
+
+            <h5>Step 3: Certificate Exchange</h5>
+
+            <p>After the Server Hello message, the server sends its TLS certificate to the client. The certificate includes the server's public key, which will be used for key exchange during the TLS session. The certificate also includes information about the certificate authority that issued the certificate.</p>
+
+            <h5>Step 4: Client Key Exchange</h5>
+
+            <p>The client then generates a random session key and encrypts it using the server's public key from the TLS certificate. The client then sends the encrypted session key to the server, which decrypts it using its private key.</p>
+
+            <h5>Step 5: TLS Handshake Complete</h5>
+
+            <p>Once the server receives the encrypted session key from the client, it sends a Server Finished message to the client to signal that the TLS handshake is complete. The client then sends a Client Finished message to the server to confirm that it has received the Server Finished message.</p>
+            
+            <h5>Step 6: Data Transfer</h5>
+
+            <p>Once the TLS handshake is complete, the client and server can begin exchanging data. All data transmitted between the client and server is encrypted using the session key that was exchanged during the TLS handshake.</p>
+
+            <h3>Conclusion</h3>
+
+            <p>Establishing an TLS connection is a critical step in securing communication between two endpoints over the internet. By following a series of steps during the TLS handshake process, the client and server can establish a secure channel for data transfer, ensuring the confidentiality and integrity of the data being exchanged.</p>
+
+        </div> 
 
     </article> <!-- end entry -->
 

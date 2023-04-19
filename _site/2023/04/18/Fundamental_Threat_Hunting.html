@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>BentleySec - OSINT</title>
+    <title>BentleySec - Fundamental Basics of Threat Hunting</title>
     <meta name="description" content="Home Page">
     <meta name="author" content="Steven Bentley">
 
@@ -90,34 +90,40 @@
         <header class="entry__header">
 
             <h2 class="entry__title h1">
-                OSINT
+                Fundamental Basics of Threat Hunting
             </h2>        
         </header>
         
         <div class="entry__content">
-            <p>Open source intelligence (OSINT) is a field of intelligence collection that involves gathering information from publicly available sources. This can include media outlets, social media, government websites, and other online resources. The goal of OSINT is to provide intelligence agencies, businesses, and other organizations with the information they need to make informed decisions.</p>
+            <p>Threat hunting is a proactive approach to cybersecurity that involves actively seeking out and identifying threats that may have evaded traditional security measures. The following are the fundamental aspects of threat hunting:
+            <ul>
+            <li><b>Contextual Understanding</b>: Threat hunting requires a deep understanding of the organization's network and systems, the types of threats that are most likely to target them, and the tactics, techniques, and procedures (TTPs) that attackers commonly use. Without this contextual understanding, it can be difficult to know what to look for when hunting for threats.</li>
 
-            <p>There are several key elements to consider when it comes to open source intelligence. First and foremost, it is important to understand the various types of sources that can be used for OSINT. These sources can be classified into several categories, including:
+            <li><b>Continuous Monitoring</b>: Threat hunting is not a one-time event, but rather a continuous process. Threat hunters must monitor the network and systems on an ongoing basis, looking for signs of unusual activity that may indicate a threat.</li>
+
+            <li><b>Data Collection and Analysis</b>: Threat hunting relies heavily on data collection and analysis. Threat hunters must have access to logs, network traffic, and other sources of data that can help them identify indicators of compromise (IOCs) and potential threats. They must also be able to analyze this data to identify patterns and anomalies that may indicate a threat.</li>
+
+            <li><b>Proactive and Reactive Techniques</b>: Threat hunting involves both proactive and reactive techniques. Proactive techniques involve actively seeking out threats before they can do any harm, while reactive techniques involve responding to threats that have already been identified.</li>
+
+            <li><b>Collaboration</b>: Threat hunting is a collaborative process that involves multiple stakeholders, including security analysts, IT professionals, and business leaders. Collaboration helps ensure that all relevant data is collected and analyzed, and that the right decisions are made to protect the organization from threats.</li>
+            </ul>
+            </p>
+
+            <p>Threat hunting is a crucial part of a comprehensive cybersecurity strategy, as it helps organizations identify and mitigate threats that may have otherwise gone undetected.</p>
+
+            <h3>Carrying out a Threat Hunt</h3>
+            <p>In a threat hunt, potential threats can be found by following a structured process that includes the following steps:
             <ol>
-                <li>Traditional media: This includes sources such as newspapers, television, and radio.</li>
-                <li>Digital media: This includes sources such as websites, social media platforms, and online forums.</li>
-                <li>Government sources: This includes sources such as official government websites and documents, as well as information from agencies such as the FBI and CIA.</li>
-                <li>Professional sources: This includes sources such as industry trade publications, academic journals, and professional associations.</li>
-            </ol></p>
-            <p>In order to effectively gather and analyze open source intelligence, it is also important to consider the tools and techniques that are used. Some common tools used in OSINT include:
-            <ol>
-                <li>Web scraping: This involves using software to automatically extract data from websites and other online sources.</li>
-                <li>Data mining: This involves using algorithms and other techniques to identify patterns and trends in large sets of data.</li>
-                <li>Social media monitoring: This involves using tools to track and analyze activity on social media platforms.</li>
-                <li>Geospatial analysis: This involves using geographic information and other data to create maps and other visualizations.</li>
-            </ol></p>
-            <p>One of the key benefits of open source intelligence is that it is relatively inexpensive to gather and analyze, compared to other forms of intelligence collection. It is also relatively easy to access, as much of the information is available online. However, it is important to be aware of the limitations of OSINT. For example, the accuracy of the information gathered may vary, and it is important to verify the sources and ensure that the information is reliable.</p>
-
-            <p>Another key aspect of open source intelligence is the role of human analysts. While many of the tools and techniques used in OSINT are automated, it is still important to have trained analysts who can interpret the data and provide insights and recommendations based on their expertise.</p>
-
-            <p>Open source intelligence is a valuable tool for organizations looking to gather and analyze information from publicly available sources. By understanding the types of sources available and the tools and techniques used to gather and analyze this information, it is possible to make informed decisions based on reliable and accurate data.</p>
-
-             </div> 
+                <li>Define scope: Define the scope of the threat hunt, including the assets and data to be monitored.</li>
+                <li>Develop hypotheses: Develop hypotheses about potential threats and attacks that may have evaded existing security controls.</li>
+                <li>Collect and analyze data: Collect and analyze relevant data from different sources, including logs, network traffic, and endpoints.</li>
+                <li>Identify anomalies: Look for anomalies in the data that may indicate a potential threat, such as unusual network traffic patterns, unexpected process behavior, or abnormal user activity.</li>
+                <li>Investigate: Investigate the anomalies to determine whether they are legitimate threats or false positives. This may involve looking at additional data sources or conducting interviews with system administrators or users.</li>
+                <li>Confirm or deny: Confirm or deny the presence of a threat based on the investigation. If a threat is confirmed, take appropriate actions to contain and mitigate the threat.</li>
+                <li>Document: Document the findings and lessons learned from the threat hunt to improve future hunts and overall security posture.</li>
+            </ol>
+            </p>
+        </div> 
 
     </article> <!-- end entry -->
 
