@@ -64,7 +64,6 @@ title: Identifying Anomalies
 
             <li>Gephi: Gephi is an open-source data visualization tool that specializes in visualizing large networks and graphs. It provides interactive visualizations that allow users to explore and identify patterns in the data.</li>
             </ol></p>
-
             
         </div> 
 
