@@ -29,7 +29,7 @@ title: Automation in Security
                 <li>Improved scalability: Automation can help security teams to scale their operations more easily by automating tasks that are difficult or impossible to perform manually at scale. This can help to improve the overall effectiveness of security operations and reduce costs.</li>
             </ul>
 
-            <h5>Implementing Automation in Security Operations<h5>
+            <h5>Implementing Automation in Security Operations</h5>
             <p>Implementing automation in security operations requires careful planning and execution. Here are some best practices to follow when implementing automation in your security operations:</p>
             <ul>
                 <li>Identify the tasks to automate: The first step in implementing automation is to identify the tasks that are most suitable for automation. This might include tasks such as vulnerability scanning, log analysis, incident response, and compliance reporting.</li>
