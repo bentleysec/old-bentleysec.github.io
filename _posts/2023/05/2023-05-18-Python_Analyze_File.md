@@ -50,6 +50,40 @@ title: Using Python to Analyze Files For Malware
 
             <h5>Conclusion</h5>
             <p>Python provides a versatile and effective platform for analyzing files for malware. By leveraging various libraries and modules, you can extract metadata, perform static and dynamic analysis, analyze file content, use YARA rules, and generate detailed reports. This enables you to identify and mitigate potential malware threats effectively. Remember to always exercise caution and ensure you are working in a secure and controlled environment when analyzing potentially malicious files.</p>
+
+            <h5>Example</h5>
+            <p>This script will look at a PDF to extract suspicious URLs</p>
+            <code>
+            import re
+            from PyPDF2 import PdfFileReader
+
+            def analyze_pdf_for_suspicious_urls(file_path):
+                # Load the PDF file
+                with open(file_path, 'rb') as file:
+                    pdf = PdfFileReader(file)
+
+                    # Extract text from each page
+                    num_pages = pdf.getNumPages()
+                    for page_num in range(num_pages):
+                        page = pdf.getPage(page_num)
+                        text = page.extractText()
+
+                        # Search for URLs using regular expressions
+                        urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
+                        if urls:
+                            print(f"Page {page_num + 1}:")
+                            for url in urls:
+                                print(url)
+                            print("=" * 50)
+
+            # Usage: Provide the path to the PDF file you want to analyze
+            pdf_file_path = "path/to/your/file.pdf"
+            analyze_pdf_for_suspicious_urls(pdf_file_path)
+            </code>
+
+            <p>In this script, we use the PyPDF2 library to extract text from each page of the PDF file. Then, we search for URLs within the extracted text using a regular expression pattern. URLs matching the pattern are considered suspicious and printed as output.</p>
+
+            <p>Keep in mind that this script focuses on extracting URLs from the text content of the PDF file. It's important to consider additional analysis techniques and indicators of suspicious URLs to perform a thorough analysis.</p>
         </div> 
 
     </article> <!-- end entry -->
