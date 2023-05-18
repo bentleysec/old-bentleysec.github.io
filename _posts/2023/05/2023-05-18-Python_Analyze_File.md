@@ -53,7 +53,7 @@ title: Using Python to Analyze Files For Malware
 
             <h5>Example</h5>
             <p>This script will look at a PDF to extract suspicious URLs</p>
-            <pre><code>
+            <pre>
 import re
 from PyPDF2 import PdfFileReader
 
@@ -79,7 +79,7 @@ def analyze_pdf_for_suspicious_urls(file_path):
 # Usage: Provide the path to the PDF file you want to analyze
 pdf_file_path = "path/to/your/file.pdf"
 analyze_pdf_for_suspicious_urls(pdf_file_path)
-            </code></pre>
+            </pre>
 
             <p>In this script, we use the PyPDF2 library to extract text from each page of the PDF file. Then, we search for URLs within the extracted text using a regular expression pattern. URLs matching the pattern are considered suspicious and printed as output.</p>
 
