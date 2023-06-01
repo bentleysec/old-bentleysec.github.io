@@ -32,13 +32,19 @@ title: Comprehend Cloud Infrastructure Components
             <h3>Compute</h3>
             <p>Compute resources are componenets that provide VMs, disk, processor, memory, and network resources, which are all under the responsibility of the CSP. All physical components are the responsibility of the CSP, all the data and users are the responsibility are the responsibility of the customer. The software that runs on the hardware and is used by the customer falls under the responsibility of both the CSP and the customer depending on the service model.
                 <ul>
-                    <li>IaaS: When then CSP provides software such as virtualization and OS, they are responsible. If the software is configurable, the customer is responsible for the configurations. All other software is the responsibility of the customer.</li>
-                    <li>PaaS: The CSP is responsible for all the services they provide, the customer is responsible for the configurations they change, all data and users, and any additional software or applications that they install on the platform.</li>
-                    <li>SaaS: The CSP is responsible for all compute resources, the customer is responsible for the customization of the services provided, data, and users.</li>
+                    <li><b>IaaS</b>: When then CSP provides software such as virtualization and OS, they are responsible. If the software is configurable, the customer is responsible for the configurations. All other software is the responsibility of the customer.</li>
+                    <li><b>PaaS</b>: The CSP is responsible for all the services they provide, the customer is responsible for the configurations they change, all data and users, and any additional software or applications that they install on the platform.</li>
+                    <li><b>SaaS</b>: The CSP is responsible for all compute resources, the customer is responsible for the customization of the services provided, data, and users.</li>
                 </ul>
             </p>
 
             <h3>Virtualization</h3>
+            <p>There are two types of hypervisors that provide virtualization, Type-1 hypervisor (bare-metal) and Type-2 hypervisor (hosted). Type-1 being the most prevalent.
+                <ul>
+                    <li><b>Type-1</b>: the hypervisor is installed on the physical server and its hardware. It is not installed as part of an OS, but rather provides the OS functionality. Management of the VMs is performed through a console that is not part of the hypervisor.</li>
+                    <li><b>Type-2</b>: the hypervisor is software that is installed on top of the OS (Windows, macOS, or Linux). The VMs are usually managed on the server itself.</li>
+                </ul>
+            </p>
 
             <h3>Storage</h3>
 
