@@ -45,10 +45,14 @@ title: Comprehend Cloud Infrastructure Components
                     <li><b>Type-2</b>: the hypervisor is software that is installed on top of the OS (Windows, macOS, or Linux). The VMs are usually managed on the server itself.</li>
                 </ul>
             </p>
+            <p>The security of the hypervisor is essential. The CSP is responsible for the hypervisor itself. Depending on the hosting model, the security of the networking and VM may fall under the tennant or the CSP.</p>
+            <p>The virtual network uses software defined switches, routers, and firewalls. Keeping VMs isolated reduces the possibilty of attackers moving from one network to the other. Security tools meant for physical networks may not work in a virtual environment, make sure to use tools designed for virtual networks.</p>
 
             <h3>Storage</h3>
+            <p>The security for storage is shared between the customer and the CSP. The CSP is responsible for the physical security of the data centers and the security patches. The customer is responsible for the security and privacy of the information that is being stored. One of the best ways to protect the data stored is using encryption at rest and using crypto shredding when the data is no longer needed.</p>
 
             <h3>Management Plane</h3>
+            <p>The management plane is the tools used to configure, monitorm and control the cloud environment. This is usually in the form of web interfaces and apis. There are other planes as well such as the control and data planes. The management plane has control of the cloud environment. Access to the management plane should be monitored and controlled using role-based access control. Root and admin accounts are usually the only accounts with access to the management plane.</p>
 
         </div>
     </article>
