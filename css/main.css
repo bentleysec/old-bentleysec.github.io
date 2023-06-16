@@ -2614,3 +2614,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         border-left: none;
     }
 }
+
+
+#bottom_nav {
+    float: right;
+}
