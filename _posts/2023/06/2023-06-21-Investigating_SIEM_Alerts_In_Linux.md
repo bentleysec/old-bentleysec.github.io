@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Investigating SIEM Alerts on Linux Hosts: Unveiling the Truth in Log Files
+title: Investigating SIEM Alerts on Linux Hosts Unveiling the Truth in Log Files
 ---
 
 
