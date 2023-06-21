@@ -32,7 +32,7 @@ title: Investigating SIEM Alerts on Linux Hosts Unveiling the Truth in Log Files
             <p>To focus your investigation, identify the timeframe during which the SIEM alert was triggered. By narrowing down the logs to this specific period, you can eliminate noise and concentrate on the events directly related to the incident.</p>
             <h4>Searching for Relevant Events:</h4>
             <p>Using tools like "grep" or log analysis platforms, search for events that align with the SIEM alert's description. Look for entries related to the specific event, such as failed SSH login attempts, in the respective log files. Pay attention to timestamps, source IP addresses, usernames, and any other pertinent details.</p>
-            <p>n our scenario, we navigate to the "/var/log/auth.log" file and search for entries related to SSH authentication failures within the specified timeframe. By running the command:
+            <p>In our scenario, we navigate to the "/var/log/auth.log" file and search for entries related to SSH authentication failures within the specified timeframe. By running the command:
 <pre>
 grep 'sshd.*Failed' /var/log/auth.log
 </pre>
