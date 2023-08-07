@@ -52,7 +52,7 @@ title: Harnessing the Power of Threat Intelligence Platforms A Technical Guide t
 
         <h3>Building an Effective Threat Intelligence Strategy:</h3>
         <ul>
-            </li><strong>Define Objectives</strong>: Identify the specific threats and vulnerabilities most relevant to your organization's assets and industry.</li>
+            <li><strong>Define Objectives</strong>: Identify the specific threats and vulnerabilities most relevant to your organization's assets and industry.</li>
             <li><strong>Data Collection and Enrichment</strong>: Choose the right mix of open-source and commercial feeds to gather relevant and timely intelligence.</li>
             <li><strong>Integration with Security Infrastructure</strong>: Integrate your TIP with SIEMs, firewalls, and other security tools for automated incident response.</li>
             <li><strong>Contextual Analysis</strong>: Leverage threat intelligence analysts to contextualize data and produce actionable insights.</li>
