@@ -33,7 +33,7 @@ title: Harnessing the Power of Threat Intelligence Platforms A Technical Guide t
         <ul>
             <li><strong>Strategic Intelligence</strong>: Focuses on long-term trends, threat actors' motivations, and geopolitical factors affecting cybersecurity.</li>
             <li><strong>Operational Intelligence</strong>: Provides real-time information on active threats and indicators of ongoing attacks.</li>
-            <li><strong>Tactical Intelligence</strong>: Details technical indicators, tactics, techniques, and procedures (TTPs) employed by threat actors.
+            <li><strong>Tactical Intelligence</strong>: Details technical indicators, tactics, techniques, and procedures (TTPs) employed by threat actors.</li>
         </ul>
 
         <h3>Open-Source Threat Intelligence Feeds:</h3>
