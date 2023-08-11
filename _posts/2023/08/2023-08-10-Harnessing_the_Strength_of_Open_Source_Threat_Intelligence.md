@@ -16,7 +16,7 @@ title: Harnessing the Strength of Open Source Threat Intelligence
 
         <div class="entry__content">
         <h3>Introduction:</h3>
-        <p>In a digital landscape where cyber threats continually evolve, OSINT emerges as a crucial ally for defenders. In this blog post, we will delve into the technical intricacies of OSINT, its importance in keeping up with the latest cybersecurity challenges, and a hands-on guide on how to effectively utilize OSINT sources.<p>
+        <p>In a digital landscape where cyber threats continually evolve, OSINT emerges as a crucial ally for defenders. In this blog post, we will delve into the technical intricacies of OSINT, its importance in keeping up with the latest cybersecurity challenges, and a hands-on guide on how to effectively utilize OSINT sources.</p>
 
         <h3>Unveiling the Power of Open Source Threat Intelligence:</h3>
 
