@@ -16,7 +16,7 @@ title: Threat Intelligence Feeds
         
         <div class="entry__content">
         <h3>Introduction</h3>
-        <p>In the relentless battle against cyber threats, information is power. Threat intelligence feeds stand as sentinels, offering a continuous stream of data about potential risks and vulnerabilities. In this blog post, we’ll delve into the realm of threat intelligence feeds, understanding what they are, how to use them effectively, and integrating them seamlessly into your cybersecurity workflow.</p>\
+        <p>In the relentless battle against cyber threats, information is power. Threat intelligence feeds stand as sentinels, offering a continuous stream of data about potential risks and vulnerabilities. In this blog post, we’ll delve into the realm of threat intelligence feeds, understanding what they are, how to use them effectively, and integrating them seamlessly into your cybersecurity workflow.</p>
 
         <h3>Understanding Threat Intelligence Feeds:</h3>
         
