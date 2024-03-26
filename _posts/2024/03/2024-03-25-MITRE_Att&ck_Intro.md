@@ -25,7 +25,7 @@ title: Most Common MITRE Att&ck Techniques
 <ol>
     <li>Initial Access:</li>
     <ol>
-        <li>Phishing (T1566)</li>
+        <li><a href="2024-03-26-Phishing.md">Phishing</a> (<a href="https://attack.mitre.org/techniques/T1566/">T1566</a>)</li>
         <li>Exploiting Public-Facing Applications (T1190)</li>
         <li>Trusted Relationship (T1199)</li>
     </ol>
