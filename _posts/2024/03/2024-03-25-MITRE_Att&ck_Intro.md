@@ -27,7 +27,7 @@ title: Most Common MITRE Att&ck Techniques
     <ol>
         <li><a href="2024-03-26-Phishing.md">Phishing</a> (<a href="https://attack.mitre.org/techniques/T1566/">T1566</a>)</li>
         <li><a href="2024-03-27-Exploiting_Public-Facing_Apps.md">Exploiting Public-Facing Applications</a> (<a href="https://attack.mitre.org/techniques/T1190/">T1190</a>)</li>
-        <li>Trusted Relationship (T1199)</li>
+        <li><a href="2024-03-28-Trusted_Relationship.md">Trusted Relationship</a> (<a href="https://attack.mitre.org/techniques/T1199/">T1199</a>)</li>
     </ol>
     <li>Execution:</li>
     <ol>
