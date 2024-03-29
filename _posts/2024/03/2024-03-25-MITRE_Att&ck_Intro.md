@@ -26,12 +26,12 @@ title: Most Common MITRE Att&ck Techniques
     <li>Initial Access:</li>
     <ol>
         <li><a href="../26/Phishing.html">Phishing</a> (<a href="https://attack.mitre.org/techniques/T1566/">T1566</a>)</li>
-        <li><a href="../03/2024-03-27-Exploiting_Public-Facing_Apps.md">Exploiting Public-Facing Applications</a> (<a href="https://attack.mitre.org/techniques/T1190/">T1190</a>)</li>
-        <li><a href="../03/2024-03-28-Trusted_Relationship.md">Trusted Relationship</a> (<a href="https://attack.mitre.org/techniques/T1199/">T1199</a>)</li>
+        <li><a href="../27/Exploiting_Public-Facing_Apps.html">Exploiting Public-Facing Applications</a> (<a href="https://attack.mitre.org/techniques/T1190/">T1190</a>)</li>
+        <li><a href="../28/Trusted_Relationship.html">Trusted Relationship</a> (<a href="https://attack.mitre.org/techniques/T1199/">T1199</a>)</li>
     </ol>
     <li>Execution:</li>
     <ol>
-        <li><a href="../03/2024-03-29-PowerShell.md">PowerShell</a> (<a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>)</li>
+        <li><a href="../29/PowerShell.html">PowerShell</a> (<a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>)</li>
         <li>Windows Command Shell (T1059.003)</li>
         <li>Script Interpreter (T1059)</li>
     </ol>
