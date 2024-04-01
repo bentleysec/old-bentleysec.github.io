@@ -32,7 +32,7 @@ title: Most Common MITRE Att&ck Techniques
     <li>Execution:</li>
     <ol>
         <li><a href="../29/PowerShell.html">PowerShell</a> (<a href="https://attack.mitre.org/techniques/T1059/001/">T1059.001</a>)</li>
-        <li>Windows Command Shell (T1059.003)</li>
+        <li><a href="../../04/01/Windows_Command_Shell.html">Windows Command Shell</a> (<a href="https://attack.mitre.org/techniques/T1059/003/">T1059.003</a>)</li>
         <li>Script Interpreter (T1059)</li>
     </ol>
     <li>Persistence:</li>
