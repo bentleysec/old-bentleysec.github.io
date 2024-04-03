@@ -56,6 +56,8 @@ title: PowerShell
 </ol></p>
 <p>By understanding how attackers abuse PowerShell and implementing appropriate mitigation and detection measures, organizations can better protect themselves against PowerShell-based attacks and maintain a more secure environment.</p>
 
+<p><a href="../25/MITRE_Att&ck_Intro.html">Most Common MITRE Att&ck Techniques</a></p>
+
 </div>
 </article> <!-- end entry -->
 

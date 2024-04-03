@@ -18,7 +18,7 @@ title: Command and Scripting Interpreters
 
 <p>As cyber defenders, we need to understand the techniques attackers use to compromise systems. One very common and powerful technique is abusing command and scripting interpreters. Let's break this down.</p>
 
-<h4>>What are Command and Scripting Interpreters?</h4>
+<h4>What are Command and Scripting Interpreters?</h4>
 
 <p>These are programs that allow you to execute instructions/commands on an operating system. Some examples:
 <ul>
@@ -65,6 +65,8 @@ title: Command and Scripting Interpreters
 <p>The flexibility of interpreters is why attackers rely on them so heavily. By understanding this technique, defenders can take steps to shut down this attack vector.</p>
 
 <p>Let me know if you need any clarification or have additional suggestions for this blog post draft!</p>
+
+<p><a href="../../03/25/MITRE_Att&ck_Intro.html">Most Common MITRE Att&ck Techniques</a></p>
 
 </div>
 </article> <!-- end entry -->

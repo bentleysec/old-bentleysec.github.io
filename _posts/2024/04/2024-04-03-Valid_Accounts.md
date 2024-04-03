@@ -18,7 +18,7 @@ title: Valid Accounts
 
 <p>As cyber defenders, we have to watch for attackers leveraging legitimate tools and permissions in devious ways. One sneaky technique hackers rely on is called "Valid Accounts" - let's dive into what this is.</p>
 
-<h4>>What Are Valid Accounts?</h4>
+<h4>What Are Valid Accounts?</h4>
 
 <p>Valid accounts refer to user accounts that are meant for actual employees, contractors, or system processes. These accounts have approved permissions to access resources on a network or system.</p>
 
@@ -59,6 +59,8 @@ title: Valid Accounts
 <p>Valid accounts provide attackers with cover and increased access - which is why this technique is so dangerous. Adopting a least privilege model and vigilant monitoring is critical.</p>
 
 <p>Let me know if any part of this needs clarification or expansion when it comes to explaining the Valid Accounts technique!</p>
+
+<p><a href="../../03/25/MITRE_Att&ck_Intro.html">Most Common MITRE Att&ck Techniques</a></p>
 
 </div>
 </article> <!-- end entry -->

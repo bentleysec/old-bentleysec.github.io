@@ -57,6 +57,8 @@ title: Trusted Relationships
 
 <p>Remember, trust should never be taken for granted in cybersecurity. Maintaining vigilance, implementing defense-in-depth strategies, and fostering a culture of security awareness are essential for protecting your organization against the exploitation of trusted relationships.</p>
 
+<p><a href="../25/MITRE_Att&ck_Intro.html">Most Common MITRE Att&ck Techniques</a></p>
+
 </div>
 </article> <!-- end entry -->
 

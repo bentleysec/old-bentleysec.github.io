@@ -44,6 +44,8 @@ title: Windows Command Shell
 </ul></p>
 <p>Defenders can leverage Sysmon, PowerShell logging, and other security tools to capture and alert on suspicious command shell activities.</p>
 
+<p><a href="../../03/25/MITRE_Att&ck_Intro.html">Most Common MITRE Att&ck Techniques</a></p>
+
 </div>
 </article> <!-- end entry -->
 
