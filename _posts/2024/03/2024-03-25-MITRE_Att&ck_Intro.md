@@ -37,7 +37,7 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Persistence:</li>
     <ol>
-        <li>Valid Accounts (T1078)</li>
+        <li><a href="../../04/03/Valid_Accounts.html">Valid Accounts</a> (<a href="https://attack.mitre.org/techniques/T1078/">T1078</a>)</li>
         <li>Server Software Component (T1505)</li>
         <li>Scheduled Task/Job (T1053)</li>
     </ol>
