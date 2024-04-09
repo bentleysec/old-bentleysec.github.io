@@ -38,7 +38,7 @@ title: Most Common MITRE Att&ck Techniques
     <li>Persistence:</li>
     <ol>
         <li><a href="../../04/03/Valid_Accounts.html">Valid Accounts</a> (<a href="https://attack.mitre.org/techniques/T1078/">T1078</a>)</li>
-        <li>Server Software Component (T1505)</li>
+        <li><a href="../../04/09/Server_Software_Component.html">Server Software Component</a> (<a href="https://attack.mitre.org/techniques/T1505/">T1505</a>)</li>
         <li>Scheduled Task/Job (T1053)</li>
     </ol>
     <li>Privilege Escalation:</li>
