@@ -39,7 +39,7 @@ title: Most Common MITRE Att&ck Techniques
     <ol>
         <li><a href="../../04/03/Valid_Accounts.html">Valid Accounts</a> (<a href="https://attack.mitre.org/techniques/T1078/">T1078</a>)</li>
         <li><a href="../../04/09/Server_Software_Component.html">Server Software Component</a> (<a href="https://attack.mitre.org/techniques/T1505/">T1505</a>)</li>
-        <li>Scheduled Task/Job (<a href="https://attack.mitre.org/techniques/T1053/">T1053</a>)</li>
+        <li><a href="../../04/10/Scheduled_taks_Job.html">Scheduled Task/Job</a> (<a href="https://attack.mitre.org/techniques/T1053/">T1053</a>)</li>
     </ol>
     <li>Privilege Escalation:</li>
     <ol>

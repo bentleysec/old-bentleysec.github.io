@@ -18,7 +18,7 @@ title: Server Software Component
 
 <p>In the ever-evolving landscape of cybersecurity threats, it's crucial for organizations to stay informed about the latest attack techniques and strategies employed by malicious actors. One such technique highlighted by MITRE ATT&CK is the Server Software Component attack. In this blog post, we'll delve into what this technique entails, provide examples, discuss mitigation strategies, and explore detection methods.</p>
 
-<h4>What is the Server Software Component Attack?**
+<h4>What is the Server Software Component Attack?</h4>
 
 <p>The Server Software Component attack falls under the MITRE ATT&CK framework, which provides a comprehensive matrix of techniques used by adversaries during cyber intrusions. This particular technique involves exploiting vulnerabilities within server software components to gain unauthorized access, escalate privileges, or achieve other malicious objectives.</p>
 
