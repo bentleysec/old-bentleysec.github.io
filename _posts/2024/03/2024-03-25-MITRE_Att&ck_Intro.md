@@ -43,7 +43,7 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Privilege Escalation:</li>
     <ol>
-        <li>Exploitation for Privilege Escalation (T1068)</li>
+        <li>Exploitation for Privilege Escalation (<a href="https://attack.mitre.org/techniques/T1068/">T1068</a>)</li>
         <li>Process Injection (T1055)</li>
         <li>Bypass User Account Control (T1548)</li>
     </ol>

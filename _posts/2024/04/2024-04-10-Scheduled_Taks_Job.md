@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Sceduled Task/Job
+title: Scheduled Task/Job
 ---
 
 
