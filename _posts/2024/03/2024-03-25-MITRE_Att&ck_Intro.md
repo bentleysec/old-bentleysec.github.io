@@ -45,7 +45,7 @@ title: Most Common MITRE Att&ck Techniques
     <ol>
         <li><a href="../../04/11/Exploitation_for_Privilege_Escalation.html">Exploitation for Privilege Escalation</a> (<a href="https://attack.mitre.org/techniques/T1068/">T1068</a>)</li>
         <li><a href="../../04/15/Process_Injection.html">Process Injection</a> (<a href="https://attack.mitre.org/techniques/T1055/">T1055</a>)</li>
-        <li>Bypass User Account Control (T1548)</li>
+        <li><a href="../../04/16/Bypass_User_Account_Control.html">Bypass User Account Control</a> (<a href="https://attack.mitre.org/techniques/T1548/">T1548</a>)</li>
     </ol>
     <li>Defense Evasion:</li>
     <ol>
