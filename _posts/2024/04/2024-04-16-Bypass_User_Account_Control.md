@@ -18,7 +18,7 @@ title: Bypass User Account Control
 
 <p>In the ever-evolving landscape of cybersecurity threats, understanding the techniques employed by adversaries is paramount for effective defense. One such technique highlighted by the MITRE ATT&CK framework is Bypass User Account Control. In this blog post, we'll explore what Bypass User Account Control entails, provide real-world examples, discuss mitigation strategies, and examine detection methods.</p>
 
-<h4>Understanding Bypass User Account Control<h5>
+<h4>Understanding Bypass User Account Control</h4>
 
 <p>User Account Control (UAC) is a security feature in Windows that helps prevent unauthorized changes to the system by requiring administrative approval for certain actions. Bypassing User Account Control involves techniques used by adversaries to elevate privileges or bypass UAC prompts, thereby gaining elevated permissions and executing malicious actions with increased privileges.</p>
 
