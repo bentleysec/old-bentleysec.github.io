@@ -49,7 +49,7 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Defense Evasion:</li>
     <ol>
-        <li>Masquerading (T1036)</li>
+        <li><a href="../../04/17/Masquerading.html">Masquerading</a> (<a href="https://attack.mitre.org/techniques/T1036/">T1036</a>)</li>
         <li>Obfuscated Files or Information (T1027)</li>
         <li>Disabling Security Tools (T1089)</li>
     </ol>
