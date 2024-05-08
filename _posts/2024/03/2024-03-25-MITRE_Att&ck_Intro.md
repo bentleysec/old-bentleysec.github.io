@@ -51,7 +51,7 @@ title: Most Common MITRE Att&ck Techniques
     <ol>
         <li><a href="../../04/17/Masquerading.html">Masquerading</a> (<a href="https://attack.mitre.org/techniques/T1036/">T1036</a>)</li>
         <li><a href="../../04/18/Obfuscated_Files_or_Information.html">Obfuscated Files or Information</a> (<a href="https://attack.mitre.org/techniques/T1027/">T1027</a>)</li>
-        <li>Disabling Security Tools (T1089)</li>
+        <li><a href="../../05/08/Disabling_Security_Tools.html">Disabling Security Tools</a> (<a href="https://attack.mitre.org/techniques/T1562/001/">T1089</a>)</li>
     </ol>
     <li>Credential Access:</li>
     <ol>
