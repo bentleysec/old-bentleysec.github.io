@@ -41,7 +41,7 @@ Real-World Examples
 </ul>
 </p>
 <p>
-Detecting Security Tool Tampering While disabling security tools aims to evade detection, there are still ways to identify such activity:
+<strong>Detecting Security Tool Tampering</strong> - While disabling security tools aims to evade detection, there are still ways to identify such activity:
 <ol>
 <li>Monitor process creation and termination events for signs of security software being killed.</li>
 <li>Watch for unauthorized modifications to configuration files, registry keys, or scheduled tasks related to security tools.</li>
@@ -50,7 +50,7 @@ Detecting Security Tool Tampering While disabling security tools aims to evade d
 </ol>
 </p>
 <p>
-Mitigating the Threat To mitigate the risk of security tools being disabled, organizations should consider the following measures:
+<strong>Mitigating the Threat</strong> - To mitigate the risk of security tools being disabled, organizations should consider the following measures:
 <ol>
 <li>Deploy security solutions with tamper protection, self-healing capabilities, and robust update mechanisms.</li>
 <li>Implement application whitelisting and strict execution policies to prevent unauthorized modification or termination of security processes.</li>
