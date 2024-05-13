@@ -55,7 +55,7 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Credential Access:</li>
     <ol>
-        <li>OS Credential Dumping (T1003)</li>
+        <li><a href="../../05/13/OS_Credential_Dumping.html">OS Credential Dumping</a> (<a href="https://attack.mitre.org/techniques/T1003/">T1003</a>)</li>
         <li>Brute Force (T1110)</li>
         <li>Unsecured Credentials (T1552)</li>
     </ol>
