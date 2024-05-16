@@ -18,7 +18,7 @@ title: OS Credential Dumping
 
 <p>As cybersecurity defenders, we are constantly on the lookout for the latest tactics and techniques employed by adversaries to gain unauthorized access to our systems. One particularly concerning method, tracked as T1003 in the Mitre ATT&CK framework, is OS Credential Dumping – a stealthy approach that allows attackers to extract sensitive credential data directly from operating system memory.
 
-<p><strong>What is OS Credential Dumping? OS Credential Dumping involves leveraging tools or utilities to extract login credentials, password hashes, Kerberos tickets, and other authentication material from the operating system's memory or processes. These credentials are often stored in plaintext or reversible formats, making them highly valuable for lateral movement and privilege escalation within a compromised network.</p>
+<p>What is OS Credential Dumping? OS Credential Dumping involves leveraging tools or utilities to extract login credentials, password hashes, Kerberos tickets, and other authentication material from the operating system's memory or processes. These credentials are often stored in plaintext or reversible formats, making them highly valuable for lateral movement and privilege escalation within a compromised network.</p>
 
 <p><strong>How Adversaries Leverage It</strong> Here are some common ways threat actors use OS Credential Dumping for nefarious purposes:
 <ol>
