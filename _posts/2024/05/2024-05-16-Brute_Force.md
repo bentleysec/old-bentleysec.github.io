@@ -16,7 +16,7 @@ title: Brute Force
 
 <div class="entry__content">
 
-<p>In the realm of cybersecurity, <a href="https://attack.mitre.org/techniques/T1110/"">Brute Force</a> attacks stand as a relentless force, exploiting weaknesses in authentication mechanisms with sheer persistence. Characterized by their methodical trial-and-error approach, these attacks pose a significant threat to the integrity of systems, applications, and data. Join us as we delve into the world of Brute Force, exploring its techniques, real-world implications, detection methods, and mitigation strategies to fortify our digital defenses against this formidable adversary tactic.</p>
+<p>In the realm of cybersecurity, <a href="https://attack.mitre.org/techniques/T1110/">Brute Force</a> attacks stand as a relentless force, exploiting weaknesses in authentication mechanisms with sheer persistence. Characterized by their methodical trial-and-error approach, these attacks pose a significant threat to the integrity of systems, applications, and data. Join us as we delve into the world of Brute Force, exploring its techniques, real-world implications, detection methods, and mitigation strategies to fortify our digital defenses against this formidable adversary tactic.</p>
 
 <h5>Understanding Brute Force</h5>
 
