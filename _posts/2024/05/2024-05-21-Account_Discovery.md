@@ -71,7 +71,7 @@ title: Account Discovery
 <li><strong>Active Monitoring:</strong>Continuously monitor for signs of account enumeration and other suspicious activities. Implement automated responses to quickly address detected threats.</li>
 <li><strong>Incident Response Plans:</strong> Develop and regularly update incident response plans to handle potential breaches effectively. Ensure that your team is trained to recognize and respond to Account Discovery attempts.</li>
 </ul>
-<ol></p>
+</ol></p>
 <h5>Conclusion</h5>
 
 <p>Account Discovery (T1087) is a critical technique used by adversaries to gather information about user and service accounts, setting the stage for more advanced attacks. By understanding this technique, implementing robust detection methods, and adopting comprehensive mitigation strategies, organizations can significantly reduce their risk of compromise. As cybersecurity professionals, staying vigilant and proactive in our defense strategies is essential to safeguarding our digital environments from persistent threats.</p>
