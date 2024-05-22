@@ -62,7 +62,7 @@ title: Most Common MITRE Att&ck Techniques
     <li>Discovery:</li>
     <ol>
         <li><a href="../../05/21/Account_Discovery.html">Account Discovery</a> (<a href="https://attack.mitre.org/techniques/T1087/">T1087</a>)</li>
-        <li>System Information Discovery (T1082)</li>
+        <li><a href="../../05/22/System_Information_Discovery.html">System Information Discovery</a> (<a href="https://attack.mitre.org/techniques/T1082/">T1082</a>)</li>
         <li>Network Share Discovery (T1135)</li>
     </ol>
     <li>Lateral Movement:</li>
