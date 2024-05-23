@@ -24,7 +24,7 @@ title: Network Share Discovery
 
 <p>On Windows systems, attackers might use commands like <code>net view</code> and <code>net share</code> to list network shares. Similarly, tools like <code>smbclient</code> can be used in Unix-based environments to discover shared resources.</p>
 
-<h5>>Real-World Examples</h5>
+<h5>Real-World Examples</h5>
 <ol>
 <li><strong>EternalBlue Exploit:</strong> The EternalBlue exploit, used in the WannaCry ransomware attack, scanned for vulnerable network shares to propagate itself across infected networks. Once a share was found, the ransomware encrypted files and spread to other systems.</li>
 
