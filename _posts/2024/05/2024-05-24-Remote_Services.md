@@ -48,7 +48,7 @@ title: Remote Services
 <ul>
 <li><strong>User Behavior Analytics (UBA):</strong> Deploy UBA to establish baselines for normal user activities and detect deviations that may indicate compromised accounts or malicious activity.</li>
 <li><strong>Endpoint Detection and Response (EDR):</strong> Use EDR solutions to monitor endpoint activities for signs of remote access and lateral movement.</li>
-</ul</ol></p>
+</ul></ol></p>
 <h5>Mitigation Methods</h5>
 
 <p>Mitigating the risks associated with Remote Services requires a combination of preventive measures and active defenses. Here are key mitigation strategies:
