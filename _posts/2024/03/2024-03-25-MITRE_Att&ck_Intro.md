@@ -68,7 +68,7 @@ title: Most Common MITRE Att&ck Techniques
     <li>Lateral Movement:</li>
     <ol>
         <li><a href="../../05/24/Remote_Services.html">Remote Services</a> (<a href="https://attack.mitre.org/techniques/T1021/">T1021</a>)</li>
-        <li>Windows Admin Shares (T1077)</li>
+        <li><a href="../../05/28/Windows_Admin_Shares.html">Windows Admin Shares</a> (<a href="https://attack.mitre.org/techniques/T1021/002/">T1077</a>)</li>
         <li>Exploitation of Remote Services (T1210)</li>
     </ol>
     <li>Collection:</li>
