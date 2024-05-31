@@ -73,7 +73,7 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Collection:</li>
     <ol>
-        <li>Data from Local System (T1005)</li>
+        <li>Data from Local System (<a href="https://attack.mitre.org/techniques/T1005/">T1005</a>)</li>
         <li>Data from Network Shared Drive (T1039)</li>
         <li>Email Collection (T1114)</li>
     </ol>
