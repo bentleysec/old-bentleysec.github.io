@@ -73,9 +73,9 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Collection:</li>
     <ol>
-        <li>Data from Local System (<a href="https://attack.mitre.org/techniques/T1005/">T1005</a>)</li>
-        <li>Data from Network Shared Drive (T1039)</li>
-        <li>Email Collection (T1114)</li>
+        <li><a href="../../05/31/Data_From_Local_System.html">Data from Local System</a> (<a href="https://attack.mitre.org/techniques/T1005/">T1005</a>)</li>
+        <li><a href="../../06/03/Data_from_Network_Shared_Drive.html">Data from Network Shared Drive</a> (<a href="https://attack.mitre.org/techniques/T1039/">T1039</a>)</li>
+        <li><a href="../../06/04/Email_Collection.html">Email Collection</a> (<a href="https://attack.mitre.org/techniques/T1114/">T1114</a>)</li>
     </ol>
     <li>Exfiltration:</li>
     <ol>
