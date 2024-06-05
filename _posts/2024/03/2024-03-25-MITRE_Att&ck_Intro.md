@@ -79,7 +79,7 @@ title: Most Common MITRE Att&ck Techniques
     </ol>
     <li>Exfiltration:</li>
     <ol>
-        <li>Exfiltration Over C2 Channel (T1041)</li>
+        <li><a href="../../06/05/Exfiltration_Over_C2_Channel.html">Exfiltration Over C2 Channel</a> (<a href="https://attack.mitre.org/techniques/T1041/">T1041</a>)</li>
         <li>Exfiltration Over Alternative Protocol (T1048)</li>
         <li>Automated Exfiltration (T1020)</li>
     </ol>
