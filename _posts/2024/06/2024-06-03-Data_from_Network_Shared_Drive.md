@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Data from Local System
+title: Data from Network Shared Drive
 ---
 
 
@@ -10,7 +10,7 @@ title: Data from Local System
 <header class="entry__header">
 
 <h2 class="entry__title h1">
-    Data from Local System
+    Data from Network Shared Drive
 </h2>        
 </header>
 
