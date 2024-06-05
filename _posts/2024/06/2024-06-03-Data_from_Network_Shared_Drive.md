@@ -18,7 +18,7 @@ title: Data from Network Shared Drive
 
 <p>As a cybersecurity engineer, one of our primary responsibilities is to stay ahead of potential threats by understanding the techniques attackers use to compromise systems. One such technique within the MITRE ATT&CK framework is <a href="https://attack.mitre.org/techniques/T1039/">Data from Network Shared Drive (T1039)</a>. This technique involves adversaries accessing and exfiltrating sensitive data from shared network drives. In this post, we will explore the specifics of Data from Network Shared Drive, provide real-world examples, discuss detection methods, and outline effective mitigation strategies.</p>
 
-<h5>>Understanding Data from Network Shared Drive (T1039)</h5>
+<h5>Understanding Data from Network Shared Drive (T1039)</h5>
 
 <p>Data from Network Shared Drive (T1039) refers to the tactic where attackers leverage access to shared network drives to collect and exfiltrate sensitive information. Network shared drives are often used within organizations to store and share documents, spreadsheets, and other important files. When these drives are not adequately secured, they can become a goldmine for adversaries who have managed to gain a foothold in the network.</p>
 
@@ -64,7 +64,7 @@ Mitigating the risks associated with Data from Network Shared Drive requires a c
     <li><strong>Regular Audits and Monitoring:</strong></li>
     <ul>
         <li><strong>Security Audits:</strong> Conduct regular security audits to identify and remediate vulnerabilities related to shared drive access and storage. Focus on critical systems and sensitive data repositories./li>
-        <li><strong>Continuous Monitoring:</strong> Implement continuous monitoring solutions to track and alert on suspicious file access and system activities in real-time./li>
+        <li><strong>Continuous Monitoring:</strong> Implement continuous monitoring solutions to track and alert on suspicious file access and system activities in real-time.</li>
     </ul>
     <li><strong>User Training and Awareness:</strong></li>
     <ul>
