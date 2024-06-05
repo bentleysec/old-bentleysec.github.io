@@ -63,7 +63,7 @@ Mitigating the risks associated with Data from Network Shared Drive requires a c
     </ul>
     <li><strong>Regular Audits and Monitoring:</strong></li>
     <ul>
-        <li><strong>Security Audits:</strong> Conduct regular security audits to identify and remediate vulnerabilities related to shared drive access and storage. Focus on critical systems and sensitive data repositories./li>
+        <li><strong>Security Audits:</strong> Conduct regular security audits to identify and remediate vulnerabilities related to shared drive access and storage. Focus on critical systems and sensitive data repositories.</li>
         <li><strong>Continuous Monitoring:</strong> Implement continuous monitoring solutions to track and alert on suspicious file access and system activities in real-time.</li>
     </ul>
     <li><strong>User Training and Awareness:</strong></li>
