@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Data from Local System
+title: Email Collection
 ---
 
 
@@ -10,7 +10,7 @@ title: Data from Local System
 <header class="entry__header">
 
 <h2 class="entry__title h1">
-    Data from Local System
+    Email Collection
 </h2>        
 </header>
 
