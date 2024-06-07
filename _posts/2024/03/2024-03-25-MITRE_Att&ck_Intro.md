@@ -81,7 +81,7 @@ title: Most Common MITRE Att&ck Techniques
     <ol>
         <li><a href="../../06/05/Exfiltration_Over_C2_Channel.html">Exfiltration Over C2 Channel</a> (<a href="https://attack.mitre.org/techniques/T1041/">T1041</a>)</li>
         <li><a href="../../06/06/Exfiltration_Over_Alternative_Protocol.html">Exfiltration Over Alternative Protocol</a> (<a href="https://attack.mitre.org/techniques/T1048/">T1048</a>)</li>
-        <li>Automated Exfiltration (T1020)</li>
+        <li><a href="../../06/07/Automated_Exfiltration.html">Automated Exfiltration</a> (<a href="https://attack.mitre.org/techniques/T1020/">T1020</a>)</li>
     </ol>
 </ol></p>
 <p>By understanding these common techniques, organizations can implement effective countermeasures, enhance their security posture, and stay ahead of potential threats. Join us as we dive deep into each category, dissecting the tactics and providing actionable insights for defending against these pervasive cyber attack methods.</p>
