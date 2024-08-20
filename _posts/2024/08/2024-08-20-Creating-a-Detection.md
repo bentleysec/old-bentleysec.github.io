@@ -45,7 +45,7 @@ title: Creating a Detection
     <li><strong>Automate Testing</strong>: Just like software, detection rules should be tested automatically before deployment. Create test cases that simulate both malicious and benign behaviors to ensure the rule triggers correctly. This helps catch false positives and negatives early.</li>
     <li><strong>Continuous Integration/Continuous Deployment (CI/CD)</strong>: Use CI/CD pipelines to automatically deploy your detection rules across your environment. This ensures that updates are rolled out consistently and quickly, reducing the window of vulnerability.</li>
     <li><strong>Monitor and Iterate</strong>: Once deployed, continuously monitor the performance of your detection rules. Collect feedback from the SOC team, analyze the alerts generated, and iterate on the rules as needed. The goal is to maintain high detection efficacy while minimizing noise.</li>
-<ol></p>
+</ol></p>
 <h3>Example: Writing a Detection Rule for Brute Force Attacks</h3>
 <p>Let’s walk through a simple example: writing a detection rule to identify brute force attacks on a web application.
 <ol>
@@ -57,15 +57,15 @@ title: Creating a Detection
         <li><strong>Threshold</strong>: Set at 10 attempts to balance between detecting real attacks and avoiding false positives.</li>
         <li><strong>Action</strong>: Generate an alert and potentially block the IP address temporarily.</li>
         <code class="yaml">
-        rule:
-            name: "Detect Brute Force Attacks"
-            description: "Triggers when more than 10 failed login attempts are detected from the same IP within 60 seconds."
-            conditions:
-                - failed_login_attempts > 10
-                - timeframe: 60s
-        actions:
-            - alert: "Brute force attack detected"
-            - block_ip: true
+        rule:<br>
+            &nbsp;&nbsp;name: "Detect Brute Force Attacks"<br>
+            &nbsp;&nbsp;description: "Triggers when more than 10 failed login attempts are detected from the same IP within 60 seconds."<br>
+            &nbsp;&nbsp;conditions:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;- failed_login_attempts > 10<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;- timeframe: 60s<br>
+            &nbsp;&nbsp;actions:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- alert: "Brute force attack detected"<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;- block_ip: true<br>
         </code>
     <li><strong>Test the Rule</strong>: Simulate both benign and malicious login attempts to ensure the rule triggers appropriately.</li>
     <li><strong>Implement Using DaC</strong>:
