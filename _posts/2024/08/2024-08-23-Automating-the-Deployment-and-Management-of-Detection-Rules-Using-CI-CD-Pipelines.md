@@ -122,6 +122,6 @@ monitor:<br>
 
 
 </div>
-</article> <!-- end entry -->
+</article> 
 
 </div> <!-- end main -->  

@@ -81,7 +81,7 @@ title: Integrating Threat Intelligence into Detection Engineering
 <h3>Conclusion</h3>
 <p>Integrating threat intelligence into your detection engineering process is a powerful way to enhance the accuracy, relevance, and timeliness of your detection rules. By leveraging real-time data and automating the integration process, you can ensure that your detection logic remains agile and responsive to the ever-evolving threat landscape.</p>
 
-<p>In the next post, we’ll discuss how to measure the effectiveness of your detection rules and continuously optimize your detection engineering process for maximum impact. Stay tuned!</p>
+<p>In the next post, we’ll discuss how to measure the effectiveness of your detection rules and continuously optimize your detection engineering process for maximum impact. Stay tuned!</p> 
 
 
 
