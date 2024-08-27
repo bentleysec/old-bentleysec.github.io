@@ -39,6 +39,13 @@ title: Detection Engineering and Detection as Code
 
 <p>Over the coming weeks, I will be diving deeper into the world of Detection as Code and Detection Engineering. Through a series of blog posts, we'll explore the tools, techniques, and best practices that can help you become proficient in these essential security disciplines. Whether you're a seasoned security professional or just starting your journey in cybersecurity, this series will provide valuable insights and practical guidance to help you level up your detection capabilities.</p>
 
+
+<p><a href="../20/Creating-a-Detection.hmtl">Part 2</a></p>
+<p><a href="../22/Detection-False-True-Positives.html">Part 3</a></p>
+<p><a href="../23/Automating-the-Deployment-and-Managment-of-Detection-rules-Using-CI-CD-Pipelines.html">Part 4</a></p>
+<p><a href="../26/Threat_Intelligence_Detection-Engineering.html">Part 5</a></p>
+<p><a href="../27/Detection_Effectiveness.html">Part 6</a></p>
+
 </div>
 </article> <!-- end entry -->
 

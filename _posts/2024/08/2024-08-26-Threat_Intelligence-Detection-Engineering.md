@@ -83,7 +83,12 @@ title: Integrating Threat Intelligence into Detection Engineering
 
 <p>In the next post, we’ll discuss how to measure the effectiveness of your detection rules and continuously optimize your detection engineering process for maximum impact. Stay tuned!</p> 
 
+<p><a href="../19/Detection-As-Code.html">Part 1</a></p>
+<p><a href="../20/Creating-a-Detection.hmtl">Part 2</a></p>
+<p><a href="../22/Detection-False-True-Positives.html">Part 3</a></p>
+<p><a href="../23/Automating-the-Deployment-and-Managment-of-Detection-rules-Using-CI-CD-Pipelines.html">Part 4</a></p>
 
+<p><a href="../27/Detection_Effectiveness.html">Part 6</a></p>
 
 
 </div>

@@ -79,6 +79,13 @@ title: Creating a Detection
 <h3>Conclusion</h3>
 <p>Writing detection rules is a critical skill for any Detection Engineer, and implementing these rules using Detection as Code principles ensures that your detection logic is robust, scalable, and easy to manage. By following a structured approach to rule creation, testing, and deployment, you can significantly improve your organization's ability to detect and respond to threats in real time.</p>
 
+<p><a href="../19/Detection-As-Code.html">Part 1</a></p>
+
+<p><a href="../22/Detection-False-True-Positives.html">Part 3</a></p>
+<p><a href="../23/Automating-the-Deployment-and-Managment-of-Detection-rules-Using-CI-CD-Pipelines.html">Part 4</a></p>
+<p><a href="../26/Threat_Intelligence_Detection-Engineering.html">Part 5</a></p>
+<p><a href="../27/Detection_Effectiveness.html">Part 6</a></p>
+
 </div>
 </article> <!-- end entry -->
 

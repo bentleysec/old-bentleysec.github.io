@@ -127,6 +127,11 @@ title: Measuring the Effectiveness of Your Detection Rules and Continuously Opti
 
 <p>In the next post of this series, we’ll explore how to build a detection engineering strategy that aligns with your organization’s broader security goals, ensuring long-term success and resilience. Stay tuned!</p>
 
+<p><a href="../19/Detection-As-Code.html">Part 1</a></p>
+<p><a href="../20/Creating-a-Detection.hmtl">Part 2</a></p>
+<p><a href="../22/Detection-False-True-Positives.html">Part 3</a></p>
+<p><a href="../23/Automating-the-Deployment-and-Managment-of-Detection-rules-Using-CI-CD-Pipelines.html">Part 4</a></p>
+<p><a href="../26/Threat_Intelligence_Detection-Engineering.html">Part 5</a></p>
 
 
 

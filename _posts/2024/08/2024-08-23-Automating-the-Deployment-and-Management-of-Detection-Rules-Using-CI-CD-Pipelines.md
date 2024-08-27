@@ -117,7 +117,12 @@ monitor:<br>
 
 <p>In the next post, we’ll explore how to integrate threat intelligence into your detection engineering process, leveraging real-time data to enhance the accuracy and effectiveness of your detection rules. Stay tuned!</p>
 
+<p><a href="../19/Detection-As-Code.html">Part 1</a></p>
+<p><a href="../20/Creating-a-Detection.hmtl">Part 2</a></p>
+<p><a href="../22/Detection-False-True-Positives.html">Part 3</a></p>
 
+<p><a href="../26/Threat_Intelligence_Detection-Engineering.html">Part 5</a></p>
+<p><a href="../27/Detection_Effectiveness.html">Part 6</a></p>
 
 
 
