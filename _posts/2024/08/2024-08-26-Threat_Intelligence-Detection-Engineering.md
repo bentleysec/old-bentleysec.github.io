@@ -86,7 +86,7 @@ title: Integrating Threat Intelligence into Detection Engineering
 <p><a href="../19/Detection-As-Code.html">Part 1</a> - Detection Engineering and Detection as Code<br>
 <a href="../20/Creating-a-Detection.html">Part 2</a> - Creating a Detection<br>
 <a href="../22/Detection-False-True-Positives.html">Part 3</a> - Handling False Positives and False Negatives in Detection Rules<br>
-<a href="../23/Automating-the-Deployment-and-Managment-of-Detection-rules-Using-CI-CD-Pipelines.html">Part 4</a> - Automating the Deployment and Management of Detection Rules Using CI/CD Pipelines<br>
+<a href="../23/Automating-the-Deployment-and-Management-of-Detection-Rules-Using-CI-CD-Pipelines.html">Part 4</a> - Automating the Deployment and Management of Detection Rules Using CI/CD Pipelines<br>
 Part 5 - Integrating Threat Intelligence into Detection Engineering<br>
 <a href="../27/Detection_Effectiveness.html">Part 6</a> - Measuring the Effectiveness of Your Detection Rules and Continuously Optimizing Your Detection Engineering Process</p>
 

@@ -121,7 +121,7 @@ monitor:<br>
 <a href="../20/Creating-a-Detection.html">Part 2</a> - Creating a Detection<br>
 <a href="../22/Detection-False-True-Positives.html">Part 3</a> - Handling False Positives and False Negatives in Detection Rules<br>
 Part 4 - Automating the Deployment and Management of Detection Rules Using CI/CD Pipelines<br>
-<a href="../26/Threat_Intelligence_Detection-Engineering.html">Part 5</a> - Integrating Threat Intelligence into Detection Engineering<br>
+<a href="../26/Threat_Intelligence-Detection-Engineering.html">Part 5</a> - Integrating Threat Intelligence into Detection Engineering<br>
 <a href="../27/Detection_Effectiveness.html">Part 6</a> - Measuring the Effectiveness of Your Detection Rules and Continuously Optimizing Your Detection Engineering Process</p>
 
 
