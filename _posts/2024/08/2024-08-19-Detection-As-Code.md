@@ -41,7 +41,7 @@ title: Detection Engineering and Detection as Code
 
 
 <p>Part 1 - Detection Engineering and Detection as Code<br>
-<a href="../20/Creating-a-Detection.hmtl">Part 2</a> - Creating a Detection<br>
+<a href="../20/Creating-a-Detection.html">Part 2</a> - Creating a Detection<br>
 <a href="../22/Detection-False-True-Positives.html">Part 3</a> - Handling False Positives and False Negatives in Detection Rules<br>
 <a href="../23/Automating-the-Deployment-and-Managment-of-Detection-rules-Using-CI-CD-Pipelines.html">Part 4</a> - Automating the Deployment and Management of Detection Rules Using CI/CD Pipelines<br>
 <a href="../26/Threat_Intelligence_Detection-Engineering.html">Part 5</a> - Integrating Threat Intelligence into Detection Engineering<br>
