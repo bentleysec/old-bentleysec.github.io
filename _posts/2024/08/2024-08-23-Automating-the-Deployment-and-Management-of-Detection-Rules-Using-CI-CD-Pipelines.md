@@ -45,12 +45,12 @@ title: Automating the Deployment and Management of Detection Rules Using CI/CD P
     <ul>
         <li><strong>Choose a CI/CD Platform</strong>: Select a CI/CD platform that integrates with your VCS, such as Jenkins, GitLab CI, GitHub Actions, or Azure DevOps. These platforms will automate the testing, deployment, and monitoring of your detection rules.</li>
         <li><strong>Define Pipeline Stages</strong>: Break your pipeline into stages, each responsible for a specific task:
-        <ol>
+        <ul>
             <li><strong>Build</strong>: Package your detection rules and prepare them for deployment.</li>
             <li><strong>Test</strong>: Run the automated tests you’ve created to validate the rules.</li>
             <li><strong>Deploy</strong>: Deploy the validated rules to your security tools or platforms, such as SIEM, EDR, or cloud security solutions.</li>
             <li><strong>Monitor</strong>: Continuously monitor the deployed rules for performance and effectiveness, generating feedback for further improvements.</li>
-        </ol>
+        </ul>
     </ul>
     <li>Automate Deployment to Multiple Environments</li>
     <ul>
