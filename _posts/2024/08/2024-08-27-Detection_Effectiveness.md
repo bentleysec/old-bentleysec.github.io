@@ -132,8 +132,8 @@ title: Measuring the Effectiveness of Your Detection Rules and Continuously Opti
 <a href="../22/Detection-False-True-Positives.html">Part 3</a> - Handling False Positives and False Negatives in Detection Rules<br>
 <a href="../23/Automating-the-Deployment-and-Management-of-Detection-Rules-Using-CI-CD-Pipelines.html">Part 4</a> - Automating the Deployment and Management of Detection Rules Using CI/CD Pipelines<br>
 <a href="../26/Threat_Intelligence-Detection-Engineering.html">Part 5</a> - Integrating Threat Intelligence into Detection Engineering<br>
-Part 6 - Measuring the Effectiveness of Your Detection Rules and Continuously Optimizing Your Detection Engineering Process</p>
-
+Part 6 - Measuring the Effectiveness of Your Detection Rules and Continuously Optimizing Your Detection Engineering Process<br>
+<a href="../29/Detection-Strategy.html">Part 7</a> - Building a Detection Engineering Strategy Aligned with Your Organization’s Security Goals</p>
 
 
 </div>
