@@ -1474,7 +1474,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     top: .6rem;
     left: 0;
-    color: #edecec;
+    color: #FFFFFF;
 }
 
 .s-header__nav {
