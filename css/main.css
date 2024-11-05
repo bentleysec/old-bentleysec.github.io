@@ -1469,11 +1469,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    background-color: #F5F4F3;
+    background-color: #5A5A5A;
     border-bottom: 1px solid #EAE8E8;
     position: absolute;
     top: .6rem;
     left: 0;
+    color: #edecec;
 }
 
 .s-header__nav {
