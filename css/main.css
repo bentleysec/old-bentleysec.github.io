@@ -1463,14 +1463,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* nav-wrap */
 .s-header__nav-wrap {
     z-index: 1;
-    color: #FFFFFF !important;
     width: 100%;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    background-color: #5A5A5A;
+    background-color: #F5F4F3;
     border-bottom: 1px solid #EAE8E8;
     position: absolute;
     top: .6rem;
