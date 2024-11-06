@@ -1463,6 +1463,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* nav-wrap */
 .s-header__nav-wrap {
     z-index: 1;
+    color: #FFFFFF;
     width: 100%;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
@@ -1474,7 +1475,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     top: .6rem;
     left: 0;
-    color: #FFFFFF;
 }
 
 .s-header__nav {
